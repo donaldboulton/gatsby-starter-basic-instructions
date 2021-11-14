@@ -1,13 +1,15 @@
 ---
 template: blog-post
-title: Extreme gaming extravaganza
-path: /gaming-extravaganza
+title: My Pretty White Shoes
+path: /posts/my-pretty-white-shoes
 date: 2020-05-13 12:55
 description: How we scaled an Extreme gaming extravaganza
 tags:
   - extravaganza
   - gaming
-featuredImage: ../../images/fredrick-tendong-hvyepjyehdq-unsplash.jpg
+featuredImage: ../../images/blood.jpg
 ---
+
+## New Shoes
 
 My Pretty White ShoesMy Pretty White ShoesMy Pretty White ShoesMy Pretty White ShoesMy Pretty White ShoesMy Pretty White ShoesMy Pretty White Shoes

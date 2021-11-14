@@ -1,13 +1,15 @@
 ---
 template: blog-post
-title: Mobile gaming revolution is on
-path: /plant/bud
+title: Plant
+path: /posts/plant
 date: 2020-05-13 12:37
-description: dfdfdfsf
+description: Weed Plants in every yard
 tags:
   - plant
   - buds
 featuredImage: ../../images/screen-post-hixmjh9xhoo-unsplash.jpg
 ---
 
-dhfjkdhskjhjkh jk dhjk dhkjgfkjdg fjkdgf kjdg fjkdg kfjh
+# Plants
+
+Weed Plants in every yard free to all to take a bud.

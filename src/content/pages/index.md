@@ -6,7 +6,7 @@ tagline: Basic Instructions Gatsby Starter
 featuredImage: ../../images/fredrick-tendong-hvyepjyehdq-unsplash.jpg
 cta:
   ctaText: Know More
-  ctaLink: posts/minimalists-desk
+  ctaLink: /posts/minimalists-desk
 ---
 
 Built by Donald W. Boulton

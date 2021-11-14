@@ -5,7 +5,7 @@ title: About
 featuredImage: ../../images/alex-zr48yvupk04-unsplash.jpg
 ---
 
-## 👌 Features
+## Features
 
 - A Blog and Personal website with Netlify CMS.
 - Responsive Web Design
@@ -28,7 +28,7 @@ featuredImage: ../../images/alex-zr48yvupk04-unsplash.jpg
 - Gatsby Incremental Builds with Netlify.
 - Images with gatsby-plugin-image
 
-## 🚀 Quick Deploy
+## Quick Deploy
 
 Just click on the **Deploy to Netlify** button.
 

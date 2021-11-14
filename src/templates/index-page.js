@@ -51,7 +51,7 @@ export const pageQuery = graphql`
                 gatsbyImageData(
                   layout: FULL_WIDTH
                   breakpoints: [250, 345, 576, 720]
-                  placeholder: TRACED_SVG
+                  placeholder: DOMINANT_COLOR
                   quality: 90
                 )
               }

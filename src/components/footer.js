@@ -12,11 +12,11 @@ const Footer = () => (
   >
     <div>
       <p>
-      © {new Date().getFullYear()} Bibwoe.com{" "}
+      © {new Date().getFullYear()} Gatsby Starter{" "}
         <span className="icon -love">
           <RiHeart2Line />
         </span>{" "}
-        <Link to="/">Basic Instructions Books While On Earth</Link>
+        <Link to="/">Basic Instructions</Link>
       </p>
     </div>
   </footer>

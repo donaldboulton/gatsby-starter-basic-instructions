@@ -1,26 +1,26 @@
 ---
 template: blog-post
 title: Desk for minimalists
-path: /minimalists-desk
+path: /posts/desk-for-minimalists
 date: 2020-05-13 12:46
-description: sdasd
+description: Add something good
 tags:
   - minimalists
   - desk
 featuredImage: ../../images/bench-accounting-nvzvopqw0gc-unsplash.jpg
 ---
 
+## Mechanical Puppy
+
 Uh, is the puppy mechanical in any way? Maybe I love you so much I love you no matter who you are pretending to be. If rubbin' frozen dirt in your crotch is wrong, hey I don't wanna be right. I found what I need. And it's not friends, it's things.
 
 That's the ONLY thing about being a slave. OK, if everyone's finished being stupid. Bender, we're trying our best. Fry! Stay back! He's too powerful! I just told you! **You've killed me!** _And yet you haven't said what I told you to say!_ How can any of us trust you?
 
-![Royal Mail](/assets/royal-mail-unsplash.jpg "Royal Mail from Unsplash")
+![Royal Mail](../../images/royal-mail-unsplash.jpg "Royal Mail from Unsplash")
 
 ## It doesn't look so shiny to me.
 
 No! I want to live! There are still too many things I don't own! It doesn't look so shiny to me. I'm just glad my fat, ugly mama isn't alive to see this day. Soon enough. I'm sure those windmills will keep them cool.
-
-![]()
 
 1. Guards! Bring me the forms I need to fill out to have her taken away!
 2. Have you ever tried just turning off the TV, sitting down with your children, and hitting them?

@@ -12,4 +12,4 @@ featuredImage: ../../images/blog.webp
 
 ## No Image
 
-Hello i am post without an image
+Hello I am post without an image

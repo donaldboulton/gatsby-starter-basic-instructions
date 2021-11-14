@@ -272,7 +272,7 @@ ampersands and angle brackets. For example, this:
         &copy; 2004 Foo Corporation
     </div>
 
-![Royal Mail](/assets/royal-mail-unsplash.jpg)
+![Royal Mail](../../images/royal-mail-unsplash.jpg)
 
 Regular Markdown syntax is not processed within code blocks. E.g.,
 asterisks are just literal asterisks within a code block. This means

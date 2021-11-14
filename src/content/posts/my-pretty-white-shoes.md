@@ -1,15 +1,25 @@
 ---
 template: blog-post
-title: My Pretty White Shoes
-path: /posts/my-pretty-white-shoes
+title: My Pretty Red Shoes
+path: /posts/my-pretty-red-shoes
 date: 2020-05-13 12:55
-description: How we scaled an Extreme gaming extravaganza
+description: I Got Some Pretty Red Shoes
 tags:
-  - extravaganza
+  - shoes
   - gaming
 featuredImage: ../../images/blood.jpg
 ---
 
 ## New Shoes
 
-My Pretty White ShoesMy Pretty White ShoesMy Pretty White ShoesMy Pretty White ShoesMy Pretty White ShoesMy Pretty White ShoesMy Pretty White Shoes
+My Pretty Red Shoes
+
+> My Pretty Red Shoes
+
+My Pretty Red Shoes
+
+> > My Pretty Red Shoes
+
+My Pretty Red Shoes
+
+> > > Look At My Pretty Red Shoes

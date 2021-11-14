@@ -1,6 +1,6 @@
 {
   "name": "gatsby-starter-basic-instructions",
-  "private": true,
+  "private": false,
   "description": "A starter for a blog powered by Gatsby and Markdown",
   "version": "0.1.0",
   "author": "Donald Boulton <donaldboulton@gmail.com>",
@@ -50,7 +50,8 @@
   "homepage": "https://github.com/donaldboulton/gatsby-starter-basic-instructionsg#readme",
   "keywords": [
     "gatsby",
-    "starter",
+    "gatsby-plugin",
+    "gatsby-starter",
     "next"
   ],
   "license": "0BSD",

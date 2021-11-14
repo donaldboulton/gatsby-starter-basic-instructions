@@ -1,4 +1,4 @@
-> **Update** Basic Instructions is now built with Gatsby V4 "4.1.4", this includes many performance with Latest Gatsby!
+> **Update** [Basic Instructions Hosted on Gatsby Cloud](https://gatsbystarterbasicinstructions.gatsbyjs.io/) is now built with Gatsby V4 "4.1.4", this includes many performance updates with Latest Gatsby!
 
 GatsbyJS Version 4.1.4 with all the latest modules from npm.
 
@@ -16,7 +16,7 @@ gatsby-plugin-image With the Plugins proper usage.
   </a>
 </p>
 <h1 align="center">
-  Gatsby's Starter Basic Instructions
+  Gatsby Starter Basic Instructions
 </h1>
 
 Kick off your project with this blog boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.

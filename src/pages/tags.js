@@ -45,6 +45,7 @@ const TagsPage = ({
     </div>
   </Layout>
 )
+
 TagsPage.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({

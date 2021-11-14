@@ -8,4 +8,4 @@ Disallow: /categories/*
 Disallow: /static/*
 Disallow: /*.xls$
 
-sitemap: https://bibwoe.com/sitemap.xml
+sitemap: https://gatsby-starter-basic-instructions.com/sitemap.xml

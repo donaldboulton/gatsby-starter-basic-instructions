@@ -2,12 +2,12 @@ const settings = require("./src/util/site.json")
 
 module.exports = {
   siteMetadata: {
-    title: `Bibwoe`,
+    title: `Basic Instructions`,
     author: {
       name: `Don Boulton`,
       summary: `Resides in OKC.`,
     },
-    description: `Basic Instructions Books While On Earth.`,
+    description: `Basic Instructions.`,
     siteUrl: `https://bibwoe.com/`,
     social: {
       twitter: `donboulton`,

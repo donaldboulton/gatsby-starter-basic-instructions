@@ -1,12 +1,12 @@
 {
   "meta": {
-    "title": "Bibwoe",
+    "title": "Basic Instructions",
     "titleTemplate": "%s",
-    "description": "Basic Instructions Books While on Earth, The Last Testament to the Holy Bible",
+    "description": "Basic Instructions",
     "siteUrl": "https://bibwoe.com",
     "image": "/assets/prayer.png",
     "iconimage": "/assets/prayer.png",
     "twitterUsername": "@donboulton"
   },
-  "ga": "UA-2378526-1"
+  "ga": "UA-0000000-1"
 }

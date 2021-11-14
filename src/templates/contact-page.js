@@ -51,7 +51,6 @@ const Contact = ({ data }) => {
       />
       <Helmet>
         <script src="https://www.google.com/recaptcha/api.js"></script>
-        <script src="https://embed.small.chat/T8PMJ5ZNYGDRA9BJEA.js" async></script>
       </Helmet>
       <div className="wrapper">
         <header className="featured-banner">
@@ -107,7 +106,7 @@ const Contact = ({ data }) => {
           <p className="text-align-right">
             <button
               class="button g-recaptcha" 
-              data-sitekey="6LcE-hwdAAAAAAu3XbPI_IMHXDiQeUy3_eyXdxqx" 
+              data-sitekey="6LcE-000000000_000000_000000" 
               data-callback={onSubmit}
               data-action='submit'
               className="button g-recaptcha"

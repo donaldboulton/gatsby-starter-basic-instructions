@@ -1,12 +1,12 @@
 ---
 template: index-page
 path: /
-title: Bibwoe
-tagline: Basic Instructions Books While on Earth
-featuredImage: ../../images/the-sermon-mount.jpg
+title: Basic Instructions
+tagline: Basic Instructions Gatsby Starter
+featuredImage: ../../images/fredrick-tendong-hvyepjyehdq-unsplash.jpg
 cta:
   ctaText: Know More
-  ctaLink: /posts/creation-of-all
+  ctaLink: posts/minimalists-desk
 ---
 
-Written by the Left Hand of God.
+Built by Donald W. Boulton

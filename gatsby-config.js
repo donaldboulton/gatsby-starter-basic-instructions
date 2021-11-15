@@ -82,8 +82,14 @@ module.exports = {
               escapeEntities: {},
             },
           },
+          `gatsby-remark-code-titles`,
           `gatsby-remark-copy-linked-files`,
-          `gatsby-remark-smartypants`,
+          {
+            resolve: "gatsby-remark-smartypants",
+            options: {
+              dashes: "oldschool",
+            },
+          },
         ],
       },
     },
@@ -165,8 +171,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Bibwoe`,
-        short_name: `Bibwoe`,
+        name: `Basic`,
+        short_name: `Basic Instructions`,
         start_url: `/`,
         background_color: `#f7f0eb`,
         theme_color: `#a2466c`,
@@ -177,7 +183,7 @@ module.exports = {
     {
       resolve: `@gatsby-contrib/gatsby-plugin-elasticlunr-search`,
       options: {
-        // Fields to index
+        // Fields to index Add Featured Image to fields and in Markdown below to index images
         fields: [`title`, `description`, `content`, `path`, `date`],
         // How to resolve each field`s value for a supported node type
         resolvers: {

@@ -1,13 +1,33 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
+import React from "React"
 import { Link, graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
+import rehypeReact from "rehype-react"
+import Counter from "../components/counter"
 import { RiTimerLine } from "@react-icons/all-files/ri/RiTimerLine"
 import { RiArrowLeftLine } from "@react-icons/all-files/ri/RiArrowLeftLine"
 import { RiArrowRightLine } from "@react-icons/all-files/ri/RiArrowRightLine"
 import { FaTags } from "@react-icons/all-files/fa/FaTags"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+
+require('prismjs')
+require('prismjs/components/prism-javascript')
+require('prismjs/components/prism-scss')
+require('prismjs/components/prism-jsx')
+require('prismjs/components/prism-bash')
+require('prismjs/components/prism-json')
+require('prismjs/components/prism-diff')
+require('prismjs/components/prism-markdown')
+require('prismjs/components/prism-graphql')
+require("prismjs/themes/prism-okaidia.css")
+require("prismjs/plugins/line-numbers/prism-line-numbers.css");
+
+const renderAst = new rehypeReact({
+  createElement: React.createElement,
+  components: { "interactive-counter": Counter },
+}).Compiler
 
 const styles = {
   "article blockquote": {
@@ -71,7 +91,7 @@ const Pagination = props => (
 
 const BlogPostTemplate = ({ data, pageContext }) => {
   const { markdownRemark } = data // data.markdownRemark holds your post data
-  const { frontmatter, html, excerpt } = markdownRemark
+  const { frontmatter, htmlAst, excerpt } = markdownRemark
   const postNode = data.markdownRemark
   const Image = frontmatter.featuredImage
     ? postNode.frontmatter.featuredImage.childImageSharp.gatsbyImageData
@@ -145,8 +165,11 @@ const BlogPostTemplate = ({ data, pageContext }) => {
         </header>
         <div
           className="blog-post-content"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
+          >
+            {
+              renderAst(htmlAst)
+            }
+        </div>
       </article>
       {(previous || next) && <Pagination {...props} />}
     </Layout>
@@ -159,7 +182,7 @@ export const pageQuery = graphql`
   query BlogPostQuery($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
-      html
+      htmlAst
       excerpt(pruneLength: 148)
       timeToRead
       frontmatter {

@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Flex, Box, Heading } from "theme-ui"
+import { jsx, Container, Heading } from "theme-ui"
 import PropTypes from "prop-types"
 import { FaTags } from "@react-icons/all-files/fa/FaTags";
 
@@ -21,8 +21,8 @@ const Tags = ({ pageContext, data }) => {
       <div
         className="wrapper"
       >
-        <Flex>
-          <Box p={4} bg="primary">
+        <div>
+          <Container p={4} bg="primary">
             <Heading as='h2'>{tagHeader}</Heading>
             <div>
               <ul className="taglist">
@@ -43,8 +43,8 @@ const Tags = ({ pageContext, data }) => {
               </span>{" "} 
               <Link to="/tags">All tags</Link>
             </div>
-          </Box>
-        </Flex>
+          </Container>
+        </div>
       </div>
     </Layout>
   )

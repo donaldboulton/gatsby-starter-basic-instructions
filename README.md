@@ -1,6 +1,6 @@
-> **Update** [Basic Instructions Hosted on Gatsby Cloud](https://gatsbystarterbasicinstructions.gatsbyjs.io/) is now built with Gatsby V4 "4.1.4", this includes many performance updates with Latest Gatsby!
+> **Update** [Basic Instructions Hosted on Gatsby Cloud](https://gatsbystarterbasicinstructions.gatsbyjs.io/) is now built with Gatsby V4 "4.1.6", this includes many performance updates with Latest Gatsby!
 
-GatsbyJS Version 4.1.4 with all the latest modules from npm.
+GatsbyJS Version 4.1.6 with all the latest modules from npm.
 
 [![npm version](https://badge.fury.io/js/gatsby.svg)](https://badge.fury.io/js/gatsby) 
 

@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import React from "React"
+import * as React from "react"
 import { Link, graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import rehypeReact from "rehype-react"
@@ -13,16 +13,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 require('prismjs')
-require('prismjs/components/prism-javascript')
-require('prismjs/components/prism-scss')
-require('prismjs/components/prism-jsx')
-require('prismjs/components/prism-bash')
-require('prismjs/components/prism-json')
-require('prismjs/components/prism-diff')
-require('prismjs/components/prism-markdown')
-require('prismjs/components/prism-graphql')
 require("prismjs/themes/prism-okaidia.css")
-require("prismjs/plugins/line-numbers/prism-line-numbers.css");
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,

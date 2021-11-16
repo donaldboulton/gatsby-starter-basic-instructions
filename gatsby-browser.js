@@ -9,9 +9,9 @@ export const onServiceWorkerUpdateReady = () => {
     if (answer === true) {
       window.location.reload()
     }
-  }
+}
   
-  export const shouldUpdateScroll = ({
+export const shouldUpdateScroll = ({
     routerProps: { location, transitionDelay },
     getSavedScrollPosition,
   }) => {
@@ -35,4 +35,4 @@ export const onServiceWorkerUpdateReady = () => {
       }, transitionDelay)
     }
     return false
-  }
+}

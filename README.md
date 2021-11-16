@@ -438,7 +438,7 @@ You can find all the website settings such website Site title, Website URL, Goog
 
 ## 🌐 Adding Custom domain to netlify website
 
-We have written a short article on [Custom domain with Netlify website](custom-domain)
+Article on [Custom domain with a Netlify website](https://www.netlify.com/blog/2020/03/26/how-to-set-up-netlify-dns-custom-domains-cname-a-records/)
 
 ## 🖥 Install Locally
 
@@ -475,7 +475,7 @@ We really appreciate you taking time to build your website with our `gatsby-star
 
 I would love to get your feedback and contributions.
 
-Feel free to ping [@donaldboulton](donaldboulton) for help regarding your JAMstack website, our DM's are open. And do not forget to share you website with me 😊
+Feel free to ping [@donaldboulton](donaldboulton) for help regarding your JAMstack website, our DM's are open. And do not forget to share your website with me 😊
 
 [gatsby]: https://gatsbyjs.org
 [netlifycms]: https://www.netlifycms.org

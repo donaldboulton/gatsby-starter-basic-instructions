@@ -4,9 +4,8 @@ title: Paper Boat
 path: /posts/paper-boat
 date: 2020-05-23 03:40
 description: How to draw a character
-tags:
-  - character
-  - design
+tags: [character, design]
+category: stuff  
 featuredImage: ../../images/andrew-seaman-4fi_4q6_efm-unsplash.jpg
 ---
 

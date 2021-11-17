@@ -2,10 +2,9 @@
 template: blog-post
 path: /posts/markdown
 date: 2020-05-09 09:30
-title: "Markdown"
-tags:
-  - markdown
-  - syntax
+title: Markdown
+tags: [markdown, post]
+category: format  
 featuredImage: ../../images/mike-dorner-sf_1ZDA1YFw-unsplash.jpg
 ---
 

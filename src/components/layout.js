@@ -19,7 +19,7 @@ const query = graphql`
   }
 `
 
-const Layout = ({ location, className, props, children }) => {
+const Layout = ({ className, children }) => {
   const { siteSearchIndex } = useStaticQuery(query)
 
   return (

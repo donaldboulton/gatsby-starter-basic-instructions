@@ -4,9 +4,8 @@ title: Code Blocks
 path: /posts/code-blocks
 date: 2020-05-11 08:40
 description: Post with no image
-tags:
-  - plant
-  - desk
+category: code
+tags: [plant, desk]
 featuredImage: ../../images/blog.webp
 ---
 

@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import React from "react"
+import * as React from "react"
 import { Link, graphql } from "gatsby"
 import { RiArrowLeftLine } from "@react-icons/all-files/ri/RiArrowLeftLine"
 import { RiArrowRightLine } from "@react-icons/all-files/ri/RiArrowRightLine"
@@ -39,6 +39,7 @@ export const blogListQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             path
             tags
+            category
             title
             featuredImage {
               childImageSharp {

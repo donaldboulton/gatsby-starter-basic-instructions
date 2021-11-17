@@ -8,6 +8,7 @@ import Counter from "../components/counter"
 import { RiTimerLine } from "@react-icons/all-files/ri/RiTimerLine"
 import { RiArrowLeftLine } from "@react-icons/all-files/ri/RiArrowLeftLine"
 import { RiArrowRightLine } from "@react-icons/all-files/ri/RiArrowRightLine"
+import { MdList } from "@react-icons/all-files//md/MdList"
 import { FaTags } from "@react-icons/all-files/fa/FaTags"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -100,7 +101,6 @@ const BlogPostTemplate = ({ data, pageContext }) => {
         taglist += tags.join(', ');
     }
 
-
   return (
     <Layout className="page">
       <Seo
@@ -135,12 +135,23 @@ const BlogPostTemplate = ({ data, pageContext }) => {
                   color: "muted",
                 }}
               >
-                <Link aria-label='Tags' to='/tags/'>
-                  <span className="icon -tags">
-                    <FaTags />
-                  </span>{" "}  
-                  <small>{taglist}</small>
-                </Link>
+                <span className="icon -tags">
+                  <FaTags />
+                </span>{" "}
+                <span>
+                  <Link aria-label='Tags' to='/tags/'>  
+                    <small>{taglist}</small>
+                  </Link>
+                </span>
+                &ensp;
+                <span className="icon -category">
+                  <MdList />
+                </span>{" "} 
+                <span>
+                  <Link aria-label='Categories' to='/categories/'>
+                    <small>{frontmatter.category}</small>
+                  </Link>
+                </span>
               </div>
             }
           </section>
@@ -180,6 +191,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         tags
+        category
         title
         description
         featuredImage {

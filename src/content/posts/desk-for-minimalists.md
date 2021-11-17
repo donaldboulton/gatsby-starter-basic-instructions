@@ -1,12 +1,11 @@
 ---
 template: blog-post
-title: Desk for minimalists
+title: Desk for Minimalists
 path: /posts/desk-for-minimalists
 date: 2020-05-13 12:46
 description: Add something good
-tags:
-  - minimalists
-  - desk
+tags: [minimalists, desk]
+category: post
 featuredImage: ../../images/bench-accounting-nvzvopqw0gc-unsplash.jpg
 ---
 

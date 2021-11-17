@@ -6,7 +6,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
 
   const blogList = path.resolve(`./src/templates/blog-list.js`)
-  const tagTemplate = path.resolve("src/templates/tags-page.js")
+  const tagTemplate = path.resolve("./src/templates/tags-page.js")
+  const categoryTemplate = path.resolve("./src/templates/category-page.js")
 
   const result = await graphql(`
     {
@@ -29,6 +30,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
               path
               template
               tags
+              category
               title
               description
             }
@@ -37,6 +39,11 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       }
       tagsGroup: allMarkdownRemark(limit: 2000) {
         group(field: frontmatter___tags) {
+          fieldValue
+        }
+      }
+      categoryGroup: allMarkdownRemark(limit: 2000) {
+        group(field: frontmatter___category) {
           fieldValue
         }
       }
@@ -70,6 +77,30 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         previous,
         next,
       },
+    })
+    
+    let category = []
+
+    // Iterate through each post, putting all found date fields into `dates`
+    posts.forEach(post => {
+      if (_.get(post, `node.frontmatter.category`)) {
+        category = category.concat(post.node.frontmatter.category)
+      }
+    })
+    // Eliminate duplicate categories
+    category = _.uniq(category)
+
+    // Make category pages
+    category.forEach(category => {
+      const categoryPath = `/categories/${_.kebabCase(category)}/`
+
+      createPage({
+        path: categoryPath,
+        component: categoryTemplate,
+        context: {
+          category,
+        },
+      })
     })
 
     // Extract tag data from query

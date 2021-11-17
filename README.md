@@ -1,6 +1,6 @@
-> **Update** [Basic Instructions Hosted on Gatsby Cloud](https://gatsbystarterbasicinstructions.gatsbyjs.io/) is now built with Gatsby V4 "4.1.6", this includes many performance updates with Latest Gatsby!
+> **Update** [Basic Instructions Hosted on Gatsby Cloud](https://gatsbystarterbasicinstructions.gatsbyjs.io/) is now built with Gatsby V4 "4.2.0", this includes many performance updates with Latest Gatsby!
 
-GatsbyJS Version 4.1.6 with all the latest modules from npm.
+GatsbyJS Version @latest with all the @latest modules from npm.
 
 [![npm version](https://badge.fury.io/js/gatsby.svg)](https://badge.fury.io/js/gatsby) 
 
@@ -111,7 +111,9 @@ Gatsby Cloud is an end-to-end cloud platform specifically built for the Gatsby f
 - Responsive Web Design
 - Using Theme-Ui for structure and styles
 - Dark / Light Mode
-- Blog Posts Tags
+- Blog Posts Tags Pages with a added component
+- Blog Posts Categories Pages with a added component
+- Using Remark-Rehype to add Html or Modules to Blog Posts Markdown Pages
 - Customize theme color from CMS
 - Search bar
 - Customize content of Homepage, About and Contact page.

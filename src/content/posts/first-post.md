@@ -5,8 +5,9 @@ path: /posts/first-post
 date: 2019-07-10 10:00
 description: Add Anything
 tags:
-  - Book
+  - book
   - gaming
+category: post  
 featuredImage: ../../images/bench-accounting-nvzvopqw0gc-unsplash.jpg
 ---
 

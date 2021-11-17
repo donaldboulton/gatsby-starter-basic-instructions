@@ -1,18 +1,18 @@
 /** @jsx jsx */
 import { jsx, Container, Heading } from "theme-ui"
 import PropTypes from "prop-types"
-import { FaTags } from "@react-icons/all-files/fa/FaTags";
+import { MdList } from "@react-icons/all-files/md/MdList";
 // Components
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-const Tags = ({ pageContext, data }) => {
-  const { tag } = pageContext
+const Category = ({ pageContext, data }) => {
+  const { category } = pageContext
   const { edges, totalCount } = data.allMarkdownRemark
-  const tagHeader = `${totalCount} post${
-    totalCount === 1 ? "" : "s"
-  } tagged with "${tag}"`
+  const categoryHeader = `${totalCount} post${
+    totalCount === 1 ? '' : 's'
+  } categorized with “${category}”`
 
   return (
     <Layout className="not-found-page">
@@ -22,7 +22,7 @@ const Tags = ({ pageContext, data }) => {
       >
         <div>
           <Container p={4} bg="primary">
-            <Heading as='h2'>{tagHeader}</Heading>
+            <Heading as='h2'>{categoryHeader}</Heading>
             <div>
               <ul className="taglist">
                 {edges.map(({ node }) => {
@@ -37,10 +37,10 @@ const Tags = ({ pageContext, data }) => {
               </ul>
             </div>
             <div>
-              <span className="icon -tags">
-                <FaTags />
+              <span className="icon -category">
+                <MdList />
               </span>{" "} 
-              <Link to="/tags">All Tags</Link>
+              <Link to="/categories">All Categories</Link>
             </div>
           </Container>
         </div>
@@ -49,9 +49,9 @@ const Tags = ({ pageContext, data }) => {
   )
 }
 
-Tags.propTypes = {
+Category.propTypes = {
   pageContext: PropTypes.shape({
-    tag: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired,
   }),
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
@@ -72,14 +72,14 @@ Tags.propTypes = {
   }),
 }
 
-export default Tags
+export default Category
 
 export const pageQuery = graphql`
-  query($tag: String) {
+  query($category: String) {
     allMarkdownRemark(
-      limit: 2000
+      limit: 1000
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { tags: { in: [$tag] } } }
+      filter: { frontmatter: { category: { in: [$category] } } }
     ) {
       totalCount
       edges {

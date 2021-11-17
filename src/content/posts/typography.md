@@ -3,9 +3,8 @@ template: blog-post
 title: Typography
 date: 2020-05-13 09:19
 path: /posts/typography
-tags:
-  - typography
-  - gaming
+tags: [typography, gaming]
+category: code 
 featuredImage: ../../images/alexander-andrews-zw07kvdahpw-unsplash.jpg
 description: metaphorically make a deal with the devil
 ---

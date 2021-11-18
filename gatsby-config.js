@@ -8,7 +8,7 @@ module.exports = {
       summary: `Resides in OKC.`,
     },
     description: `Basic Instructions.`,
-    siteUrl: `https://gatsbystarterbasicinstructions.gatsbyjs.io/`,
+    siteUrl: `https://gatsbystarterbasicinstructions.gtsb.io/`,
     social: {
       twitter: `donboulton`,
     },

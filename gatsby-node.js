@@ -173,6 +173,11 @@ exports.createSchemaCustomization = ({ actions }) => {
       summary: String
     }
 
+    type Headings {
+      depth: String
+      value: String
+    }
+
     type Social {
       twitter: String
     }

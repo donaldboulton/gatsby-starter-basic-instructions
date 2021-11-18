@@ -3,9 +3,7 @@ Allow: /*
 Disallow: /admin/*
 Disallow: /app/*
 Disallow: /cms/*
-Disallow: /tags/*
-Disallow: /categories/*
 Disallow: /static/*
 Disallow: /*.xls$
 
-sitemap: https://gatsby-starter-basic-instructions.com/sitemap.xml
+sitemap: https://gatsbystarterbasicinstructions.gtsb.io/sitemap.xml

@@ -6,12 +6,12 @@ date: 2020-05-13 12:55
 description: I Got Some Pretty Red Shoes
 tags: [shoes, gaming]
 category: stuff
-featuredImage: ../../../static/assets/images/blood.jpg
+featuredImage: ../../../static/assets/blood.jpg
 ---
 
 ## New Shoes
 
-My Pretty Red Shoes
+I Got some new Pretty Red Shoes.
 
 > My Pretty Red Shoes
 

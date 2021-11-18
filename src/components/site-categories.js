@@ -8,15 +8,15 @@ import { FaList } from "@react-icons/all-files/fa/FaList";
 const SiteCategories = ({ group, ...rest }) => {
   const { categoryTitle = `Posts Categories` } = rest
   const data = useStaticQuery(graphql`
-      {
-        allMarkdownRemark {
-          group(field: frontmatter___category) {
-            fieldValue
-            totalCount
-          }
+    {
+      allMarkdownRemark {
+        group(field: frontmatter___category) {
+          fieldValue
+          totalCount
         }
       }
-    `)
+    }
+  `)
   return (
     <>
       <Box>

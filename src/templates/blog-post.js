@@ -22,8 +22,8 @@ const renderAst = new rehypeReact({
   createElement: React.createElement,
   components: { 
     "interactive-counter": Counter,
-    "tags" : SiteTags,
-    "categories" : SiteCategory
+    "tags": SiteTags,
+    "categories": SiteCategory,
   },
 }).Compiler
 

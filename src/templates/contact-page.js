@@ -3,7 +3,6 @@ import { jsx } from "theme-ui"
 import { graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { RiSendPlane2Line } from "@react-icons/all-files/ri/RiSendPlane2Line"
-import { Helmet } from "react-helmet"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
@@ -49,9 +48,6 @@ const Contact = ({ data }) => {
         title={frontmatter.title}
         description={frontmatter.title + " " + site.siteMetadata.title}
       />
-      <Helmet>
-        <script src="https://www.google.com/recaptcha/api.js"></script>
-      </Helmet>
       <div className="wrapper">
         <header className="featured-banner">
           <section className="article-header">

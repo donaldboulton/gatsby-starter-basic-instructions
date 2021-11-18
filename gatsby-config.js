@@ -20,7 +20,7 @@ module.exports = {
       options: {
         headers: {
           "/*": [
-            "Cache-Control: public, max-age=31536000, immutable",
+            "Cache-Control: public, max-age=2592000, immutable",
           ],
           "/static/assets/*": [
             "Cache-Control: public, max-age=31536000, immutable",

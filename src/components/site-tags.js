@@ -8,15 +8,15 @@ import { FaTags } from "@react-icons/all-files/fa/FaTags";
 const SiteTags = ({ group, ...rest }) => {
   const { tagsTitle = `Posts Tags` } = rest
   const data = useStaticQuery(graphql`
-      {
-        allMarkdownRemark {
-          group(field: frontmatter___tags) {
-            fieldValue
-            totalCount
-          }
+    {
+      allMarkdownRemark {
+        group(field: frontmatter___tags) {
+          fieldValue
+          totalCount
         }
       }
-    `)
+    }
+  `)
   return (
     <>
       <Box>

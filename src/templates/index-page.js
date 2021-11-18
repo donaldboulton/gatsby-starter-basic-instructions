@@ -80,35 +80,35 @@ const HomePage = ({ data }) => {
       <div key={"social icons" + index}>
         {icons.icon === "facebook" ? (
           <Link to={icons.url} rel="noopener noreferrer" target="_blank">
-            <RiFacebookBoxFill />
+            <RiFacebookBoxFill alt='Facebook' />
           </Link>
         ) : (
           ""
         )}
         {icons.icon === "twitter" ? (
           <Link to={icons.url} rel="noopener noreferrer" target="_blank">
-            <RiTwitterFill />
+            <RiTwitterFill alt='Twitter' />
           </Link>
         ) : (
           ""
         )}
         {icons.icon === "youtube" ? (
           <Link to={icons.url} rel="noopener noreferrer" target="_blank">
-            <RiYoutubeFill />
+            <RiYoutubeFill alt='Youtube' />
           </Link>
         ) : (
           ""
         )}
         {icons.icon === "instagram" ? (
           <Link to={icons.url} rel="noopener noreferrer" target="_blank">
-            <RiInstagramFill />
+            <RiInstagramFill alt='Instagram' />
           </Link>
         ) : (
           ""
         )}        
         {icons.icon === "github" ? (
           <Link to={icons.url} rel="noopener noreferrer" target="_blank">
-            <RiGithubFill />
+            <RiGithubFill alt='Github' />
           </Link>
         ) : (
           ""

@@ -18,8 +18,24 @@ module.exports = {
     {
       resolve: `gatsby-plugin-gatsby-cloud`,
       options: {
-        headers: {}, // option to add more headers. `Link` headers are transformed by the below criteria
-        allPageHeaders: [], // option to add headers for all pages. `Link` headers are transformed by the below criteria
+        headers: {
+          "/*": [
+            "Cache-Control: public, max-age=31536000, immutable",
+          ],
+          "/static/assets/*": [
+            "Cache-Control: public, max-age=31536000, immutable",
+          ],
+        }, // option to add more headers. `Link` headers are transformed by the below criteria
+        allPageHeaders: [
+          "Link: <../../static/assets/logo.png>; rel=preload; as=image",
+          "Strict-Transport-Security: max-age=31536000; preload",
+          "X-Frame-Options: DENY",
+          "X-XSS-Protection: 1; mode=block",
+          "X-Content-Type-Options: nosniff",
+          "Referrer-Policy: same-origin",
+          "Access-Control-Allow-Origin: *",
+          "Access-Control-Allow-Methods: POST; GET; PUT; DELETE; HEAD",
+        ], // option to add headers for all pages. `Link` headers are transformed by the below criteria
         mergeSecurityHeaders: true, // boolean to turn off the default security headers
         mergeLinkHeaders: true, // boolean to turn off the default gatsby js headers
         mergeCachingHeaders: true, // boolean to turn off the default caching headers

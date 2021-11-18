@@ -6,192 +6,192 @@
 	xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
 	xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 	<url>
-		<loc>https://gatsbystarterbasicinstructions.gatsbyjs.io/about</loc>
+		<loc>https://gatsbystarterbasicinstructions.gtsb.io/about</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>https://gatsbystarterbasicinstructions.gatsbyjs.io/categories/code/</loc>
+		<loc>https://gatsbystarterbasicinstructions.gtsb.io/categories/code/</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>https://gatsbystarterbasicinstructions.gatsbyjs.io/categories/format/</loc>
+		<loc>https://gatsbystarterbasicinstructions.gtsb.io/categories/format/</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>https://gatsbystarterbasicinstructions.gatsbyjs.io/categories/stuff/</loc>
+		<loc>https://gatsbystarterbasicinstructions.gtsb.io/categories/stuff/</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>https://gatsbystarterbasicinstructions.gatsbyjs.io/categories/post/</loc>
+		<loc>https://gatsbystarterbasicinstructions.gtsb.io/categories/post/</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>https://gatsbystarterbasicinstructions.gatsbyjs.io/tags/category/</loc>
+		<loc>https://gatsbystarterbasicinstructions.gtsb.io/tags/category/</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>https://gatsbystarterbasicinstructions.gatsbyjs.io/tags/tags/</loc>
+		<loc>https://gatsbystarterbasicinstructions.gtsb.io/tags/tags/</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>https://gatsbystarterbasicinstructions.gatsbyjs.io/tags/buds/</loc>
+		<loc>https://gatsbystarterbasicinstructions.gtsb.io/tags/buds/</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>https://gatsbystarterbasicinstructions.gatsbyjs.io/tags/character/</loc>
+		<loc>https://gatsbystarterbasicinstructions.gtsb.io/tags/character/</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>https://gatsbystarterbasicinstructions.gatsbyjs.io/tags/design/</loc>
+		<loc>https://gatsbystarterbasicinstructions.gtsb.io/tags/design/</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>https://gatsbystarterbasicinstructions.gatsbyjs.io/tags/desk/</loc>
+		<loc>https://gatsbystarterbasicinstructions.gtsb.io/tags/desk/</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>https://gatsbystarterbasicinstructions.gatsbyjs.io/tags/gaming/</loc>
+		<loc>https://gatsbystarterbasicinstructions.gtsb.io/tags/gaming/</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>https://gatsbystarterbasicinstructions.gatsbyjs.io/tags/markdown/</loc>
+		<loc>https://gatsbystarterbasicinstructions.gtsb.io/tags/markdown/</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>https://gatsbystarterbasicinstructions.gatsbyjs.io/tags/minimalists/</loc>
+		<loc>https://gatsbystarterbasicinstructions.gtsb.io/tags/minimalists/</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>https://gatsbystarterbasicinstructions.gatsbyjs.io/tags/plant/</loc>
+		<loc>https://gatsbystarterbasicinstructions.gtsb.io/tags/plant/</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>https://gatsbystarterbasicinstructions.gatsbyjs.io/tags/post/</loc>
+		<loc>https://gatsbystarterbasicinstructions.gtsb.io/tags/post/</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>https://gatsbystarterbasicinstructions.gatsbyjs.io/tags/rehype/</loc>
+		<loc>https://gatsbystarterbasicinstructions.gtsb.io/tags/rehype/</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>https://gatsbystarterbasicinstructions.gatsbyjs.io/tags/remark/</loc>
+		<loc>https://gatsbystarterbasicinstructions.gtsb.io/tags/remark/</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>https://gatsbystarterbasicinstructions.gatsbyjs.io/tags/sesame/</loc>
+		<loc>https://gatsbystarterbasicinstructions.gtsb.io/tags/sesame/</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>https://gatsbystarterbasicinstructions.gatsbyjs.io/tags/shoes/</loc>
+		<loc>https://gatsbystarterbasicinstructions.gtsb.io/tags/shoes/</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>https://gatsbystarterbasicinstructions.gatsbyjs.io/tags/typography/</loc>
+		<loc>https://gatsbystarterbasicinstructions.gtsb.io/tags/typography/</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>https://gatsbystarterbasicinstructions.gatsbyjs.io/contact</loc>
+		<loc>https://gatsbystarterbasicinstructions.gtsb.io/contact</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>https://gatsbystarterbasicinstructions.gatsbyjs.io/</loc>
+		<loc>https://gatsbystarterbasicinstructions.gtsb.io/</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>https://gatsbystarterbasicinstructions.gatsbyjs.io/posts/typography</loc>
+		<loc>https://gatsbystarterbasicinstructions.gtsb.io/posts/typography</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>https://gatsbystarterbasicinstructions.gatsbyjs.io/posts/remark-rehype</loc>
+		<loc>https://gatsbystarterbasicinstructions.gtsb.io/posts/remark-rehype</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>https://gatsbystarterbasicinstructions.gatsbyjs.io/posts/markdown</loc>
+		<loc>https://gatsbystarterbasicinstructions.gtsb.io/posts/markdown</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>https://gatsbystarterbasicinstructions.gatsbyjs.io/posts/code-blocks</loc>
+		<loc>https://gatsbystarterbasicinstructions.gtsb.io/posts/code-blocks</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>https://gatsbystarterbasicinstructions.gatsbyjs.io/posts/category-tags</loc>
+		<loc>https://gatsbystarterbasicinstructions.gtsb.io/posts/category-tags</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>https://gatsbystarterbasicinstructions.gatsbyjs.io/posts/paper-boat</loc>
+		<loc>https://gatsbystarterbasicinstructions.gtsb.io/posts/paper-boat</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>https://gatsbystarterbasicinstructions.gatsbyjs.io/posts/my-pretty-red-shoes</loc>
+		<loc>https://gatsbystarterbasicinstructions.gtsb.io/posts/my-pretty-red-shoes</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>https://gatsbystarterbasicinstructions.gatsbyjs.io/posts/sesame-momos</loc>
+		<loc>https://gatsbystarterbasicinstructions.gtsb.io/posts/sesame-momos</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>https://gatsbystarterbasicinstructions.gatsbyjs.io/posts/desk-for-minimalists</loc>
+		<loc>https://gatsbystarterbasicinstructions.gtsb.io/posts/desk-for-minimalists</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>https://gatsbystarterbasicinstructions.gatsbyjs.io/posts/plant</loc>
+		<loc>https://gatsbystarterbasicinstructions.gtsb.io/posts/plant</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>https://gatsbystarterbasicinstructions.gatsbyjs.io/posts</loc>
+		<loc>https://gatsbystarterbasicinstructions.gtsb.io/posts</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>https://gatsbystarterbasicinstructions.gatsbyjs.io/posts/2</loc>
+		<loc>https://gatsbystarterbasicinstructions.gtsb.io/posts/2</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>https://gatsbystarterbasicinstructions.gatsbyjs.io/categories/</loc>
+		<loc>https://gatsbystarterbasicinstructions.gtsb.io/categories/</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>https://gatsbystarterbasicinstructions.gatsbyjs.io/tags/</loc>
+		<loc>https://gatsbystarterbasicinstructions.gtsb.io/tags/</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>https://gatsbystarterbasicinstructions.gatsbyjs.io/thanks/</loc>
+		<loc>https://gatsbystarterbasicinstructions.gtsb.io/thanks/</loc>
 		<changefreq>daily</changefreq>
 		<priority>0.7</priority>
 	</url>

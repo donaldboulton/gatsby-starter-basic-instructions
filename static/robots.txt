@@ -1,8 +1,5 @@
 User-agent: *
 Allow: /*
-Disallow: /admin/*
-Disallow: /app/*
-Disallow: /cms/*
 Disallow: /static/*
 Disallow: /*.xls$
 

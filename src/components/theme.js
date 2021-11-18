@@ -9,6 +9,7 @@ const Theme = () => {
   return (
     <div sx={themeStyles.modeOption}>
       <button
+        aria-label="Dark Mode"
         onClick={e => {
           setColorMode(colorMode === "default" ? "dark" : "default")
         }}

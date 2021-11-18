@@ -105,6 +105,7 @@ const Contact = ({ data }) => {
           </p>
           <p className="text-align-right">
             <button
+              aria-label="Submit"
               class="button g-recaptcha" 
               data-sitekey="6LcE-000000000_000000_000000" 
               data-callback={onSubmit}

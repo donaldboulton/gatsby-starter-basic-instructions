@@ -62,6 +62,7 @@ export default class Search extends Component {
         <div>
           <button
             onClick={this.handleToggleClick}
+            aria-label="Search Button"
             className={this.state.showSearch ? "search is-active" : "search"}
           >
             <RiSearchLine />

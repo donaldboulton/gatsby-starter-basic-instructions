@@ -21,6 +21,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        titleAlt
         tagline
         featuredImage {
           childImageSharp {
@@ -46,7 +47,6 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             path
             title
-            titleAlt
             featuredImage {
               childImageSharp {
                 gatsbyImageData(

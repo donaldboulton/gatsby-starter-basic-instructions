@@ -6,7 +6,7 @@ date: 2020-05-23 03:40
 description: How to draw a character
 tags: [character, design]
 category: stuff  
-featuredImage: ../../images/andrew-seaman-4fi_4q6_efm-unsplash.jpg
+featuredImage: ../../../static/assets/alex-zr48yvupk04-unsplash.jpg
 ---
 
 # Drawing

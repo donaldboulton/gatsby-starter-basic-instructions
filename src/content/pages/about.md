@@ -2,7 +2,7 @@
 template: about-page
 path: /about
 title: About 
-featuredImage: ../../images/alex-zr48yvupk04-unsplash.jpg
+featuredImage: ../../../static/assets/alex-zr48yvupk04-unsplash.jpg
 ---
 
 ## Features

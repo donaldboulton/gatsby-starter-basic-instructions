@@ -1,11 +1,11 @@
 ---
 template: blog-post
 path: /posts/markdown
-date: 2020-05-09 09:30
+date: 2021-11-12 09:30
 title: Markdown
 tags: [markdown, post]
 category: format  
-featuredImage: ../../images/mike-dorner-sf_1ZDA1YFw-unsplash.jpg
+featuredImage: ../../../static/assets/mike-dorner-sf_1ZDA1YFw-unsplash.jpg
 ---
 
 ## Overview
@@ -271,7 +271,7 @@ ampersands and angle brackets. For example, this:
         &copy; 2004 Foo Corporation
     </div>
 
-![Royal Mail](../../images/royal-mail-unsplash.jpg)
+![Royal Mail](../../../static/assets/royal-mail-unsplash.jpg)
 
 Regular Markdown syntax is not processed within code blocks. E.g.,
 asterisks are just literal asterisks within a code block. This means

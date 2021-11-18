@@ -1,11 +1,11 @@
 ---
 template: blog-post
 title: Typography
-date: 2020-05-13 09:19
+date: 2021-11-14 09:19
 path: /posts/typography
 tags: [typography, gaming]
 category: code 
-featuredImage: ../../images/alexander-andrews-zw07kvdahpw-unsplash.jpg
+featuredImage: ../../../static/assets/alexander-andrews-zw07kvdahpw-unsplash.jpg
 description: metaphorically make a deal with the devil
 ---
 

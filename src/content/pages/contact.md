@@ -2,7 +2,7 @@
 template: contact-page
 path: /contact
 title: Get in touch
-featuredImage: ../../images/alex-zr48yvupk04-unsplash.jpg
+featuredImage: ../../../static/assets/andrew-seaman-4fi_4q6_efm-unsplash.jpg
 ---
 
 Got a burning question regarding **Basic Instructions**, Need a new **Connection To Us**, or just anything in general. We are happy to talk.

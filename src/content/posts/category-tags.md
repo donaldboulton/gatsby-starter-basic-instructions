@@ -8,7 +8,7 @@ tags:
   - Tags
   - Category
 category: code  
-featuredImage: ../../images/bench-accounting-nvzvopqw0gc-unsplash.jpg
+featuredImage: ../../../static/assets/bench-accounting-nvzvopqw0gc-unsplash.jpg
 ---
 
 ## Tags

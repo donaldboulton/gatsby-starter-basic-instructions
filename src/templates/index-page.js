@@ -46,6 +46,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             path
             title
+            titleAlt
             featuredImage {
               childImageSharp {
                 gatsbyImageData(
@@ -60,11 +61,16 @@ export const pageQuery = graphql`
         }
       }
     }
+    site {
+      siteMetadata {
+        title
+      }
+    }
   }
 `
 
 const HomePage = ({ data }) => {
-  const { markdownRemark, posts } = data // data.markdownRemark holds your post data
+  const { markdownRemark, posts, site } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
   const Image = frontmatter.featuredImage
     ? frontmatter.featuredImage.childImageSharp.gatsbyImageData
@@ -112,10 +118,13 @@ const HomePage = ({ data }) => {
   })
   return (
     <Layout>
-      <Seo />
+      <Seo
+        title={frontmatter.title}
+        description={frontmatter.title + " " + site.siteMetadata.title}
+      />
       <div className="home-banner grids col-1 sm-2">
         <div>
-          <h1>{frontmatter.title}</h1>
+          <h1>{frontmatter.titleAlt}</h1>
           <p
             className="tagline"
             sx={{

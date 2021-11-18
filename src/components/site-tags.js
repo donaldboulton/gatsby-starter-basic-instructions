@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Heading } from "theme-ui"
+import { jsx, Heading, Box } from "theme-ui"
 import * as React from "react"
 import { useStaticQuery, graphql, Link } from 'gatsby'
 import { kebabCase } from 'lodash'
@@ -19,11 +19,15 @@ const SiteTags = ({ group, ...rest }) => {
     `)
   return (
     <>
-      <div>
-        <Heading as='h3'>
-          <FaTags /> 
-          {tagsTitle}
-        </Heading>
+      <Box>
+        <div>
+          <Heading as='h3'>
+            <span className="icon -tags">
+              <FaTags />
+            </span>{" "}
+            &nbsp;{tagsTitle}
+          </Heading>
+        </div>
         <nav className='nav-scroll'
           sx={{
             background: "#111",
@@ -44,7 +48,7 @@ const SiteTags = ({ group, ...rest }) => {
             </ul>
           </div>
         </nav>
-      </div>
+      </Box>
     </>
   )
 }

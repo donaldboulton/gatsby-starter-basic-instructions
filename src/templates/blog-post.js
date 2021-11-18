@@ -12,13 +12,19 @@ import { MdList } from "@react-icons/all-files//md/MdList"
 import { FaTags } from "@react-icons/all-files/fa/FaTags"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import SiteTags from '../components/site-tags'
+import SiteCategory from "../components/site-categories"
 
 require('prismjs')
 require("prismjs/themes/prism-okaidia.css")
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
-  components: { "interactive-counter": Counter },
+  components: { 
+    "interactive-counter": Counter,
+    "tags" : SiteTags,
+    "categories" : SiteCategory
+  },
 }).Compiler
 
 const styles = {
@@ -149,7 +155,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
                 </span>{" "} 
                 <span>
                   <Link aria-label='Categories' to='/categories/'>
-                    <small>{frontmatter.category}</small>
+                    <small>Categories: {frontmatter.category}</small>
                   </Link>
                 </span>
               </div>

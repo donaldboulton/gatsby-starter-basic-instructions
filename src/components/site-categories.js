@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Heading } from "theme-ui"
+import { jsx, Heading, Box } from "theme-ui"
 import * as React from "react"
 import { useStaticQuery, graphql, Link } from 'gatsby'
 import { kebabCase } from 'lodash'
@@ -19,11 +19,13 @@ const SiteCategories = ({ group, ...rest }) => {
     `)
   return (
     <>
-      <div>
+      <Box>
         <div>
           <Heading as='h3'>
-            <FaList />
-            {categoryTitle}
+            <span className="icon -list">
+              <FaList />
+            </span>{" "}
+            &nbsp;{categoryTitle}
           </Heading>
         <div>
             <nav className='nav-scroll'
@@ -53,7 +55,7 @@ const SiteCategories = ({ group, ...rest }) => {
             </nav>
           </div>
         </div>
-      </div>
+      </Box>
     </>
   )
 }

@@ -119,6 +119,19 @@ input:-webkit-autofill {
 .cover-text{
   position: absolute;
 }
+.tagsPage {
+  list-style: none;
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+.tagsPage li {
+  padding: 10px;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+}
 .taglist {
   list-style: none;
   margin: 0;

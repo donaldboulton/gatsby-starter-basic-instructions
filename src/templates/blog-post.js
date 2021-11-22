@@ -14,6 +14,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import SiteTags from '../components/site-tags'
 import SiteCategory from "../components/site-categories"
+import Comments from "../components/comments"
 
 require('prismjs')
 require("prismjs/themes/prism-okaidia.css")
@@ -178,6 +179,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
               renderAst(htmlAst)
             }
         </div>
+        <Comments />
       </article>
       {(previous || next) && <Pagination {...props} />}
     </Layout>
@@ -193,6 +195,7 @@ export const pageQuery = graphql`
       htmlAst
       excerpt(pruneLength: 148)
       timeToRead
+      tableOfContents
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         path

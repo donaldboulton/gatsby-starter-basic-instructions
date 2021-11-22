@@ -15,20 +15,20 @@ Hello with Code Blocks.
 
 Add to you blog-post.js template or globally in gatsby-browser.js
 
-```javascript
+```bash
 require('prismjs')
 require("prismjs/themes/prism-okaidia.css")
 ```
 
 ### Add Gatsby elasticlunr Search
 
-```javascript{27,33}
+```javascript{1,3}:title=Elasticlunr
   {
       resolve: `@gatsby-contrib/gatsby-plugin-elasticlunr-search`,
       options: {
-        // Fields to index Add Featured Image to fields and in Markdown below to index images
+        // Fields to index, Add Featured Image to fields and in Markdown below to index images
         fields: [`title`, `description`, `content`, `path`, `date`],
-        // How to resolve each field`s value for a supported node type, excerpt could replace content for a smaller index
+        // How to resolve each field`s value for a supported node type, description could replace content for a logical search display
         resolvers: {
           BlogPost : {
             title         : node => node.title,

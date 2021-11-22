@@ -22,7 +22,7 @@ module.exports = {
           "/*": [
             "Cache-Control: public, max-age=2592000, immutable",
           ],
-          "/static/assets/*": [
+          "/static/*": [
             "Cache-Control: public, max-age=31536000, immutable",
           ],
         }, // option to add more headers. `Link` headers are transformed by the below criteria
@@ -33,8 +33,10 @@ module.exports = {
           "X-XSS-Protection: 1; mode=block",
           "X-Content-Type-Options: nosniff",
           "Referrer-Policy: same-origin",
-          "Access-Control-Allow-Origin: *",
+          "Access-Control-Allow-Origin: https://gatsbystarterbasicinstructions.gatsbyjs.io/, https://utteranc.es/client.js",
           "Access-Control-Allow-Methods: POST; GET; PUT; DELETE; HEAD",
+          "Permissions-Policy: fullscreen=(self); autoplay=(self); picture-in-picture=(self)",
+          "Content-Security-Policy: connect-src 'self' blob: https://gatsbystarterbasicinstructions.gatsbyjs.io/, https://utteranc.es/client.js, https://www.googletagmanager.com/gtag/js, https://stats.g.doubleclick.net/; form-action 'self': https://netlify.com, https://twitter.com, https://*.twitter.com, font-src 'self' blob: data: https://fonts.gstatic.com; frame-src 'self': https://www.google.com/ https://unpkg.com; img-src 'self' blob: data: https://img.badgesize.io/, https://referrer.disqus.com, https://img.shields.io, https://avatars0.githubusercontent.com, https://avatars1.githubusercontent.com, https://avatars2.githubusercontent.com, https://cdn.rawgit.com, https://withspectrum.github.io, https://api.netlify.com, https://widget.cloudinary.com, https://static.doubleclick.net, https://*.cdn.twitter.com, https://ton.twitter.com, https://*.twimg.com; manifest-src 'self'; media-src 'self' blob: https://res.cloudinary.com, https://widget.cloudinary.com, https://static.doubleclick.net, https://www.youtube.com, https://twitter.com, https://*.twimg.com, https://*.vine.co, https://*.giphy.com; object-src 'self' script-src 'self' 'unsafe-inline' 'unsafe-eval': https://api.bitbucket.org, https://secure.gravatar.com, https://graphql.fauna.com, https://graphql.fauna.com/graphql, https://api.applause-button.com, https://api.netlify.com, https://netlify.com, https://res.cloudinary.com, https://www.google-analytics.com, https://platform.slack-edge.com, https://static.doubleclick.net, https://www.youtube.com, https://www.youtube.de, https://twitter.com, https://*.twimg.com, https://www.google-analytics.com, https://www.googletagmanager.com; script-src-elem 'self' blob: 'unsafe-inline': https://www.google.com/recaptcha/api.js, https://storage.googleapis.com, https://github.com, https://cdn.lr-ingest.io, https://www.googletagmanager.com, https://www.google-analytics.com, https://api.netlify.com, https://app.logrocket.com, https://api.logrocket.com, https://c.disquscdn.com; style-src 'self' 'unsafe-inline' https://static.small.chat/messenger.css; worker-src 'self' blob: https://www.googletagmanager.com/gtag/js, https://storage.googleapis.com, https://www.google-analytics.com/analytics.js; report-uri https://donboulton.report-uri.com/r/d/csp/reportOnly" 
         ], // option to add headers for all pages. `Link` headers are transformed by the below criteria
         mergeSecurityHeaders: true, // boolean to turn off the default security headers
         mergeLinkHeaders: true, // boolean to turn off the default gatsby js headers
@@ -103,7 +105,6 @@ module.exports = {
               escapeEntities: {},
             },
           },
-          `gatsby-remark-code-titles`,
           `gatsby-remark-copy-linked-files`,
           {
             resolve: "gatsby-remark-smartypants",

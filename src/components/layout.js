@@ -27,11 +27,7 @@ const Layout = ({ className, children }) => {
   return (
     <>
       <Helmet>
-        <link rel="sitemap" type="application/xml" title="Sitemap Index" href="/static/sitemap.xml" />
-        <link rel="sitemap" type="application/xml" title="Sitemap Pages" href="/static/sitemap-pages.xml" />
-        <link rel="sitemap" type="application/xml" title="Sitemap Posts" href="/static/sitemap-posts.xml" />
-        <link rel="sitemap" type="application/xml" title="Sitemap Tags" href="/static/sitemap-tags.xml" />
-        <link rel="sitemap" type="application/xml" title="Sitemap Categories" href="/static/sitemap-categories.xml" />
+        <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
       </Helmet>
       <div
         sx={{

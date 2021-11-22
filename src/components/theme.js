@@ -54,7 +54,7 @@ const themeStyles = {
     mt: "-5px",
     letterSpacing: "1px",
   },
-  badges: {
+  modeBadges: {
     primary: {
       fontSize: "16px",
       color: 'background',

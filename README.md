@@ -123,7 +123,7 @@ Gatsby Cloud is an end-to-end cloud platform specifically built for the Gatsby f
 - Social media icons
 - OpenGraph structured data
 - Twitter Cards meta
-- Beautiful XML Sitemaps
+- Beautiful XML Sitemaps, for now hand built
 - Robots.txt
 - Netlify Contact Form, Works right out of the box after deployment.
 - Invite collaborators into Netlify CMS, without giving access to your Github account via Git Gateway
@@ -161,7 +161,7 @@ This would fork `gatsby-starter-basic-instructions` to your Github account and s
 
 ## ⛭ Installation of CMS
 
-> gatsby-plugin-netlify-cms Version 6.1.0
+> gatsby-plugin-netlify-cms Version @latest
 
 > netlify-cms-app Version @latest
 
@@ -182,7 +182,7 @@ yarn add gatsby-plugin-netlify-cms netlify-cms-app gatsby-plugin-netlify-cms-pat
 
 ### CMS file in src/cms
 
-Add to folder under src/cms/cms.js
+Add to initialize **netlify-cms-app** as a folder under src/cms/cms.js
 
 ```js
 import CMS from "netlify-cms-app"
@@ -467,7 +467,7 @@ Your site is now running at `http://localhost:8000`!
 
 _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
 
-Open the `gatsby-starter-foundation` directory in your code editor of choice and edit. Save your changes and the browser will update in real time!
+Open the `gatsby-starter-basic-instructions` directory in your code editor of choice and edit. Save your changes and the browser will update in real time!
 
 You can use Netlify CMS in you local just run `npx netlify-cms-proxy-server` and start run `gatsby develop`
 
@@ -481,5 +481,5 @@ Feel free to ping [@donaldboulton](donaldboulton) for help regarding your JAMsta
 
 [gatsby]: https://gatsbyjs.org
 [netlifycms]: https://www.netlifycms.org
-[stackrole]: https://stackrole.com
+[publiuslogic]: https://publiuslogic.com
 [twitter]: https://twitter.com/donboulton

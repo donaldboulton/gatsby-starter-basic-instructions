@@ -6,7 +6,7 @@ date: 2021-11-11 08:40
 description: Post with no image
 category: code
 tags: [plant, desk]
-featuredImage: ../../../static/assets/blog.webp
+featuredImage: ../../../static/assets/blog.jpg
 ---
 
 ## Code Blocks

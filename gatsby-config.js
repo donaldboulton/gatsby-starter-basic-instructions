@@ -8,7 +8,7 @@ module.exports = {
       summary: `Resides in OKC.`,
     },
     description: `Basic Instructions.`,
-    siteUrl: `https://gatsbystarterbasicinstructions.gtsb.io/`,
+    siteUrl: `https://gatsbystarterbasicinstructions.gatsbyjs.io`,
     social: {
       twitter: `donboulton`,
     },
@@ -129,10 +129,31 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-image`,
     {
-       resolve: `gatsby-plugin-google-analytics`,
-       options: {
-         trackingId: `UA-2378526-1`,
-       },
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: [
+          "G-5RRNPTBZ6H", // Google Analytics / GA
+          "AW-CONVERSION_ID", // Google Ads / Adwords / AW
+          "DC-FLOODIGHT_ID", // Marketing Platform advertising products (Display & Video 360, Search Ads 360, and Campaign Manager)
+        ],
+        // This object gets passed directly to the gtag config command
+        // This config will be shared across all trackingIds
+        gtagConfig: {
+          optimize_id: "G-5RRNPTBZ6H",
+          anonymize_ip: true,
+          cookie_expires: 0,
+        },
+        // This object is used for configuration specific to this plugin
+        pluginConfig: {
+          // Puts tracking script in the head instead of the body
+          head: false,
+          // Setting this parameter is also optional
+          respectDNT: true,
+          // Avoids sending pageview hits from custom paths
+          exclude: ["/static/**", "/404.html/"],
+        },
+      },
     },
     {
       resolve: `gatsby-plugin-feed`,
@@ -237,10 +258,48 @@ module.exports = {
     {
       resolve: `gatsby-plugin-offline`,
       options: {
-        precachePages: [`/`, `/contact`, `/posts/*`],
+        precachePages: [`/`, `about`, `/contact`, `/posts/*`],
         workboxConfig: {
           importWorkboxFrom: `cdn`,
         },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-react-social-cards`,
+      options: {
+          query: `
+              {
+                  allMarkdownRemark {
+                      nodes {
+                          fields {
+                              slug
+                          }
+                          frontmatter {
+                              title
+                              description
+                              featuredImage {
+                                childImageSharp {
+                                  gatsbyImageData(layout: FULL_WIDTH)
+                                }
+                              }
+                          }
+                      }
+                  }
+              }
+          `,
+          queryToPages: (result) => 
+              result.data.allMarkdownRemark.nodes.map(node => {
+                  const slugWithoutSlashes = node.fields.slug.node.slug.replace(/\//g, '');
+                  return {
+                      slug: `/${slugWithoutSlashes}`,
+                      pageContext: {
+                          title: node.frontmatter.title,
+                          coverImage: node.frontmatter.featuredImage,
+                      },
+                  };
+              }),
+          component: require.resolve('./src/components/social-card.js'),
+          cardLimit: 0, // Useful for debugging.
       },
     },
   ],

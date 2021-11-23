@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { jsx, Container, Heading } from "theme-ui"
 import PropTypes from "prop-types"
+import { Helmet } from 'react-helmet'
 import { FaTags } from "@react-icons/all-files/fa/FaTags";
 // Components
 import { Link, graphql } from "gatsby"
@@ -9,6 +10,7 @@ import Seo from "../components/seo"
 
 const Tags = ({ pageContext, data }) => {
   const { tag } = pageContext
+  const url = typeof window !== 'undefined' ? window.location.href : '';
   const { edges, totalCount } = data.allMarkdownRemark
   const tagHeader = `${totalCount} post${
     totalCount === 1 ? "" : "s"
@@ -17,6 +19,13 @@ const Tags = ({ pageContext, data }) => {
   return (
     <Layout className="not-found-page">
       <Seo />
+      <Helmet>
+        <meta property="og:url" content={url} />
+        <meta property="og:title" content={tagHeader} />
+        <meta property="og:description" content={tag} />
+        <meta property="twitter:title" content={tagHeader} />
+        <meta property="twitter:description" content={tag} />
+      </Helmet>
       <div
         className="wrapper"
       >
@@ -90,6 +99,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             path
+            description
           }
         }
       }

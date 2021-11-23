@@ -2,6 +2,7 @@
 import { jsx } from "theme-ui"
 import * as React from "react"
 import { Link, graphql } from "gatsby"
+import { Helmet } from 'react-helmet'
 import { GatsbyImage } from "gatsby-plugin-image"
 import rehypeReact from "rehype-react"
 import Counter from "../components/counter"
@@ -92,6 +93,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, htmlAst, excerpt } = markdownRemark
   const postNode = data.markdownRemark
+  const url = typeof window !== 'undefined' ? window.location.href : '';
   const Image = frontmatter.featuredImage
     ? postNode.frontmatter.featuredImage.childImageSharp.gatsbyImageData
     : ""
@@ -116,8 +118,16 @@ const BlogPostTemplate = ({ data, pageContext }) => {
           frontmatter.description ? frontmatter.description : excerpt
         }
         image={Image}
+        url={url}
         article={true}
       />
+        <Helmet>
+          <meta property="og:url" content={url} />
+          <meta property="og:title" content={frontmatter.title} />
+          <meta property="og:description" content={frontmatter.description} />
+          <meta property="twitter:title" content={frontmatter.title} />
+          <meta property="twitter:description" content={frontmatter.description} />
+        </Helmet>
       <article className="blog-post">
         <header className="featured-banner">
           <section className="article-header">

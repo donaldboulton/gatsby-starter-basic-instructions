@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-const Seo = ({ description, lang, meta, title }) => {
+const Seo = ({ description, lang, meta, slug, isPost, title }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -29,6 +29,14 @@ const Seo = ({ description, lang, meta, title }) => {
 
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata.title
+  const siteUrl = 'https://gatsbystarterbasicinstructions.gatsbyjs.io';
+  const slugWithoutSlashes = () => slug.replace(/\//g, '');
+
+  const socialCard = isPost
+      ? `${siteUrl}/${slugWithoutSlashes()}-social-card.png`
+      : `${siteUrl}/square-social-card.png`;
+
+  const twitterCard = isPost ? 'summary_large_image' : 'summary';
 
   return (
     <Helmet
@@ -43,32 +51,24 @@ const Seo = ({ description, lang, meta, title }) => {
           content: metaDescription,
         },
         {
-          property: `og:title`,
-          content: defaultTitle,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
-        },
-        {
           property: `og:type`,
           content: `website`,
         },
         {
+          property: 'og:image',
+          content: socialCard,
+        },
+        {
+          name: `twitter:site`,
+          content: site.siteMetadata?.social?.twitter || ``,
+        },        
+        {
           name: `twitter:card`,
-          content: `summary`,
+          content: twitterCard,
         },
         {
           name: `twitter:creator`,
           content: site.siteMetadata?.social?.twitter || ``,
-        },
-        {
-          name: `twitter:title`,
-          content: defaultTitle,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
         },
       ].concat(meta)}
     />

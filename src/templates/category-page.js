@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { jsx, Container, Heading } from "theme-ui"
 import PropTypes from "prop-types"
+import { Helmet } from 'react-helmet'
 import { MdList } from "@react-icons/all-files/md/MdList";
 // Components
 import { Link, graphql } from "gatsby"
@@ -9,6 +10,7 @@ import Seo from "../components/seo"
 
 const Category = ({ pageContext, data }) => {
   const { category } = pageContext
+  const url = typeof window !== 'undefined' ? window.location.href : '';
   const { edges, totalCount } = data.allMarkdownRemark
   const categoryHeader = `${totalCount} post${
     totalCount === 1 ? '' : 's'
@@ -17,6 +19,13 @@ const Category = ({ pageContext, data }) => {
   return (
     <Layout className="not-found-page">
       <Seo />
+      <Helmet>
+        <meta property="og:url" content={url} />
+        <meta property="og:title" content={categoryHeader} />
+        <meta property="og:description" content={category} />
+        <meta property="twitter:title" content={categoryHeader} />
+        <meta property="twitter:description" content={category} />
+      </Helmet>
       <div
         className="wrapper"
       >
@@ -90,6 +99,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             path
+            description
           }
         }
       }

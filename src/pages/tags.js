@@ -9,6 +9,8 @@ import { Link, graphql } from "gatsby"
 import Seo from "../components/seo"
 import Layout from "../components/layout"
 
+const url = typeof window !== 'undefined' ? window.location.href : '';
+
 const TagsPage = ({
   data: {
     allMarkdownRemark: { group },
@@ -19,12 +21,23 @@ const TagsPage = ({
 }) => (
   <Layout className="not-found-page">
     <Seo title="Tags Page" />
-    <Helmet title={title} />
+    <Helmet>
+      title={title}
+      <meta property="og:url" content={url} />
+      <meta property="og:title" content="Tags" />
+      <meta property="og:description" content="Tags Page" />
+      <meta property="twitter:title" content="Tags" />
+      <meta property="twitter:description" content="Tags Page" />
+    </Helmet>
     <div
       className="wrapper"
     >
       <h1>Tags</h1>
-      <Box p={4} bg="primary">
+      <Box p={4} bg="primary"
+        sx={{
+          borderRadius: "12px",
+        }}
+      >
         <ul className='taglist field is-grouped is-grouped-multiline'>
           {group.map(tag => (
             <li key={tag.fieldValue} className='control'>

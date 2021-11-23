@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import { graphql, Link } from "gatsby"
+import { Helmet } from 'react-helmet'
 import { GatsbyImage } from "gatsby-plugin-image"
 import { RiArrowRightSLine } from "@react-icons/all-files/ri/RiArrowRightSLine"
 import { RiFacebookBoxFill } from "@react-icons/all-files/ri/RiFacebookBoxFill"
@@ -72,9 +73,10 @@ export const pageQuery = graphql`
 const HomePage = ({ data }) => {
   const { markdownRemark, posts, site } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
+  const url = typeof window !== 'undefined' ? window.location.href : '';
   const Image = frontmatter.featuredImage
     ? frontmatter.featuredImage.childImageSharp.gatsbyImageData
-    : ""
+    : ""    
   const sIcons = Icons.socialIcons.map((icons, index) => {
     return (
       <div key={"social icons" + index}>
@@ -121,7 +123,16 @@ const HomePage = ({ data }) => {
       <Seo
         title={frontmatter.title}
         description={frontmatter.title + " " + site.siteMetadata.title}
+        image={Image}
+        url={url}
       />
+      <Helmet>
+        <meta property="og:url" content={url} />
+        <meta property="og:title" content={frontmatter.title} />
+        <meta property="og:description" content={frontmatter.tagLine} />
+        <meta property="twitter:title" content={frontmatter.title} />
+        <meta property="twitter:description" content={frontmatter.tagLine} />
+      </Helmet>
       <div className="home-banner grids col-1 sm-2">
         <div>
           <h1>{frontmatter.titleAlt}</h1>

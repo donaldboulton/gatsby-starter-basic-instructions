@@ -2,6 +2,7 @@
 template: about-page
 path: /about
 title: About 
+description: About Basic Instructions
 featuredImage: ../../../static/assets/about.jpg
 ---
 

@@ -7,6 +7,8 @@ import { Link, graphql } from 'gatsby'
 import Seo from "../components/seo"
 import Layout from '../components/layout'
 
+const url = typeof window !== 'undefined' ? window.location.href : '';
+
 const CategoriesPage = ({
   data: {
     allMarkdownRemark: { group },
@@ -17,24 +19,35 @@ const CategoriesPage = ({
 }) => (
   <Layout className="not-found-page">
     <Seo title="Categories Page" />
-      <Helmet title={title} />
+    <Helmet>
+      title={title}
+      <meta property="og:url" content={url} />
+      <meta property="og:title" content="Category" />
+      <meta property="og:description" content="Categories Page" />
+      <meta property="twitter:title" content="Category" />
+      <meta property="twitter:description" content="Categories Page" />
+    </Helmet>
     <div
       className="wrapper"
     >
       <h1>Categories</h1>
-      <Box p={4} bg="primary">       
-          <ul className='taglist field is-grouped is-grouped-multiline'>
-            {group.map(category => (
-              <li className='control' key={category.fieldValue}>
-                <Link to={`/categories/${kebabCase(category.fieldValue)}/`}>
-                  <div className='tags has-addons is-large'>
-                    <span aria-label='Category' className='tag is-primary'>{category.fieldValue}</span>
-                    <span aria-label='Category Count' className='tag is-dark'>{category.totalCount}</span>
-                  </div>
-                </Link>
-              </li>
-            ))}
-          </ul>
+      <Box p={4} bg="primary"
+        sx={{
+          borderRadius: "12px",
+        }}
+      >       
+        <ul className='taglist field is-grouped is-grouped-multiline'>
+          {group.map(category => (
+            <li className='control' key={category.fieldValue}>
+              <Link to={`/categories/${kebabCase(category.fieldValue)}/`}>
+                <div className='tags has-addons is-large'>
+                  <span aria-label='Category' className='tag is-primary'>{category.fieldValue}</span>
+                  <span aria-label='Category Count' className='tag is-dark'>{category.totalCount}</span>
+                </div>
+              </Link>
+            </li>
+          ))}
+        </ul>
       </Box>    
     </div>
   </Layout>

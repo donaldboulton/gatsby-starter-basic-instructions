@@ -7,7 +7,7 @@ tagline: Basic Instructions v4.2.0
 featuredImage: ../../../static/assets/gatsby-starter-rendering-modes-thumbnail-585.jpg
 cta:
   ctaText: Know More
-  ctaLink: /posts/minimalists-desk
+  ctaLink: /posts/gatsby-version-four
 ---
 
 Built by Donald W. Boulton

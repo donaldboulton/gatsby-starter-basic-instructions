@@ -185,7 +185,7 @@ This would fork `gatsby-starter-basic-instructions` to your Github account and s
 
 > netlify-cms-app Version @latest
 
-```bash
+```shell
 yarn add gatsby-plugin-netlify-cms netlify-cms-app gatsby-plugin-netlify-cms-paths
 ```
 

@@ -30,7 +30,11 @@ const Tags = ({ pageContext, data }) => {
         className="wrapper"
       >
         <div>
-          <Container p={4} bg="primary">
+          <Container p={4} bg="primary"
+            sx={{
+              borderRadius: "12px",
+            }}
+          >
             <Heading as='h2'>{tagHeader}</Heading>
             <div>
               <ul className="tagsPage">
@@ -93,13 +97,14 @@ export const pageQuery = graphql`
       totalCount
       edges {
         node {
+          htmlAst
           fields {
             slug
           }
           frontmatter {
             title
             path
-            description
+            description            
           }
         }
       }

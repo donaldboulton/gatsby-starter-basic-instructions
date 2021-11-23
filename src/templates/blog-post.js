@@ -126,6 +126,9 @@ const BlogPostTemplate = ({ data, pageContext }) => {
           <meta property="og:title" content={frontmatter.title} />
           <meta property="og:description" content={frontmatter.description} />
           <meta property="twitter:title" content={frontmatter.title} />
+          <meta property="og:image" content={Image} />
+          <meta name="twitter:image:alt" content={frontmatter.title} />
+          <meta name="twitter:card" content="summary_large_image" />
           <meta property="twitter:description" content={frontmatter.description} />
         </Helmet>
       <article className="blog-post">

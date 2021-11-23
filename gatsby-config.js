@@ -264,43 +264,5 @@ module.exports = {
         },
       },
     },
-    {
-      resolve: `gatsby-plugin-react-social-cards`,
-      options: {
-          query: `
-              {
-                  allMarkdownRemark {
-                      nodes {
-                          fields {
-                              slug
-                          }
-                          frontmatter {
-                              title
-                              description
-                              featuredImage {
-                                childImageSharp {
-                                  gatsbyImageData(layout: FULL_WIDTH)
-                                }
-                              }
-                          }
-                      }
-                  }
-              }
-          `,
-          queryToPages: (result) => 
-              result.data.allMarkdownRemark.nodes.map(node => {
-                  const slugWithoutSlashes = node.fields.slug.node.slug.replace(/\//g, '');
-                  return {
-                      slug: `/${slugWithoutSlashes}`,
-                      pageContext: {
-                          title: node.frontmatter.title,
-                          coverImage: node.frontmatter.featuredImage,
-                      },
-                  };
-              }),
-          component: require.resolve('./src/components/social-card.js'),
-          cardLimit: 0, // Useful for debugging.
-      },
-    },
   ],
 }

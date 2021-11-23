@@ -27,32 +27,34 @@ const Category = ({ pageContext, data }) => {
         <meta property="twitter:description" content={category} />
       </Helmet>
       <div
-        className="wrapper"
+         className="wrapper"
       >
-        <div>
-          <Container p={4} bg="primary">
-            <Heading as='h2'>{categoryHeader}</Heading>
-            <div>
-              <ul className="tagsPage">
-                {edges.map(({ node }) => {
-                  const { slug } = node.fields
-                  const { title } = node.frontmatter
-                  return (
-                    <li key={slug}>
-                      <Link to={slug}>{title}</Link>
-                    </li>
-                  )
-                })}
-              </ul>
-            </div>
-            <div>
-              <span className="icon -category">
-                <MdList />
-              </span>{" "} 
-              <Link to="/categories">All Categories</Link>
-            </div>
-          </Container>
-        </div>
+        <Container p={4} bg="primary"
+          sx={{
+            borderRadius: "12px",
+          }}
+        >
+          <Heading as='h2'>{categoryHeader}</Heading>
+          <div>
+            <ul className="tagsPage">
+              {edges.map(({ node }) => {
+                const { slug } = node.fields
+                const { title } = node.frontmatter
+                return (
+                  <li key={slug}>
+                    <Link to={slug}>{title}</Link>
+                  </li>
+                )
+              })}
+            </ul>
+          </div>
+          <div>
+            <span className="icon -category">
+              <MdList />
+            </span>{" "} 
+            <Link to="/categories">All Categories</Link>
+          </div>
+        </Container>
       </div>
     </Layout>
   )
@@ -99,7 +101,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             path
-            description
+            description            
           }
         }
       }

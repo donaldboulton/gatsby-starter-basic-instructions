@@ -90,18 +90,6 @@ input:-webkit-autofill {
   border-bottom: 10px;
   border-top: 10px;
 }
-.cover {
-  margin-bottom: 1em;
-  border-radius: 12px;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: thin black;  
-  width: 100%;
-  object-fit: cover;
-}
 .bio {
   display: flex;
   margin-bottom: 1.5em;

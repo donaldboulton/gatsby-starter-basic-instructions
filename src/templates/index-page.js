@@ -51,7 +51,7 @@ export const pageQuery = graphql`
               childImageSharp {
                 gatsbyImageData(
                   layout: FULL_WIDTH
-                  breakpoints: [250, 345, 576, 720]
+                  breakpoints: [250, 345, 585]
                   placeholder: DOMINANT_COLOR
                   quality: 90
                 )
@@ -159,14 +159,14 @@ const HomePage = ({ data }) => {
           </div>
         </div>
         <div>
-        {Image ? (
+          {Image ? (
             <GatsbyImage
               image={Image}
               alt={frontmatter.title + " - Featured image"}
               className="cover"
             />
-          ) : (
-            ""
+             ) : (
+               ""
           )}
         </div>
       </div>

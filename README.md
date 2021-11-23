@@ -134,7 +134,19 @@ Gatsby Cloud is an end-to-end cloud platform specifically built for the Gatsby f
 
 Just click on the **Deploy to Netlify** button.
 
+<p align="center">
+  <a href="https://www.gatsbyjs.com">
+    <img alt="Gatsby" src="./static/images/netlify-gatsby-plugin.png" width="400" />
+  </a>
+</p>
+
 This would fork `gatsby-starter-basic-instructions` to your Github account and start building your website on [Netlify](https://netlify.com). Once the deployment is done. Your website will be live and website address would look like **site-name.netlify.app**
+
+<p align="center">
+  <a href="https://app.netlify.com/start/deploy?repository=https://github.com/netlify/netlify-statuskit">
+    <img alt="Gatsby" src="https://www.netlify.com/img/deploy/button.svg" width="400" />
+  </a>
+</p>
 
 ### Further Instructions
 

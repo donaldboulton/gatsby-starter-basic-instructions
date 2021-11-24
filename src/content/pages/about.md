@@ -1,10 +1,6 @@
 ---
-template: blog-post
+template: about-page
 path: /about
-date: 2021-11-23 08:40
-category: code
-tags: [plant, about]
-title: About 
 description: About Basic Instructions
 featuredImage: ../../../static/assets/about.jpg
 ---

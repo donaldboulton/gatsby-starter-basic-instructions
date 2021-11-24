@@ -6,6 +6,7 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Comments from "../components/comments"
 
 export const pageQuery = graphql`
   query AboutQuery($id: String!) {
@@ -48,7 +49,6 @@ const AboutPage = ({ data }) => {
         <meta name="twitter:image:alt" content={frontmatter.title} />
         <meta property="twitter:description" content={frontmatter.description} />
       </Helmet>
-      <div className="wrapper">
         <article className="blog-post">
           <header className="featured-banner">
             <section className="article-header">
@@ -65,9 +65,9 @@ const AboutPage = ({ data }) => {
             )}      
           </header>
           <Bio />
-          <div dangerouslySetInnerHTML={{ __html: html }} />
+          <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }} />
+          <Comments />
         </article>
-      </div>
     </Layout>
   )
 }

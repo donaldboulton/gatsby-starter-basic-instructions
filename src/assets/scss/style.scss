@@ -289,13 +289,12 @@ article a {
   color: var(--label-text);
 }
 .blog-post-content {
-  max-width: 70ch;
+  max-width: 80vw;
   margin: 0 auto;
   padding: 20px;
   line-height: 1.5;
   font-size: 20px;
 }
-
 .blog-post {
   .featured-image {
     border-radius: 12px;

@@ -5,7 +5,6 @@ import { Link, graphql } from "gatsby"
 import { Helmet } from 'react-helmet'
 import { GatsbyImage } from "gatsby-plugin-image"
 import rehypeReact from "rehype-react"
-import Counter from "../components/counter"
 import { RiTimerLine } from "@react-icons/all-files/ri/RiTimerLine"
 import { RiArrowLeftLine } from "@react-icons/all-files/ri/RiArrowLeftLine"
 import { RiArrowRightLine } from "@react-icons/all-files/ri/RiArrowRightLine"
@@ -13,9 +12,12 @@ import { MdList } from "@react-icons/all-files//md/MdList"
 import { FaTags } from "@react-icons/all-files/fa/FaTags"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Counter from "../components/counter"
 import SiteTags from '../components/site-tags'
 import SiteCategory from "../components/site-categories"
 import Comments from "../components/comments"
+import Bio from "../components/bio"
+import Checked from "../components/checkbox"
 
 require('prismjs')
 require("prismjs/themes/prism-okaidia.css")
@@ -23,9 +25,10 @@ require("prismjs/themes/prism-okaidia.css")
 const renderAst = new rehypeReact({
   createElement: React.createElement,
   components: { 
-    "interactive-counter": Counter,
+    "counter": Counter,
     "tags": SiteTags,
     "categories": SiteCategory,
+    "checked": Checked,
   },
 }).Compiler
 
@@ -185,12 +188,13 @@ const BlogPostTemplate = ({ data, pageContext }) => {
             ""
           )}
         </header>
+        <Bio />
         <div
           className="blog-post-content"
-          >
-            {
-              renderAst(htmlAst)
-            }
+        >
+          {
+            renderAst(htmlAst)
+          }
         </div>
         <Comments />
       </article>

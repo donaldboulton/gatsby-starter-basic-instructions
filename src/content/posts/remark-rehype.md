@@ -38,8 +38,68 @@ Parses HTML to the tree with rehype-parse hast syntax tree.
 
 Plugins transform the tree Serializes the tree to HTML with rehype-stringify.
 
+## Add  to your Site
+
+Fist install in Node Modules.
+
+```bash
+yarn add rehype-react
+```
+
+Then add to your post template.
+
+```javascript
+import rehypeReact from "rehype-react"
+//Components
+import Counter from "../components/counter"
+import SiteTags from '../components/site-tags'
+import SiteCategory from "../components/site-categories"
+import Checked from "../components/checkbox"
+
+const renderAst = new rehypeReact({
+  createElement: React.createElement,
+  components: { 
+    "counter": Counter, // Components
+    "tags": SiteTags,
+    "categories": SiteCategory,
+    "checked": Checked,
+  },
+}).Compiler
+```
+
+## Change your page to htmlAst
+
+### From
+
+```javascript
+<div
+    className="blog-post-content"
+    dangerouslySetInnerHTML={{ __html: html }}
+/>
+```
+
+### To
+
+```javascript
+<div
+    className="blog-post-content"
+>
+    {
+        renderAst(htmlAst)
+    }
+</div>
+```
+
+And your Template Query from html to htmlAst. Its that simple to have MDX capabilitys in Gatsby without the overhead of MDX.
+
+Then in your markdown page add your component where ever you like. Also add html to your Markdown pages with htmlAst.
+
+```javascript
+<counter></counter>
+```
+
 Below is a simple counter component added to a markdown.md page.
 
-<interactive-counter></interactive-counter>
+<counter></counter>
 
 Other components for tags and categories is on tags and category page.

@@ -9,7 +9,6 @@ import { RiTwitterFill, } from "@react-icons/all-files/ri/RiTwitterFill"
 import { RiYoutubeFill, } from "@react-icons/all-files/ri/RiYoutubeFill"
 import { RiInstagramFill } from "@react-icons/all-files/ri/RiInstagramFill"
 import { RiGithubFill } from "@react-icons/all-files/ri/RiGithubFill"
-
 import Layout from "../components/layout"
 import BlogListHome from "../components/blog-list-home"
 import Seo from "../components/seo"

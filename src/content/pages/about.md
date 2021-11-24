@@ -1,6 +1,9 @@
 ---
-template: about-page
+template: blog-post
 path: /about
+date: 2021-11-23 08:40
+category: code
+tags: [plant, about]
 title: About 
 description: About Basic Instructions
 featuredImage: ../../../static/assets/about.jpg
@@ -18,16 +21,12 @@ gatsby-plugin-image With the Plugins proper usage.
 
 * * *
 
-# Basic Instructions is Based on Starter Foundation
+# Gatsby Version 4.2.0
 
-<p align="center">
-  <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby Starter Basic Instructions
-</h1>
+[<img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />](https://app.netlify.com/start/deploy?repository=https://www.gatsbyjs.com)
+
+
+### Gatsby Starter Basic Instructions
 
 Kick off your project with this blog boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
@@ -79,7 +78,7 @@ _Have another more specific idea? You may want to check out our vibrant collecti
 
 Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
 
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-blog)
+[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud" width="200px">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/donaldboulton/gatsby-starter-basic-instructions)
 
 ## 🧐 What's inside?
 
@@ -160,11 +159,7 @@ Just click on the **Deploy to Netlify** button.
 
 This would fork `gatsby-starter-basic-instructions` to your Github account and start building your website on [Netlify](https://netlify.com). Once the deployment is done. Your website will be live and website address would look like **site-name.netlify.app**
 
-<p align="center">
-  <a href="https://app.netlify.com/start/deploy?repository=https://github.com/netlify/netlify-statuskit">
-    <img alt="Gatsby" src="https://www.netlify.com/img/deploy/button.svg" width="400" />
-  </a>
-</p>
+[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" width="200px">](https://app.netlify.com/start/deploy?repository=https://github.com/donaldboulton/gatsby-starter-basic-instructions)
 
 ## ⚙ Access to Netlify CMS
 

@@ -1,9 +1,10 @@
-import { Checkbox, Label } from 'theme-ui'
+/** @jsx jsx */
+import { jsx, Checkbox, Label} from "theme-ui"
 
-const Checkbox = () => {
+const Checked = () => {
   <Label>
     <Checkbox defaultChecked={true} />
   </Label>
 }
 
-export default Checkbox
+export default Checked

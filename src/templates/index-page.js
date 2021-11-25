@@ -21,11 +21,16 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        description
         titleAlt
         tagline
         featuredImage {
           childImageSharp {
-            gatsbyImageData(layout: CONSTRAINED, width: 585, height: 439)
+            gatsbyImageData(
+              layout: CONSTRAINED, 
+              width: 585, 
+              height: 439
+            )
           }
         }
         cta {
@@ -128,12 +133,11 @@ const HomePage = ({ data }) => {
       <Helmet>
         <meta property="og:url" content={url} />
         <meta property="og:title" content={frontmatter.title} />
-        <meta property="og:description" content={frontmatter.tagLine} />
-        <meta property="og:image" content={Image} />
+        <meta property="og:description" content={frontmatter.description} />
         <meta name="twitter:image:alt" content={frontmatter.title} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:title" content={frontmatter.title} />
-        <meta property="twitter:description" content={frontmatter.tagLine} />
+        <meta property="twitter:description" content={frontmatter.description} />
       </Helmet>
       <div className="home-banner grids col-1 sm-2">
         <div>

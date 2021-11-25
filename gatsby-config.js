@@ -7,8 +7,9 @@ module.exports = {
       name: `Don Boulton`,
       summary: `Resides in OKC.`,
     },
-    description: `Basic Instructions.`,
+    description: `Basic Instructions`,
     siteUrl: `https://gatsbystarterbasicinstructions.gatsbyjs.io`,
+    image: `/assets/apple-touch-icon.png`,
     social: {
       twitter: `donboulton`,
     },

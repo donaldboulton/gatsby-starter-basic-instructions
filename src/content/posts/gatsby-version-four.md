@@ -3,7 +3,7 @@ template: blog-post
 title: Gatsby Version Four
 path: /posts/gatsby-version-four
 date: 2020-05-23 03:40
-description: How to draw a character
+description: Gatsby Version Four with Server-Side Rendering
 tags: [gatsby, starter]
 category: code 
 featuredImage: ../../../static/assets/gatsby-starter-rendering-modes-thumbnail-wide.jpg

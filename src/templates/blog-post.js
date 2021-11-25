@@ -16,7 +16,6 @@ import Seo from "../components/seo"
 import Counter from "../components/counter"
 import SiteTags from '../components/site-tags'
 import SiteCategory from "../components/site-categories"
-import Comments from "../components/comments"
 import Bio from "../components/bio"
 import Checked from "../components/checkbox"
 
@@ -201,7 +200,6 @@ const BlogPostTemplate = ({ data, pageContext }) => {
             renderAst(htmlAst)
           }
         </div>
-        <Comments />
       </article>
       {(previous || next) && <Pagination {...props} />}
     </Layout>

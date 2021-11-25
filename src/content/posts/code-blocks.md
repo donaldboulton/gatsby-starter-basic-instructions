@@ -5,7 +5,7 @@ path: /posts/code-blocks
 date: 2021-11-11 08:40
 description: Post with no image
 category: code
-tags: [plant, desk]
+tags: [code, prismjs]
 featuredImage: ../../../static/assets/blog.jpg
 ---
 

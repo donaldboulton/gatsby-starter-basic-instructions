@@ -13,6 +13,20 @@ description: metaphorically make a deal with the devil
 \
 I haven't felt much of anything since my guinea pig died. Oh, but you can. But you may have to metaphorically make a deal with the devil. And by "devil", I mean Robot Devil. And by "metaphorically", I mean get your coat.\
 \
+
+<details>
+<summary><b>Result</b></summary>
+
+```html
+<iframe
+  src="https://codesandbox.io/embed/ynn88nx9x?view=split"
+  style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+  allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
+  sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+></iframe>
+```
+
+</details>
 We'll go deliver this crate like professionals, and then we'll go home. Leela, are you alright? \_\_You got wanged on the head.\_\_ \*Dear God, they'll be killed on our doorstep!\* And there's no trash pickup until January 3rd.\
 
 ### Bender, you risked your life to save me

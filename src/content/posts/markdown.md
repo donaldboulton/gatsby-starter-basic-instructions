@@ -5,7 +5,7 @@ date: 2021-11-12 09:30
 title: Markdown
 tags: [markdown, post]
 category: format  
-featuredImage: ../../../static/assets/mike-dorner-sf_1ZDA1YFw-unsplash.jpg
+featuredImage: ../../../static/assets/markdown.jpg
 ---
 
 ## Overview

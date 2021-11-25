@@ -1,5 +1,6 @@
 ---
 template: about-page
+title: About
 path: /about
 description: About Basic Instructions
 featuredImage: ../../../static/assets/about.jpg
@@ -19,7 +20,7 @@ gatsby-plugin-image With the Plugins proper usage.
 
 # Gatsby Version 4.2.0
 
-[<img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />](https://app.netlify.com/start/deploy?repository=https://www.gatsbyjs.com)
+[<img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" text-align="center" />](https://app.netlify.com/start/deploy?repository=https://www.gatsbyjs.com)
 
 
 ### Gatsby Starter Basic Instructions

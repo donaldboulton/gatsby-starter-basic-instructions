@@ -35,11 +35,19 @@ Server-side rendering is useful when your pages update frequently. For example, 
 
 In contrast, server-side rendering can rebuild the product page each time a user visits it, so the page will always show the latest product information. By using server-side rendering, you can update pages automatically without needing to rebuild your entire website.
 
-      (SSG) Generated at build time                                │
-  │ D (DSG) Deferred static generation - page generated at runtime │
-  │ ∞ (SSR) Server-side renders at runtime (uses getServerData)    │
-  │ λ (Function) Gatsby function    
+> ## Build Output
+>
+> (SSG) Generated at build time ,
+>
+> > D (DSG) Deferred static generation - page generated at runtime 
+>
+> > ∞ (SSR) Server-side renders at runtime (uses getServerData) 
+>
+> > λ (Function) Gatsby function 
+
+## 4 Cool Things You Can Build with Gatsby 4
+
+`video: https://www.youtube.com/watch?v=9EX36Gtl89I`
+
 
 [See More About Gatsby Version Four](https://www.gatsbyjs.com/gatsby-4/)
-
-

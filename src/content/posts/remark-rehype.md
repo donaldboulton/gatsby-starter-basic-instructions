@@ -90,9 +90,9 @@ const renderAst = new rehypeReact({
 </div>
 ```
 
-And your Template Query from html to htmlAst. Its that simple to have MDX capabilitys in Gatsby without the overhead of MDX.
+Change your Template Query from html to htmlAst. Its that simple to have MDX capability's in Gatsby without the overhead of MDX.
 
-Then in your markdown page add your component where ever you like. Also add html to your Markdown pages with htmlAst.
+Then in your markdown page add your component where ever you like. You can also add html to your Markdown pages using htmlAst.
 
 ```javascript
 <counter></counter>
@@ -102,4 +102,4 @@ Below is a simple counter component added to a markdown.md page.
 
 <counter></counter>
 
-Other components for tags and categories is on tags and category page.
+Other components for tags and categories is on [Category-Tags Page](/posts/category-tags) page.

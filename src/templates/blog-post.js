@@ -10,6 +10,7 @@ import { RiArrowLeftLine } from "@react-icons/all-files/ri/RiArrowLeftLine"
 import { RiArrowRightLine } from "@react-icons/all-files/ri/RiArrowRightLine"
 import { MdList } from "@react-icons/all-files//md/MdList"
 import { FaTags } from "@react-icons/all-files/fa/FaTags"
+import { BsFillCalendarFill } from "@react-icons/all-files/bs/BsFillCalendarFill"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Counter from "../components/counter"
@@ -139,7 +140,11 @@ const BlogPostTemplate = ({ data, pageContext }) => {
           <section className="article-header">
             <h1>{frontmatter.title}</h1>
             <div>
-              <time sx={{color: "muted"}}>{frontmatter.date}</time>
+              <span className="icon -calendar">
+                <BsFillCalendarFill size="0.7em" /> 
+              </span> 
+              &ensp;
+              <time sx={{color: "muted"}}>{frontmatter.date}</time>              
               &ensp;
               <span
                 sx={{
@@ -149,7 +154,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
                 <span className="icon -timer">
                   <RiTimerLine size="0.8em" />                
                 </span>{" "}  
-                <small>{postNode.timeToRead} min read</small>
+                <small sx={{color: "muted"}}>{postNode.timeToRead} min read</small>
               </span>
             </div>
             {tags.length > 0 && 
@@ -159,7 +164,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
                 }}
               >
                 <span className="icon -tags">
-                  <FaTags />
+                  <FaTags size="0.8em" />
                 </span>{" "}
                 <span>
                   <Link aria-label='Tags' to='/tags/'>  
@@ -168,7 +173,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
                 </span>
                 &ensp;
                 <span className="icon -category">
-                  <MdList />
+                  <MdList size="1.1em" />
                 </span>{" "} 
                 <span>
                   <Link aria-label='Categories' to='/categories/'>

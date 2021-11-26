@@ -1,7 +1,7 @@
     /** @jsx jsx */
 import { jsx } from 'theme-ui'
 import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import { Helmet } from 'react-helmet'
 import CookieConsent from "react-cookie-consent"
 import Scroll from './Scroll'
@@ -97,11 +97,26 @@ const Layout = ({ className, children }) => {
             <Footer />
         </div>
         <CookieConsent
+          enableDeclineButton 
+          flipButtons
           location="bottom"
           buttonText="Accept"
           declineButtonText="Decline"
-          cookieName="gatsby-gdpr-google-analytics">
-          This site uses cookies ...
+          cookieName="gatsby-gdpr-google-analytics"
+          style={{
+            background: "linear-gradient(to right, orange, yellow, green, cyan, blue, violet)",
+            textShadow: "2px 2px black",
+          }}
+          buttonStyle={{
+            background: "linear-gradient(to left, orange, yellow, green, cyan, blue, violet)",
+            color: "white",
+            fontWeight: "bolder",
+            borderRadius: '3px',
+            textShadow: "2px 2px black",
+          }}
+        >
+          This website uses cookies for user experience.{" "}
+          <span style={{ fontSize: "10px" }}><Link to='/privacy' alt='Privacy Page'>Privacy Page</Link></span>
         </CookieConsent>
       </div>
     </>

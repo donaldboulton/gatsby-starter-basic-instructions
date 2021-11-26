@@ -20,6 +20,7 @@ const Tags = ({ pageContext, data }) => {
     <Layout className="not-found-page">
       <Seo />
       <Helmet>
+        <link rel="canonical" href={url} />
         <meta property="og:url" content={url} />
         <meta property="og:title" content={tagHeader} />
         <meta property="og:description" content={tag} />

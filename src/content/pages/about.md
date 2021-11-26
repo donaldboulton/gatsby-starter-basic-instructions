@@ -8,6 +8,19 @@ featuredImage: ../../../static/assets/about.jpg
 
 ## About Basic Instructions Starter
 
+This is a Gatsby Starter with everything you need for a professional website.
+
+- Correct Per-Page Meta/SEO using `react-helmet`
+- GDPR with `gatsby-plugin-gdpr-cookies` and `react-cookie-consent`
+- Sitemap
+- Site Manifest
+- PWA
+- Full Text Search with (Optional Image Search)
+- Professional Page Scrolling
+- Tags and Categories
+
+
+
 > **Update** [Basic Instructions Hosted on Gatsby Cloud](https://gatsbystarterbasicinstructions.gatsbyjs.io/) is now built with Gatsby V4 "4.2.0", this includes many performance updates with Latest Gatsby!
 
 GatsbyJS Version @latest with all the @latest modules from npm.

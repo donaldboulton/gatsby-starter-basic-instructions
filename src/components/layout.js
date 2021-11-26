@@ -3,6 +3,7 @@ import { jsx } from 'theme-ui'
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { Helmet } from 'react-helmet'
+import CookieConsent from "react-cookie-consent"
 import Scroll from './Scroll'
 import ScrollDown from './ScrollDown'
 import Header from "./header"
@@ -95,6 +96,13 @@ const Layout = ({ className, children }) => {
           }}>
             <Footer />
         </div>
+        <CookieConsent
+          location="bottom"
+          buttonText="Accept"
+          declineButtonText="Decline"
+          cookieName="gatsby-gdpr-google-analytics">
+          This site uses cookies ...
+        </CookieConsent>
       </div>
     </>
   )

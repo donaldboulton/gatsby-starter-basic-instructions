@@ -40,6 +40,7 @@ const AboutPage = ({ data }) => {
     <Layout className="page">
       <Seo title={frontmatter.title} description={excerpt} />
       <Helmet>
+        <link rel="canonical" href={url} />
         <meta property="og:url" content={url} />
         <meta property="og:title" content={frontmatter.title} />
         <meta property="og:description" content={frontmatter.description} />

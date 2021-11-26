@@ -20,6 +20,7 @@ const Category = ({ pageContext, data }) => {
     <Layout className="not-found-page">
       <Seo />
       <Helmet>
+        <link rel="canonical" href={url} />
         <meta property="og:url" content={url} />
         <meta property="og:title" content={categoryHeader} />
         <meta property="og:description" content={category} />

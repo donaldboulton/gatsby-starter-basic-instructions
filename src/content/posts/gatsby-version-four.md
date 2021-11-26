@@ -2,7 +2,7 @@
 template: blog-post
 title: Gatsby Version Four
 path: /posts/gatsby-version-four
-date: 2020-05-23 03:40
+date: 2021-11-23 03:40
 description: Gatsby Version Four with Server-Side Rendering
 tags: [gatsby, starter]
 category: code 

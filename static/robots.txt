@@ -3,4 +3,4 @@ Allow: /*
 Disallow: /static/*
 Disallow: /*.xls$
 
-sitemap: https://gatsbystarterbasicinstructions.gtsb.io/sitemap.xml
+sitemap: https://gatsbystarterbasicinstructions.gatsbyjs.io/sitemap.xml

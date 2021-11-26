@@ -4,8 +4,6 @@
   NETLIFY_USE_YARN = "true"
 [build.environment]
   NODE_VERSION = "14.17.1"
-[[plugins]]
-  package = "@netlify/plugin-gatsby"
 [[headers]]
   for = "/*"
   [headers.values]
@@ -13,6 +11,7 @@
 	  public,
 	  max-age=2592000'''
     Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Robots-Tag = "index"
     X-Content-Type-Options = "nosniff"
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"

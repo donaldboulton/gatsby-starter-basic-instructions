@@ -130,6 +130,7 @@ class BlogIndex extends React.Component {
           }
         />
         <Helmet>
+          <link rel="canonical" href={url} />
           <meta property="og:url" content={url} />
           <meta property="og:title" content="Blog" />
           <meta property="og:description" content="Blog Posts Lists" />

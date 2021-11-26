@@ -26,9 +26,9 @@ First and foremost, I will never share your email address or any other personal 
 
 All of this information is not linked to anything that is personally identifiable.
 
-## Cookies & Beacons
+## Cookies And Beacons
 
-🍪 When you visit this site "convenience" cookies are stored on your computer when you submit a comment to help you log in faster to 🔗 [Twitter](https://twitter.com/donboulton) the next time you do a tweet.
+🍪 When you visit this site "convenience" cookies are stored on your computer when you submit a comment to help you log in faster to 🔗 \* [Twitter](https://twitter.com/donboulton) the next time you do a tweet.
 
 `video: https://www.youtube.com/embed/yoE9-tNvhRs`
 
@@ -38,9 +38,14 @@ If you wish to disable cookies, you may do so through your web browser options. 
 
 ### Cookies in EU Law
 
-⚖️ 🔗 [Is the EU's cookie law confusing you too?](https://www.123-reg.co.uk/blog/security-issues/is-the-eus-cookie-law-confusing-you-too/)
-🔗 [New EU cookie law (e-Privacy Directive)](https://www.ico.gov.uk/for_organisations/privacy_and_electronic_communications/the_guide/cookies.aspx)
-🔗 [Cookies – Doing nothing isn't the right answer](https://chriswharton.me/2012/05/cookies-doing-nothing-isnt-the-right-answer/)
+⚖️ Internet Law
+
+🔗 \* [EU cookie law (e-Privacy Directive)](https://www.privacypolicies.com/blog/eu-cookie-law/)
+
+🔗 \* [Is the EU's cookie law confusing you too?](https://www.123-reg.co.uk/blog/security-issues/is-the-eus-cookie-law-confusing-you-too/)
+
+🔗 \* [Cookies – Doing nothing isn't the right answer](https://chriswharton.me/2012/05/cookies-doing-nothing-isnt-the-right-answer/)
+
 
 ### Disabling Cookies
 
@@ -53,12 +58,6 @@ If you wish to disable cookies, you may do so through your web browser options. 
 🔗 \* [Disabling cookies in Mozilla Firefox](https://support.mozilla.org/en-US/kb/third-party-cookies-firefox-tracking-protection)
 
 🔗 \* [Disabling cookies in Apple Safari](https://support.apple.com/guide/safari/manage-cookies-sfri11471/mac)
-
-### Bibwoe UI cookies
-
-CookieHub is a complete cookie consent solution that you can easily integrated with any website. The cookie consent plugin can be customized to match your brand and is compliant with cookie laws, including GDPR.
-
-To adjust cookie settings in Bibwoe look to the left bottom left of this page, click the gear icon and follow the instructions.
 
 ## Google Analytics
 
@@ -80,11 +79,11 @@ Returning, New Session, Time, Custom Variable Data, Source
 
 - \_\_utma
 
-🤚 This cookie is used to determine new and returning visitors. It has an expiration time of 2 years. If the ga.js library is executed and no \_utma cookie exists, this will be recorded as the users’ first visit and a \_utma cookie will be set. If a \_utma cookie is already in place, the expiration time is reset and the user is recorded as a return visitor.
+🤚 This cookie is used to determine new and returning visitors. It has an expiration time of 2 years. If the ga.js library is executed and no \_\_utma cookie exists, this will be recorded as the users’ first visit and a \_\_utma cookie will be set. If a \_\_utma cookie is already in place, the expiration time is reset and the user is recorded as a return visitor.
 
 - \_\_utmb
 
-🤚 This cookie is used to determine a new session. The cookie is set when the ga.js library executes and there is no \_utmb cookie in place. It has an expiration time of 30 minutes, therefore if a user is inactive for a period longer than this, a new cookie will be set when the library executes and the interaction will be recorded as a new session.
+🤚 This cookie is used to determine a new session. The cookie is set when the ga.js library executes and there is no \_\_utmb cookie in place. It has an expiration time of 30 minutes, therefore if a user is inactive for a period longer than this, a new cookie will be set when the library executes and the interaction will be recorded as a new session.
 
 - \_\_utmz
 
@@ -95,7 +94,7 @@ Returning, New Session, Time, Custom Variable Data, Source
 🤚 This Cookie waits 30 minutes, and then it expires. You see, \_\_utmc has no way of knowing when a user closes their browser or leaves a website, so it waits 30 minutes for another pageview to happen, and if it doesn’t, it expires.
 And is used to store information, such as what time your current visit occurred, whether you have been to the site before, and what site referred you to the web page.
 
-From Stackoverflow: 🔗 [What does \_\_utma mean?](https://stackoverflow.com/questions/1823406/what-does-utma-mean)
+From Stackoverflow: 🔗 \* [What does \_\_utma mean?](https://stackoverflow.com/questions/1823406/what-does-utma-mean)
 
 - \_\_utmv
 
@@ -113,11 +112,11 @@ Google stores the information collected by these cookies on servers in the Unite
 
 ### Opt Out Google tools
 
-Link to 🔗 [Opt Out Google tools](https://tools.google.com/dlpage/gaoptout?hl=None)
+🔗 \* [Opt Out Google tools](https://tools.google.com/dlpage/gaoptout?hl=None)
 
 ⚒️ For more information on the usage of cookies by Google Analytics please see the Google website. A link to the privacy advice for this product is provided below for your convenience.
 
-## Hubspot \_\_hstc Cookie
+## Hubspot hstc Cookie
 
 🥠 About this cookie \_\_hstc
 
@@ -125,7 +124,7 @@ This cookie name is associated with websites built on the HubSpot platform. It i
 
 The main purpose of this cookie is: Performance
 
-### Key numbers for \_\_hstc
+### Key numbers for hstc
 
 🗝️ Cookies with this name have been found on 316 websites, set by 269 host domains.
 
@@ -139,13 +138,13 @@ Note: Many technologies or services use cookies that will be common to different
 
 ## Privacy Google
 
-🔗 [Privacy Google](https://www.google.com/analytics/learn/privacy.html)
+🔗 \* [Privacy Google](https://www.google.com/analytics/learn/privacy.html)
 
 🗠 Google Analytics is a web analytics tool I use to help understand how visitors engage with this website. It reports website trends using cookies and web beacons without identifying individual visitors.
 
 ### Read Analytics Policy
 
-🔗 [Google Analytics Privacy Policy](https://www.google.com/analytics/learn/privacy.html)
+🔗 \* [Google Analytics Privacy Policy](https://www.google.com/analytics/learn/privacy.html)
 
 ## Google AdSense
 
@@ -153,13 +152,13 @@ Note: Many technologies or services use cookies that will be common to different
 
 ### Read AdSense Policy
 
-🔗 [Google AdSense Privacy Policy](https://support.google.com/adsense/bin/answer.py?hl=en&answer=48182)
+🔗 \* [Google AdSense Privacy Policy](https://support.google.com/adsense/bin/answer.py?hl=en&answer=48182)
 
 ### Create Your Own
 
 🦸 Google AdSense Privacy Policy creator
 
-🔗 [Privacy Policy Creator Google](https://www.termsfeed.com/blog/privacy-policy-google-adsense/)
+🔗 \* [Privacy Policy Creator Google](https://www.termsfeed.com/blog/privacy-policy-google-adsense/)
 
 ## Subscriptions
 
@@ -195,7 +194,7 @@ Demonstrate and share the intelligence, wisdom, and humor we know you possess.
 
 🩸 I make money on this website through affiliate programs. If you click an affiliate link or ad banner and buy the product, you help support this website because I'll get a percentage of that sale.
 
-Donald Boulton and this 🔗 [Basic Instructions Site](https://gatsbystarterbasicinstructions.gatsbyjs.io/) 🗸 Website is a Affiliate for Google AdSense.
+Donald Boulton and this: 🔗 \* [Basic Instructions Site](https://gatsbystarterbasicinstructions.gatsbyjs.io/) 🗸 Website is a Affiliate for Google AdSense.
 
 What this means for you:
 

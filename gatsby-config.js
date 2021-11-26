@@ -9,7 +9,7 @@ module.exports = {
     },
     description: `Basic Instructions`,
     siteUrl: `https://gatsbystarterbasicinstructions.gatsbyjs.io`,
-    image: `/assets/apple-touch-icon.png`,
+    siteImage: `/assets/apple-touch-icon.png`,
     social: {
       twitter: `donboulton`,
     },
@@ -21,15 +21,15 @@ module.exports = {
       options: {
         headers: {
           "/*": [
-            "Cache-Control: public, max-age=2592000, immutable",
+            "Cache-Control: public, max-age=31536000, immutable",
           ],
           "/static/*": [
             "Cache-Control: public, max-age=31536000, immutable",
           ],
         }, // option to add more headers. `Link` headers are transformed by the below criteria
         allPageHeaders: [
-          "Link: <../../static/assets/logo.png>; rel=preload; as=image",
           "Strict-Transport-Security: max-age=31536000; preload",
+          "X-Robots-Tag: index",
           "X-Frame-Options: DENY",
           "X-XSS-Protection: 1; mode=block",
           "X-Content-Type-Options: nosniff",
@@ -146,13 +146,13 @@ module.exports = {
       resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
         googleAnalytics: {
-          trackingId: 'G-5RRNPTBZ6H', // leave empty if you want to disable the tracker
+          trackingId: 'UA-213728425-1', // leave empty if you want to disable the tracker
           cookieName: 'gatsby-gdpr-google-analytics', // default
           anonymize: true, // default
           allowAdFeatures: false // default
         },
         googleTagManager: {
-          trackingId: 'G-5RRNPTBZ6H', // leave empty if you want to disable the tracker
+          trackingId: 'G-09Q3PSV062', // leave empty if you want to disable the tracker
           cookieName: 'gatsby-gdpr-google-tagmanager', // default
           dataLayerName: 'dataLayer', // default
         },

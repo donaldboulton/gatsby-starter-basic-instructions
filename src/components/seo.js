@@ -18,7 +18,7 @@ const Seo = ({ description, lang, meta, title }) => {
           siteMetadata {
             title
             description
-            image
+            siteImage
             social {
               twitter
             }
@@ -30,7 +30,7 @@ const Seo = ({ description, lang, meta, title }) => {
 
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata.title
-  const defaultImage = site.siteMetadata.image
+  const defaultImage = site.siteMetadata.siteImage
 
   return (
     <Helmet
@@ -54,7 +54,7 @@ const Seo = ({ description, lang, meta, title }) => {
         },
         {
           property: `og:site_name`,
-          content: `Basic Instructions`,
+          content: defaultTitle,
         },        
         {
           name: `twitter:site`,

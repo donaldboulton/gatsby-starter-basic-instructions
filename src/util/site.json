@@ -4,9 +4,10 @@
     "titleTemplate": "%s",
     "description": "Basic Instructions",
     "siteUrl": "https://gatsbystarterbasicinstructions.gatsbyjs.io",
+    "siteImage": "/assets/apple-touch-icon.png",
     "image": "/assets/apple-touch-icon.png",
     "iconimage": "/assets/apple-touch-icon.png",
     "twitterUsername": "@donboulton"
   },
-  "ga": "G-5RRNPTBZ6H"
+  "ga": "UA-213728425-1"
 }

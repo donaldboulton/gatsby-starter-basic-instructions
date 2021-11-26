@@ -107,6 +107,34 @@ import CookieConsent from 'react-cookie-consent';
     This site uses cookies ...
 </CookieConsent>
 ```
+
+Or Taylor it to you needs
+
+```javascript
+  <CookieConsent
+    enableDeclineButton 
+    flipButtons
+    location="bottom"
+    buttonText="Accept"
+    declineButtonText="Decline"
+    cookieName="gatsby-gdpr-google-analytics"
+    style={{
+      background: "linear-gradient(to right, orange, yellow, green, cyan, blue, violet)",
+      textShadow: "2px 2px black",
+    }}
+    buttonStyle={{
+      background: "linear-gradient(to left, orange, yellow, green, cyan, blue, violet)",
+      color: "white",
+      fontWeight: "bolder",
+      borderRadius: '3px',
+      textShadow: "2px 2px black",
+    }}
+  >
+    This website uses cookies for user experience.{" "}
+    <span style={{ fontSize: "10px" }}><Link to='/privacy' alt='Privacy Page' area-label="Privacy">Privacy Page</Link></span>
+  </CookieConsent>
+```
+
 The important part is to set the cookieName prop to the value of the cookie you want to set (e.g.: gatsby-gdpr-google-analytics).
 
 There are many props to configure the components behavior and appearance.
@@ -119,4 +147,4 @@ import CookieConsent, { Cookies } from "react-cookie-consent";
 
 Hopefully this helped you making your Gatsby site GDPR compliant.
 
-P.S.: I wrote a short StackOverflow answer on this topic as well after solving this for my own Gatsby sites.
+Cookie's Explained In this sites [Privacy Page](/privacy#Cookies-And-Beacons)

@@ -56,7 +56,6 @@ const Contact = ({ data }) => {
         <meta property="og:url" content={url} />
         <meta property="og:title" content={frontmatter.title} />
         <meta property="og:description" content={frontmatter.description} />
-        <meta property="og:image" content={Image} />
         <meta name="twitter:image:alt" content={frontmatter.title} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:title" content={frontmatter.title} />

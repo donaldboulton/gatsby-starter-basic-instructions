@@ -26,6 +26,7 @@ const PostMaker = ({ data }) => (
     <Link
       className="button"
       to="/posts"
+      area-label="Posts"
       sx={{
         variant: "variants.button",
       }}

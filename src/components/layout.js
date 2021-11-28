@@ -13,6 +13,7 @@ import "../assets/scss/style.scss"
 import Footer from "./footer"
 import Theme from "./theme"
 import Search from "./search"
+import { SiGnuprivacyguard } from "@react-icons/all-files/si/SiGnuprivacyguard"
 
 const query = graphql`
   query SearchIndexQuery {
@@ -104,19 +105,33 @@ const Layout = ({ className, children }) => {
           declineButtonText="Decline"
           cookieName="gatsby-gdpr-google-analytics"
           style={{
-            background: "linear-gradient(to right, orange, yellow, green, cyan, blue, violet)",
+            background: "linear-gradient(to right, transparent, #171717)",
             textShadow: "2px 2px black",
           }}
           buttonStyle={{
-            background: "linear-gradient(to left, orange, yellow, green, cyan, blue, violet)",
+            background: "radial-gradient(circle at top right, #222, transparent)",
             color: "white",
             fontWeight: "bolder",
             borderRadius: '3px',
+            border: "1px black",
             textShadow: "2px 2px black",
           }}
         >
-          This website uses cookies for user experience.{" "}
-          <span style={{ fontSize: "10px" }}><Link to='/privacy' alt='Privacy Page'>Privacy Page</Link></span>
+          Basic Instructions uses cookies for user experience.{" "}
+          <span 
+            style={{ 
+              fontSize: "14px",
+              textAlign: "center",
+              marginLeft: "20px"
+            }}
+          >
+            <span className="icon -lock">
+              <SiGnuprivacyguard />
+            </span>{" "} 
+            <Link to='/privacy' alt='Privacy Page'>
+              Privacy Page
+            </Link>
+          </span>
         </CookieConsent>
       </div>
     </>

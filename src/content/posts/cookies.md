@@ -147,4 +147,4 @@ import CookieConsent, { Cookies } from "react-cookie-consent";
 
 Hopefully this helped you making your Gatsby site GDPR compliant.
 
-Cookie's Explained In this sites [Privacy Page](/privacy#Cookies-And-Beacons)
+Cookie's Explained In  [Privacy Page](/posts/privacy#Cookies-And-Beacons)

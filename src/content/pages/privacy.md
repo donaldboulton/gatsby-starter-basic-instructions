@@ -1,5 +1,5 @@
 ---
-template: about-page
+template: privacy-page
 title: Privacy and Terms
 path: /privacy
 featuredImage: ../../../static/assets/privacy.jpg

@@ -18,7 +18,7 @@ const renderAst = new rehypeReact({
 }).Compiler
 
 export const pageQuery = graphql`
-  query AboutQuery($id: String!) {
+  query PrivacyQuery($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
       htmlAst
@@ -37,7 +37,7 @@ export const pageQuery = graphql`
   }
 `
 
-const AboutPage = ({ data }) => {
+const PrivacyPage = ({ data }) => {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, htmlAst, excerpt } = markdownRemark
   const postNode = data.markdownRemark
@@ -86,4 +86,4 @@ const AboutPage = ({ data }) => {
   )
 }
 
-export default AboutPage
+export default PrivacyPage

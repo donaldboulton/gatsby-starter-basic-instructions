@@ -17,6 +17,11 @@
   position: relative;
   padding: 15px 20px;
 }
+.cover {
+  border-radius: 12px;
+  width: 100%;
+  object-fit: cover;
+}
 .site-navigation {
   ul {
     list-style: none;
@@ -168,6 +173,7 @@
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
   border-radius: 12px;
   transition: box-shadow 0.3s linear;
+  
   .cover {
     border-radius: 12px;
     width: 100%;

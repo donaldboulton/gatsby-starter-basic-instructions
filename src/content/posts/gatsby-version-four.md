@@ -15,6 +15,10 @@ featuredImage: ../../../static/assets/gatsby-starter-rendering-modes-thumbnail-w
 
 ![DSG](../../../static/assets/DSG_for_blog_article_and_G4_overview_page.jpg "Statically Generated Websites")
 
+### Local DSG Example
+
+[DSG Example Page](/dsg)
+
 The benefits of statically generated websites - performance, security, reliability - are now available to websites of all shapes and sizes, giving teams a new way to build and deliver digital experiences at scale.
 
 ## SERVER-SIDE RENDERING (SSR)
@@ -22,6 +26,10 @@ The benefits of statically generated websites - performance, security, reliabili
 > Request and render data at run-time with Gatsby
 
 ![SSR](../../../static/assets/SSR_for_blog_article_and_G4_overview_page.jpg "Render Data At Run-time")
+
+### Local SSR Example
+
+[SSR Example Page](/ssr)
 
 Gatsby 4 now supports Server-Side Rendering, giving developers the choice of generating content at either build time, as with static-site generation, or at run time. With Server-Side Rendering, teams can now run more effective A/B tests, personalize content, and more all while still using the Gatsby framework.
 

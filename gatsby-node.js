@@ -138,6 +138,11 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       },
     })
   })
+  actions.createPage({
+    path: '/dsg',
+    component: path.resolve('src/templates/dsg.js'),
+    defer: true,
+  })
 }
 
 exports.onCreateNode = ({ node, getNode, actions }) => {

@@ -33,6 +33,59 @@ The benefits of statically generated websites - performance, security, reliabili
 
 Gatsby 4 now supports Server-Side Rendering, giving developers the choice of generating content at either build time, as with static-site generation, or at run time. With Server-Side Rendering, teams can now run more effective A/B tests, personalize content, and more all while still using the Gatsby framework.
 
+## My Function SSR Page
+
+Node fetch was killing this so to isomorphic-fetch, and it worked perfect.
+
+```javascript
+import * as React from 'react'
+import fetch from 'isomorphic-fetch'
+import { Link } from 'gatsby'
+
+function SSR (props) {
+  const { image } = props.serverData
+
+  return (    
+    <>
+      <div className="not-found-page">
+        <div
+          className="wrapper"
+          style={{
+            marginTop: "40px",
+            alignText: "center"
+          }}
+        >
+          <Link to='/posts/gatsby-version-four'>Back to Post</Link><br />
+          <h1>SSR: Server Side Rendering</h1>
+          <div>You Should See Doggies Below</div>
+          <div>Refresh The Page for More Doggies</div>
+          <div>
+            <img
+              alt='doggo'
+              src={image}
+            />
+          </div>          
+        </div>
+      </div>
+    </>
+  )
+}
+
+export default SSR
+
+export async function getServerData ({ params }) {
+  const data = await fetch(`https://dog.ceo/api/breeds/image/random`)
+    .then(res => res.json())
+
+  return {
+    props: {
+     // data has the shape of "message", "status" where message is the image src
+      image: data.message
+    }
+  }
+}
+```
+
 ### Excerpt From Medium
 
 [Medium by Eduardo Valencia](https://medium.com/@8025918/gatsby-4-using-ssr-and-dsg-14742eaecb66)

@@ -1,29 +1,37 @@
 import * as React from 'react'
-import fetch from 'node-fetch'
+import fetch from 'isomorphic-fetch'
 import { Link } from 'gatsby'
 
-export default function SSR (props) {
+function SSR (props) {
   const { image } = props.serverData
 
   return (    
     <>
-      <Layout className="not-found-page">
+      <div className="not-found-page">
         <div
           className="wrapper"
+          style={{
+            marginTop: "40px",
+            alignText: "center"
+          }}
         >
           <Link to='/posts/gatsby-version-four'>Back to Post</Link><br />
           <h1>SSR: Server Side Rendering</h1>
-
-          You Should See Doggies Below
-          <img
-            alt='doggo'
-            src={image}
-          />
+          <div>You Should See Doggies Below</div>
+          <div>Refresh The Page for More Doggies</div>
+          <div>
+            <img
+              alt='doggo'
+              src={image}
+            />
+          </div>          
         </div>
-      </Layout>
+      </div>
     </>
   )
 }
+
+export default SSR
 
 export async function getServerData ({ params }) {
   const data = await fetch(`https://dog.ceo/api/breeds/image/random`)

@@ -8,6 +8,7 @@ This is a Gatsby Starter with everything you need for a professional website.
 - Full Text Search with (Optional Image Search)
 - Professional Page Scrolling
 - Tags and Categories
+- SSR and DSG Examples
 
 ## Dependency's
 

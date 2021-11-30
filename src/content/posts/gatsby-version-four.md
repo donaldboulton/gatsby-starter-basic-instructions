@@ -37,6 +37,10 @@ Gatsby 4 now supports Server-Side Rendering, giving developers the choice of gen
 
 Node fetch was killing this so to isomorphic-fetch, and it worked perfect.
 
+Lowered my LightHouse Performance score from 99 to 95. It goes up and down???
+
+![Gatsby Cloud Build Pic](../../../static/assets/ssr-dsg.jpg)
+
 ```javascript
 import * as React from 'react'
 import fetch from 'isomorphic-fetch'

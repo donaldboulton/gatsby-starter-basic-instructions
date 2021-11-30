@@ -21,6 +21,7 @@ function SSR (props) {
           <div>Refresh The Page for More Doggies</div>
           <div>
             <img
+              className='cover'
               alt='doggo'
               src={image}
             />

@@ -39,6 +39,11 @@ You can install the plugin using npm:
 ```bash
 npm install --save gatsby-plugin-gdpr-cookies
 ```
+or yarn:
+
+```bash
+yarn add gatsby-plugin-gdpr-cookies
+```
 
 To configure the plugin put the configuration in your gatsby-config.js:
 

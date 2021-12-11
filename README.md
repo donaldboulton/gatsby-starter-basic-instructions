@@ -48,7 +48,7 @@ This is a Gatsby Starter with everything you need for a professional website. Ga
     "path": "^0.12.7",
     "prismjs": "^1.25.0",
     "react": "^17.0.2",
-    "react-cookie-consent": "^6.4.1",
+    "react-cookie-consent": "^6.4.1",  // version 7.0.0 has issues
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
     "rehype-react": "^7.0.3",

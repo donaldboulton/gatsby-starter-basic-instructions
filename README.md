@@ -1,4 +1,4 @@
-This is a Gatsby Starter with everything you need for a professional website. GatsbyJs version 4.4.0
+This is a Gatsby Starter with everything you need for a professional website. GatsbyJs version 4.11.0
 
 - Correct Per-Page Meta/SEO using `react-helmet`
 - GDPR with `gatsby-plugin-gdpr-cookies` and `react-cookie-consent`

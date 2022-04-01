@@ -1,6 +1,7 @@
 import * as React from 'react'
 import fetch from 'isomorphic-fetch'
 import { Link } from 'gatsby'
+import Stars from "../components/Stars"
 
 function SSR (props) {
   const { image } = props.serverData
@@ -8,6 +9,7 @@ function SSR (props) {
   return (    
     <>
       <div className="not-found-page">
+        <Stars />
         <div
           className="wrapper"
           style={{

@@ -5,6 +5,7 @@ import kebabCase from "lodash/kebabCase"
 import Helmet from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 import Seo from "../components/seo"
+import Stars from "../components/Stars"
 import Layout from '../components/layout'
 
 const url = typeof window !== 'undefined' ? window.location.href : '';
@@ -27,6 +28,7 @@ const CategoriesPage = ({
       <meta property="twitter:title" content="Category" />
       <meta property="twitter:description" content="Categories Page" />
     </Helmet>
+    <Stars />
     <div
       className="wrapper"
     >

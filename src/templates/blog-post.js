@@ -18,6 +18,7 @@ import SiteTags from '../components/site-tags'
 import SiteCategory from "../components/site-categories"
 import Bio from "../components/bio"
 import Checked from "../components/checkbox"
+import Stars from "../components/Stars"
 
 require('prismjs')
 require("prismjs/themes/prism-okaidia.css")
@@ -135,6 +136,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
           <meta property="twitter:description" content={frontmatter.description} />
         </Helmet>
       <article className="blog-post">
+        <Stars />
         <header className="featured-banner">
           <section className="article-header">
             <h1>{frontmatter.title}</h1>

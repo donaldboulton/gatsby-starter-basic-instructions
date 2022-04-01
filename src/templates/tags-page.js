@@ -7,6 +7,7 @@ import { FaTags } from "@react-icons/all-files/fa/FaTags";
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Stars from "../components/Stars"
 
 const Tags = ({ pageContext, data }) => {
   const { tag } = pageContext
@@ -27,6 +28,7 @@ const Tags = ({ pageContext, data }) => {
         <meta property="twitter:title" content={tagHeader} />
         <meta property="twitter:description" content={tag} />
       </Helmet>
+      <Stars />
       <div
         className="wrapper"
       >

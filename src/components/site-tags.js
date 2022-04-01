@@ -3,7 +3,7 @@ import { jsx, Heading, Box } from "theme-ui"
 import * as React from "react"
 import { useStaticQuery, graphql, Link } from 'gatsby'
 import { kebabCase } from 'lodash'
-import { FaTags } from "@react-icons/all-files/fa/FaTags";
+import { FaTags } from "@react-icons/all-files/fa/FaTags"
 
 const SiteTags = ({ group, ...rest }) => {
   const { tagsTitle = `Posts Tags` } = rest

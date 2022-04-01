@@ -8,6 +8,7 @@ import { RiArrowRightLine } from "@react-icons/all-files/ri/RiArrowRightLine"
 import Layout from "../components/layout"
 import PostCard from "../components/post-card"
 import Seo from "../components/seo"
+import Stars from "../components/Stars"
 
 const styles = {
   pagination: {
@@ -137,6 +138,7 @@ class BlogIndex extends React.Component {
           <meta property="twitter:title" content="Blog" />
           <meta property="twitter:description" content="Blog Posts Lists" />
         </Helmet>
+        <Stars />
         <h1>Blog</h1>
         <div className="grids col-1 sm-2 lg-3">{posts}</div>
         <Pagination {...props} />

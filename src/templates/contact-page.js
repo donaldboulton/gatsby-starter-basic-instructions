@@ -6,6 +6,7 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import { RiSendPlane2Line } from "@react-icons/all-files/ri/RiSendPlane2Line"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Stars from "../components/Stars"
 
 export const pageQuery = graphql`
   query ContactQuery($id: String!) {
@@ -61,6 +62,7 @@ const Contact = ({ data }) => {
         <meta property="twitter:title" content={frontmatter.title} />
         <meta property="twitter:description" content={frontmatter.description} />
       </Helmet>
+      <Stars />
       <div className="wrapper">
         <header className="featured-banner">
           <section className="article-header">

@@ -9,6 +9,7 @@ import Counter from "../components/counter"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Stars from "../components/Stars"
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
@@ -59,6 +60,7 @@ const AboutPage = ({ data }) => {
         <meta property="twitter:description" content={frontmatter.description} />
       </Helmet>
         <article className="blog-post">
+          <Stars />
           <header className="featured-banner">
             <section className="article-header">
               <h1>{frontmatter.title}</h1>

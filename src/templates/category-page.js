@@ -7,6 +7,7 @@ import { MdList } from "@react-icons/all-files/md/MdList";
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Stars from "../components/Stars"
 
 const Category = ({ pageContext, data }) => {
   const { category } = pageContext
@@ -27,6 +28,7 @@ const Category = ({ pageContext, data }) => {
         <meta property="twitter:title" content={categoryHeader} />
         <meta property="twitter:description" content={category} />
       </Helmet>
+      <Stars />
       <div
          className="wrapper"
       >

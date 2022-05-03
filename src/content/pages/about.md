@@ -8,7 +8,7 @@ featuredImage: ../../../static/assets/about.jpg
 
 ## About Basic Instructions Starter
 
-This is a Gatsby Starter with everything you need for a professional website.
+This is a Gatsby Starter v4.13.1 with everything you need for a professional website.
 
 - Correct Per-Page Meta/SEO using `react-helmet`
 - GDPR with `gatsby-plugin-gdpr-cookies` and `react-cookie-consent`
@@ -23,52 +23,60 @@ This is a Gatsby Starter with everything you need for a professional website.
 ## Dependency's
 
 ```json
+    "dependencies": {
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
     "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "^3.0.2",
+    "@mdx-js/react": "^2.1.1",
     "@react-icons/all-files": "^4.1.0",
-    "@theme-ui/color": "^0.12.0",
+    "@theme-ui/color": "^0.13.1",
     "babel-plugin-prismjs": "^2.1.0",
-    "gatsby": "^4.2.0",
+    "gatsby": "^4.13.1",
     "gatsby-plugin-anchor-links": "^1.2.1",
-    "gatsby-plugin-catch-links": "^4.2.0",
-    "gatsby-plugin-feed": "^4.2.0",
-    "gatsby-plugin-gatsby-cloud": "^4.2.0",
+    "gatsby-plugin-catch-links": "^4.13.0",
+    "gatsby-plugin-feed": "^4.13.0",
+    "gatsby-plugin-gatsby-cloud": "^4.13.0",
     "gatsby-plugin-gdpr-cookies": "^2.0.8",
-    "gatsby-plugin-image": "^2.2.0",
-    "gatsby-plugin-manifest": "^4.2.0",
-    "gatsby-plugin-offline": "^5.2.0",
-    "gatsby-plugin-react-helmet": "^5.2.0",
-    "gatsby-plugin-sass": "^5.2.0",
-    "gatsby-plugin-sharp": "^4.2.0",
-    "gatsby-plugin-sitemap": "^5.2.0",
-    "gatsby-plugin-theme-ui": "^0.12.1",
-    "gatsby-remark-autolink-headers": "^5.2.0",
-    "gatsby-remark-copy-linked-files": "^5.2.0",
+    "gatsby-plugin-image": "^2.11.1",
+    "gatsby-plugin-manifest": "^4.13.0",
+    "gatsby-plugin-offline": "^5.13.0",
+    "gatsby-plugin-react-helmet": "^5.13.0",
+    "gatsby-plugin-sass": "^5.13.0",
+    "gatsby-plugin-sharp": "^4.13.0",
+    "gatsby-plugin-sitemap": "^5.13.0",
+    "gatsby-plugin-theme-ui": "^0.14.5",
+    "gatsby-remark-autolink-headers": "^5.13.0",
+    "gatsby-remark-copy-linked-files": "^5.13.0",
     "gatsby-remark-embed-video": "^3.1.1",
-    "gatsby-remark-images": "^6.2.0",
-    "gatsby-remark-prismjs": "^6.2.0",
-    "gatsby-remark-responsive-iframe": "^5.2.0",
-    "gatsby-remark-smartypants": "^5.2.0",
+    "gatsby-remark-images": "^6.13.0",
+    "gatsby-remark-prismjs": "^6.13.0",
+    "gatsby-remark-responsive-iframe": "^5.13.0",
+    "gatsby-remark-smartypants": "^5.13.0",
     "gatsby-schema-field-absolute-path": "^1.3.0",
-    "gatsby-source-filesystem": "^4.2.0",
-    "gatsby-transformer-remark": "^5.2.0",
-    "gatsby-transformer-sharp": "^4.2.0",
+    "gatsby-source-filesystem": "^4.13.0",
+    "gatsby-transformer-remark": "^5.13.0",
+    "gatsby-transformer-sharp": "^4.13.0",
+    "isomorphic-fetch": "^3.0.0",
     "lodash": "^4.17.21",
     "node-sass": "^6.0.1",
     "path": "^0.12.7",
-    "prismjs": "^1.25.0",
+    "prismjs": "^1.28.0",
     "react": "^17.0.2",
     "react-cookie-consent": "^6.4.1",
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
-    "rehype-react": "^7.0.3",
-    "theme-ui": "^0.12.1"
-
-    Dev Dependency's
-
-    "prettier": "^2.4.1"
+    "react-tsparticles": "^2.0.6",
+    "rehype-react": "^7.0.4",
+    "theme-ui": "^0.13.1",
+    "tsparticles-preset-stars": "^2.0.6"
+  },
+  "devDependencies": {
+    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.27",
+    "prettier": "^2.6.2"
+  },
 ```
 
-> **Update** [Basic Instructions Hosted on Gatsby Cloud](https://gatsbystarterbasicinstructions.gatsbyjs.io/) is now built with Gatsby V4 "4.2.0", this includes many performance updates with Latest Gatsby!
+> **Update** [Basic Instructions Hosted on Gatsby Cloud](https://gatsbystarterbasicinstructions.gatsbyjs.io/) is now built with Gatsby V4 "4.13.1", this includes many performance updates with Latest Gatsby!
 
 GatsbyJS Version @latest with all the @latest modules from npm.
 
@@ -78,7 +86,7 @@ gatsby-plugin-image With the Plugins proper usage.
 
 * * *
 
-# Gatsby Version 4.2.0
+# Gatsby Version 4.13.1
 
 [<img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" text-align="center" />](https://app.netlify.com/start/deploy?repository=https://www.gatsbyjs.com)
 

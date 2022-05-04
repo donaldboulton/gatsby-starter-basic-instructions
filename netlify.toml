@@ -1,7 +1,6 @@
 [build]
   publish = "public"
   command = "gatsby build"
-  NETLIFY_USE_YARN = "true"
 [build.environment]
   NODE_VERSION = "14.17.1"
 [[headers]]

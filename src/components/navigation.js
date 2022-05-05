@@ -2,8 +2,7 @@
 import { jsx } from "theme-ui"
 import React from "react"
 import { Link } from "gatsby"
-import { RiMenu3Line } from "@react-icons/all-files/ri/RiMenu3Line"
-import { RiCloseLine } from "@react-icons/all-files/ri/RiCloseLine"
+import { RiMenu3Line, RiCloseLine } from "react-icons/ri"
 import Theme from "./theme"
 
 const MenuItems = [

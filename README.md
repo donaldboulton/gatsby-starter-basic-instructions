@@ -15,7 +15,7 @@ This is a Gatsby Starter with everything you need for a professional website. Ga
 ```json
     "dependencies": {
     "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "^3.0.2",
-    "@react-icons/all-files": "^4.1.0",
+    "react-icons": "^4.3.1",
     "@theme-ui/color": "^0.12.0",
     "babel-plugin-prismjs": "^2.1.0",
     "gatsby": "^4.11.0",

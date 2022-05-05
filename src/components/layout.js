@@ -13,7 +13,7 @@ import "../assets/scss/style.scss"
 import Footer from "./footer"
 import Theme from "./theme"
 import Search from "./search"
-import { SiGnuprivacyguard } from "@react-icons/all-files/si/SiGnuprivacyguard"
+import { SiGnuprivacyguard } from "react-icons/si"
 
 const query = graphql`
   query SearchIndexQuery {

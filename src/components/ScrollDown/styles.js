@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import { BiDownArrowCircle as Down } from '@react-icons/all-files/bi/BiDownArrowCircle'
+import { BiDownArrowCircle as Down } from 'react-icons/bi'
 
 export const Arrow = styled(Down)`
   z-index: 2;

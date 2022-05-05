@@ -3,7 +3,7 @@ import { jsx } from "theme-ui"
 import { graphql } from "gatsby"
 import { Helmet } from 'react-helmet'
 import { GatsbyImage } from "gatsby-plugin-image"
-import { RiSendPlane2Line } from "@react-icons/all-files/ri/RiSendPlane2Line"
+import { RiSendPlane2Line } from "react-icons/ri"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Stars from "../components/Stars"

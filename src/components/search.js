@@ -3,7 +3,7 @@ import { jsx } from "theme-ui"
 import { Component } from "react"
 import { Index } from "elasticlunr"
 import { Link } from "gatsby"
-import { RiSearchLine } from "@react-icons/all-files/ri/RiSearchLine"
+import { RiSearchLine } from "react-icons/ri"
 
 const SearchListLink = props => (
   <li>

@@ -1,9 +1,7 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import { Link } from "gatsby"
-import { RiArrowDownLine } from "@react-icons/all-files/ri/RiArrowDownLine"
-import { RiArrowRightSLine } from "@react-icons/all-files/ri/RiArrowRightSLine"
-
+import { RiArrowDownLine, RiArrowRightSLine } from "react-icons/ri"
 import PostCard from "./post-card"
 
 export default function BlogListHome(props) {

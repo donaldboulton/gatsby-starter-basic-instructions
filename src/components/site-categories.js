@@ -3,7 +3,7 @@ import { jsx, Heading, Box } from "theme-ui"
 import * as React from "react"
 import { useStaticQuery, graphql, Link } from 'gatsby'
 import { kebabCase } from 'lodash'
-import { FaList } from "@react-icons/all-files/fa/FaList";
+import { FaList } from "react-icons/fa";
 
 const SiteCategories = ({ group, ...rest }) => {
   const { categoryTitle = `Posts Categories` } = rest

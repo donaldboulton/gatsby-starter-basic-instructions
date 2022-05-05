@@ -2,7 +2,7 @@
 import { jsx, Container, Heading } from "theme-ui"
 import PropTypes from "prop-types"
 import { Helmet } from 'react-helmet'
-import { FaTags } from "@react-icons/all-files/fa/FaTags";
+import { FaTags } from "react-icons/fa";
 // Components
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"

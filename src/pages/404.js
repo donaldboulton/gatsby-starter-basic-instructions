@@ -1,9 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import { RiArrowLeftSLine } from "@react-icons/all-files/ri/RiArrowLeftSLine"
-import { RiBugLine } from "@react-icons/all-files/ri/RiBugLine"
-import { RiSkullLine } from "@react-icons/all-files/ri/RiSkullLine"
-
+import { RiArrowLeftSLine, RiSkullLine, RiBugLine } from "react-icons/ri"
 import Seo from "../components/seo"
 import Layout from "../components/layout"
 

@@ -2,7 +2,7 @@
 import { jsx, Container, Heading } from "theme-ui"
 import PropTypes from "prop-types"
 import { Helmet } from 'react-helmet'
-import { MdList } from "@react-icons/all-files/md/MdList";
+import { MdList } from "react-icons/md";
 // Components
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"

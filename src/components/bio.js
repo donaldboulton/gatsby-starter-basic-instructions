@@ -8,7 +8,7 @@
  import * as React from "react"
  import { useStaticQuery, graphql } from "gatsby"
  import { StaticImage } from "gatsby-plugin-image"
- import { FaTwitter } from "@react-icons/all-files/fa/FaTwitter"
+ import { FaTwitter } from "react-icons/fa"
  
  const Bio = () => {
    const data = useStaticQuery(graphql`

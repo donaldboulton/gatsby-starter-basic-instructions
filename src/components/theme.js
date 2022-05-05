@@ -1,8 +1,7 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import { useColorMode } from "theme-ui"
-import { FiSun } from "@react-icons/all-files/fi/FiSun"
-import { FiMoon } from "@react-icons/all-files/fi/FiMoon"
+import { FiSun, FiMoon } from "react-icons/fi"
 
 const Theme = () => {
   const [colorMode, setColorMode] = useColorMode()

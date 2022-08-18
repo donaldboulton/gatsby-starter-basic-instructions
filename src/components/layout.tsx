@@ -14,7 +14,13 @@ import Footer from "./footer"
 import Theme from "./theme"
 import Search from "./search"
 import { SiGnuprivacyguard } from "react-icons/si"
+import { LazyMotion, m } from 'framer-motion'
 
+const loadFeatures = () => import('./FramerFeatures').then(res => res.default)
+
+interface LayoutProps {
+  children: React.ReactNode
+}
 const query = graphql`
   query SearchIndexQuery {
     siteSearchIndex {
@@ -23,7 +29,13 @@ const query = graphql`
   }
 `
 
-const Layout = ({ className, children }) => {
+const animationConfiguration = {
+  initial: { opacity: 0 },
+  animate: { opacity: 1 },
+  exit: { opacity: 0 },
+}
+
+const Layout = ({ className, children, path }: LayoutProps) => {
   const { siteSearchIndex } = useStaticQuery(query)
 
   return (
@@ -70,7 +82,14 @@ const Layout = ({ className, children }) => {
           sx={{
             gridArea: 'main'
           }}>
-          <main className={"container " + className}>{children}</main>
+            <m.main 
+              key={path} 
+              className={"container " + className} 
+              variants={animationConfiguration} transition={{ duration: 2 }} 
+              exit='exit'
+            >
+              {children}
+            </m.main>
           <ScrollDown
             direction='down' to={205}
             showAbove={1500}
@@ -103,7 +122,7 @@ const Layout = ({ className, children }) => {
           location="bottom"
           buttonText="Accept"
           declineButtonText="Decline"
-          cookieName="gatsby-gdpr-google-analytics"
+          cookieName="gtag"
           style={{
             background: "linear-gradient(to right, transparent, #171717)",
             textShadow: "2px 2px black",

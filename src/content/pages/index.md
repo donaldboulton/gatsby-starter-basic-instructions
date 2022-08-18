@@ -4,7 +4,7 @@ path: /
 title: Home
 titleAlt: Gatsby Starter
 description: Basic Instructions A Gatsby Starter
-tagline: Basic Instructions v4.13.1
+tagline: Basic Instructions v4.21.0
 featuredImage: ../../../static/assets/gatsby-starter-rendering-modes-thumbnail-585.jpg
 cta:
   ctaText: Know More

@@ -8,10 +8,10 @@ featuredImage: ../../../static/assets/about.jpg
 
 ## About Basic Instructions Starter
 
-This is a Gatsby Starter v4.13.1 with everything you need for a professional website.
+This is a Gatsby Starter v4.21.0 with everything you need for a professional website.
 
-- Correct Per-Page Meta/SEO using `react-helmet`
-- GDPR with `gatsby-plugin-gdpr-cookies` and `react-cookie-consent`
+- Correct Per-Page Meta/SEO using `Script` with `import { Script } from 'gatsby'
+- GDPR with `"@builder.io/partytown": "^0.6.4"` and `react-cookie-consent`
 - Sitemap
 - Site Manifest
 - PWA
@@ -24,55 +24,77 @@ This is a Gatsby Starter v4.13.1 with everything you need for a professional web
 
 ```json
     "dependencies": {
-    "@emotion/react": "^11.9.0",
-    "@emotion/styled": "^11.8.1",
+    "@builder.io/partytown": "^0.6.4",
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
     "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "^3.0.2",
-    "@mdx-js/react": "^2.1.1",
-    "react-icons": "^4.3.1",
-    "@theme-ui/color": "^0.13.1",
+    "@mdx-js/react": "^2.1.3",
+    "@theme-ui/color": "^0.14.7",
     "babel-plugin-prismjs": "^2.1.0",
-    "gatsby": "^4.13.1",
+    "babel-preset-gatsby": "^2.21.0",
+    "framer-motion": "^7.0.0",
+    "gatsby": "^4.21.0",
     "gatsby-plugin-anchor-links": "^1.2.1",
-    "gatsby-plugin-catch-links": "^4.13.0",
-    "gatsby-plugin-feed": "^4.13.0",
-    "gatsby-plugin-gatsby-cloud": "^4.13.0",
-    "gatsby-plugin-gdpr-cookies": "^2.0.8",
-    "gatsby-plugin-image": "^2.11.1",
-    "gatsby-plugin-manifest": "^4.13.0",
-    "gatsby-plugin-offline": "^5.13.0",
-    "gatsby-plugin-react-helmet": "^5.13.0",
-    "gatsby-plugin-sass": "^5.13.0",
-    "gatsby-plugin-sharp": "^4.13.0",
-    "gatsby-plugin-sitemap": "^5.13.0",
-    "gatsby-plugin-theme-ui": "^0.14.5",
-    "gatsby-remark-autolink-headers": "^5.13.0",
-    "gatsby-remark-copy-linked-files": "^5.13.0",
+    "gatsby-plugin-catch-links": "^4.21.0",
+    "gatsby-plugin-feed": "^4.21.0",
+    "gatsby-plugin-gatsby-cloud": "^4.21.0",
+    "gatsby-plugin-image": "^2.20.0",
+    "gatsby-plugin-manifest": "^4.21.0",
+    "gatsby-plugin-offline": "^5.21.0",
+    "gatsby-plugin-react-helmet": "^5.21.0",
+    "gatsby-plugin-sass": "^5.21.0",
+    "gatsby-plugin-sharp": "^4.21.0",
+    "gatsby-plugin-sitemap": "^5.21.0",
+    "gatsby-plugin-theme-ui": "^0.14.7",
+    "gatsby-remark-autolink-headers": "^5.21.0",
+    "gatsby-remark-copy-linked-files": "^5.21.0",
     "gatsby-remark-embed-video": "^3.1.1",
-    "gatsby-remark-images": "^6.13.0",
-    "gatsby-remark-prismjs": "^6.13.0",
-    "gatsby-remark-responsive-iframe": "^5.13.0",
-    "gatsby-remark-smartypants": "^5.13.0",
+    "gatsby-remark-images": "^6.21.0",
+    "gatsby-remark-prismjs": "^6.21.0",
+    "gatsby-remark-responsive-iframe": "^5.21.0",
+    "gatsby-remark-smartypants": "^5.21.0",
     "gatsby-schema-field-absolute-path": "^1.3.0",
-    "gatsby-source-filesystem": "^4.13.0",
-    "gatsby-transformer-remark": "^5.13.0",
-    "gatsby-transformer-sharp": "^4.13.0",
+    "gatsby-source-filesystem": "^4.21.0",
+    "gatsby-transformer-remark": "^5.21.0",
+    "gatsby-transformer-sharp": "^4.21.0",
     "isomorphic-fetch": "^3.0.0",
     "lodash": "^4.17.21",
-    "node-sass": "^6.0.1",
+    "node-sass": "^7.0.1",
     "path": "^0.12.7",
     "prismjs": "^1.28.0",
-    "react": "^17.0.2",
-    "react-cookie-consent": "^6.4.1",
-    "react-dom": "^17.0.2",
+    "react": "^18.2.0",
+    "react-cookie-consent": "^8.0.1",
+    "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
-    "react-tsparticles": "^2.0.6",
-    "rehype-react": "^7.0.4",
-    "theme-ui": "^0.13.1",
-    "tsparticles-preset-stars": "^2.0.6"
+    "react-icons": "^4.4.0",
+    "react-tsparticles": "^2.2.2",
+    "rehype-react": "^7.1.1",
+    "theme-ui": "^0.14.7",
+    "tsparticles-preset-stars": "^2.2.2"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "5.16.5",
+    "@testing-library/react": "^13.3.0",
+    "@types/mdx": "^2.0.2",
+    "@types/mdx-js__react": "^1.5.5",
+    "@types/node": "^18.7.6",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.33.0",
+    "@typescript-eslint/parser": "^5.33.0", 
+    "autoprefixer": "^10.4.8", 
+    "cssnano": "5.1.12",  
+    "eslint": "^8.21.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.30.1",
+    "eslint-webpack-plugin": "^3.2.0",
+    "gatsby-plugin-eslint": "4.0.2",
+    "gatsby-plugin-postcss": "^5.21.0",
     "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.27",
-    "prettier": "^2.6.2"
+    "postcss": "^8.4.16",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4"
   },
 ```
 
@@ -86,7 +108,7 @@ gatsby-plugin-image With the Plugins proper usage.
 
 * * *
 
-# Gatsby Version 4.13.1
+# Gatsby Version 4.21.0
 
 [<img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" text-align="center" />](https://app.netlify.com/start/deploy?repository=https://www.gatsbyjs.com)
 

@@ -7,7 +7,7 @@
 
 import * as React from "react"
 import PropTypes from "prop-types"
-import { Helmet } from "react-helmet"
+import { Script } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
 
 const Seo = ({ description, lang, meta, title }) => {
@@ -33,7 +33,7 @@ const Seo = ({ description, lang, meta, title }) => {
   const defaultImage = site.siteMetadata.siteImage
 
   return (
-    <Helmet
+    <Script
       htmlAttributes={{
         lang,
       }}

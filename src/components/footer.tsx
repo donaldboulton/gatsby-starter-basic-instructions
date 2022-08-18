@@ -1,21 +1,21 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui"
-import { Link } from "gatsby"
-import { RiHeart2Line } from "react-icons/ri"
+import { jsx } from 'theme-ui'
+import { Link } from 'gatsby'
+import { RiHeart2Line } from 'react-icons/ri'
 
 const Footer = () => (
   <footer
     className="site-footer"
     sx={{
-      bg: "siteColor",
+      bg: 'siteColor',
     }}
   >
     <div>
       <p>
-      © {new Date().getFullYear()} Gatsby Starter{" "}
+        © {new Date().getFullYear()} Gatsby Starter{' '}
         <span className="icon -love">
           <RiHeart2Line />
-        </span>{" "}
+        </span>{' '}
         <Link to="/">Basic Instructions</Link>
       </p>
     </div>

@@ -7,7 +7,7 @@ description: Why Tags and Categories
 tags:
   - Tags
   - Category
-category: code  
+category: code
 featuredImage: ../../../static/assets/tags.jpg
 ---
 

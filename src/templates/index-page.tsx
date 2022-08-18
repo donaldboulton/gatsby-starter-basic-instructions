@@ -1,14 +1,21 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui"
-import { graphql, Link } from "gatsby"
+import { jsx } from 'theme-ui'
+import { graphql, Link } from 'gatsby'
 import { Helmet } from 'react-helmet'
-import { GatsbyImage } from "gatsby-plugin-image"
-import { RiArrowRightSLine, RiGithubFill, RiInstagramFill, RiYoutubeFill, RiTwitterFill, RiFacebookBoxFill  } from "react-icons/ri"
-import Layout from "../components/layout"
-import BlogListHome from "../components/blog-list-home"
-import Seo from "../components/seo"
-import Stars from "../components/Stars"
-import Icons from "../util/socialmedia.json"
+import { GatsbyImage } from 'gatsby-plugin-image'
+import {
+  RiArrowRightSLine,
+  RiGithubFill,
+  RiInstagramFill,
+  RiYoutubeFill,
+  RiTwitterFill,
+  RiFacebookBoxFill,
+} from 'react-icons/ri'
+import Layout from '../components/layout'
+import BlogListHome from '../components/blog-list-home'
+import Seo from '../components/seo'
+import Stars from '../components/Stars'
+import Icons from '../util/socialmedia.json'
 
 export const pageQuery = graphql`
   query HomeQuery($id: String!) {
@@ -22,11 +29,7 @@ export const pageQuery = graphql`
         tagline
         featuredImage {
           childImageSharp {
-            gatsbyImageData(
-              layout: CONSTRAINED, 
-              width: 585, 
-              height: 439
-            )
+            gatsbyImageData(layout: CONSTRAINED, width: 585, height: 439)
           }
         }
         cta {
@@ -73,47 +76,45 @@ export const pageQuery = graphql`
 const HomePage = ({ data }) => {
   const { markdownRemark, posts, site } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
-  const url = typeof window !== 'undefined' ? window.location.href : '';
-  const Image = frontmatter.featuredImage
-    ? frontmatter.featuredImage.childImageSharp.gatsbyImageData
-    : ""    
+  const url = typeof window !== 'undefined' ? window.location.href : ''
+  const Image = frontmatter.featuredImage ? frontmatter.featuredImage.childImageSharp.gatsbyImageData : ''
   const sIcons = Icons.socialIcons.map((icons, index) => {
     return (
-      <div key={"social icons" + index}>
-        {icons.icon === "facebook" ? (
+      <div key={'social icons' + index}>
+        {icons.icon === 'facebook' ? (
           <Link to={icons.url} rel="noopener noreferrer" target="_blank" area-label="Facebook">
-            <RiFacebookBoxFill alt='Facebook' />
+            <RiFacebookBoxFill alt="Facebook" />
           </Link>
         ) : (
-          ""
+          ''
         )}
-        {icons.icon === "twitter" ? (
+        {icons.icon === 'twitter' ? (
           <Link to={icons.url} rel="noopener noreferrer" target="_blank" area-label="Twitter">
-            <RiTwitterFill alt='Twitter' />
+            <RiTwitterFill alt="Twitter" />
           </Link>
         ) : (
-          ""
+          ''
         )}
-        {icons.icon === "youtube" ? (
+        {icons.icon === 'youtube' ? (
           <Link to={icons.url} rel="noopener noreferrer" target="_blank" area-label="Youtube">
-            <RiYoutubeFill alt='Youtube' />
+            <RiYoutubeFill alt="Youtube" />
           </Link>
         ) : (
-          ""
+          ''
         )}
-        {icons.icon === "instagram" ? (
+        {icons.icon === 'instagram' ? (
           <Link to={icons.url} rel="noopener noreferrer" target="_blank" area-label="Instagram">
-            <RiInstagramFill alt='Instagram' />
+            <RiInstagramFill alt="Instagram" />
           </Link>
         ) : (
-          ""
-        )}        
-        {icons.icon === "github" ? (
+          ''
+        )}
+        {icons.icon === 'github' ? (
           <Link to={icons.url} rel="noopener noreferrer" target="_blank">
-            <RiGithubFill alt='Github' />
+            <RiGithubFill alt="Github" />
           </Link>
         ) : (
-          ""
+          ''
         )}
       </div>
     )
@@ -122,7 +123,7 @@ const HomePage = ({ data }) => {
     <Layout>
       <Seo
         title={frontmatter.title}
-        description={frontmatter.title + " " + site.siteMetadata.title}
+        description={frontmatter.title + ' ' + site.siteMetadata.title}
         image={Image}
         url={url}
       />
@@ -143,20 +144,17 @@ const HomePage = ({ data }) => {
           <p
             className="tagline"
             sx={{
-              color: "muted",
+              color: 'muted',
             }}
           >
             {frontmatter.tagline}
           </p>
-          <div
-            className="description"
-            dangerouslySetInnerHTML={{ __html: html }}
-          />
+          <div className="description" dangerouslySetInnerHTML={{ __html: html }} />
           <Link
             to={frontmatter.cta.ctaLink}
             className="button"
             sx={{
-              variant: "variants.button",
+              variant: 'variants.button',
             }}
           >
             {frontmatter.cta.ctaText}
@@ -167,22 +165,14 @@ const HomePage = ({ data }) => {
           <div
             className="social-icons"
             sx={{
-              variant: "variants.socialIcons",
+              variant: 'variants.socialIcons',
             }}
           >
             {sIcons}
           </div>
         </div>
         <div>
-          {Image ? (
-            <GatsbyImage
-              image={Image}
-              alt={frontmatter.title + " - Featured image"}
-              className="cover"
-            />
-             ) : (
-               ""
-          )}
+          {Image ? <GatsbyImage image={Image} alt={frontmatter.title + ' - Featured image'} className="cover" /> : ''}
         </div>
       </div>
       <BlogListHome data={posts} />

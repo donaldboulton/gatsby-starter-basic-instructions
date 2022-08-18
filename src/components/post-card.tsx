@@ -1,32 +1,32 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui"
-import { Link } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image"
+import { jsx } from 'theme-ui'
+import { Link } from 'gatsby'
+import { GatsbyImage } from 'gatsby-plugin-image'
 
 const PostCard = ({ data }) => (
   <article
     className="post-card"
     sx={{
-      bg: "cardBg",
+      bg: 'cardBg',
     }}
   >
     {data.frontmatter.featuredImage ? (
       <Link to={data.frontmatter.path}>
         <GatsbyImage
           image={data.frontmatter.featuredImage.childImageSharp.gatsbyImageData}
-          alt={data.frontmatter.title + " - Featured image"}
+          alt={data.frontmatter.title + ' - Featured image'}
           className="cover"
         />
       </Link>
     ) : (
-      ""
+      ''
     )}
     <div className="post-content">
       <h2 className="title">
         <Link
           to={data.frontmatter.path}
           sx={{
-            variant: "links.postLink",
+            variant: 'links.postLink',
           }}
         >
           {data.frontmatter.title}
@@ -35,7 +35,7 @@ const PostCard = ({ data }) => (
       <p
         className="meta"
         sx={{
-          color: "muted",
+          color: 'muted',
         }}
       >
         <time>{data.frontmatter.date}</time>
@@ -43,7 +43,7 @@ const PostCard = ({ data }) => (
       <p
         className="excerpt"
         sx={{
-          color: "muted",
+          color: 'muted',
         }}
       >
         {data.excerpt}

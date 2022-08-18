@@ -1,23 +1,23 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui"
-import * as React from "react"
+import { jsx } from 'theme-ui'
+import * as React from 'react'
 import { Helmet } from 'react-helmet'
-import { Link, graphql } from "gatsby"
-import { RiArrowLeftLine, RiArrowRightLine } from "react-icons/ri"
-import Layout from "../components/layout"
-import PostCard from "../components/post-card"
-import Seo from "../components/seo"
-import Stars from "../components/Stars"
+import { Link, graphql } from 'gatsby'
+import { RiArrowLeftLine, RiArrowRightLine } from 'react-icons/ri'
+import Layout from '../components/layout'
+import PostCard from '../components/post-card'
+import Seo from '../components/seo'
+import Stars from '../components/Stars'
 
 const styles = {
   pagination: {
     a: {
-      color: "muted",
-      "&.is-active": {
-        color: "text",
+      color: 'muted',
+      '&.is-active': {
+        color: 'text',
       },
-      "&:hover": {
-        color: "text",
+      '&:hover': {
+        color: 'text',
       },
     },
   },
@@ -67,7 +67,7 @@ const Pagination = props => (
           <Link to={props.prevPage} rel="prev">
             <span className="icon -left">
               <RiArrowLeftLine />
-            </span>{" "}
+            </span>{' '}
             Previous
           </Link>
         </li>
@@ -75,8 +75,8 @@ const Pagination = props => (
       {Array.from({ length: props.numPages }, (_, i) => (
         <li key={`pagination-number${i + 1}`}>
           <Link
-            to={`${props.blogSlug}${i === 0 ? "" : i + 1}`}
-            className={props.currentPage === i + 1 ? "is-active num" : "num"}
+            to={`${props.blogSlug}${i === 0 ? '' : i + 1}`}
+            className={props.currentPage === i + 1 ? 'is-active num' : 'num'}
           >
             {i + 1}
           </Link>
@@ -85,7 +85,7 @@ const Pagination = props => (
       {!props.isLast && (
         <li>
           <Link to={props.nextPage} rel="next">
-            Next{" "}
+            Next{' '}
             <span className="icon -right">
               <RiArrowRightLine />
             </span>
@@ -100,12 +100,11 @@ class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
     const { currentPage, numPages } = this.props.pageContext
-    const blogSlug = "/posts/"
-    const url = typeof window !== 'undefined' ? window.location.href : '';
+    const blogSlug = '/posts/'
+    const url = typeof window !== 'undefined' ? window.location.href : ''
     const isFirst = currentPage === 1
     const isLast = currentPage === numPages
-    const prevPage =
-      currentPage - 1 === 1 ? blogSlug : blogSlug + (currentPage - 1).toString()
+    const prevPage = currentPage - 1 === 1 ? blogSlug : blogSlug + (currentPage - 1).toString()
     const nextPage = blogSlug + (currentPage + 1).toString()
 
     const posts = data.allMarkdownRemark.edges
@@ -124,10 +123,8 @@ class BlogIndex extends React.Component {
     return (
       <Layout className="blog-page">
         <Seo
-          title={"Blog " + currentPage + " of " + numPages}
-          description={
-            "Bibwoe base blog page " + currentPage + " of " + numPages
-          }
+          title={'Blog ' + currentPage + ' of ' + numPages}
+          description={'Bibwoe base blog page ' + currentPage + ' of ' + numPages}
         />
         <Helmet>
           <link rel="canonical" href={url} />

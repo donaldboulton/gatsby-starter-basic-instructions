@@ -72,9 +72,9 @@ This is a Gatsby Starter with everything you need for a professional website. Ga
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
     "@typescript-eslint/eslint-plugin": "^5.33.0",
-    "@typescript-eslint/parser": "^5.33.0", 
-    "autoprefixer": "^10.4.8", 
-    "cssnano": "5.1.12",  
+    "@typescript-eslint/parser": "^5.33.0",
+    "autoprefixer": "^10.4.8",
+    "cssnano": "5.1.12",
     "eslint": "^8.21.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
@@ -91,11 +91,11 @@ This is a Gatsby Starter with everything you need for a professional website. Ga
 
 > **Update** [Basic Instructions Hosted on Gatsby Cloud](https://gatsbystarterbasicinstructions.gatsbyjs.io/) is now built with Gatsby V4 "4.3.0", this includes many performance updates with Latest Gatsby!
 
-[![npm version](https://badge.fury.io/js/gatsby.svg)](https://badge.fury.io/js/gatsby) 
+[![npm version](https://badge.fury.io/js/gatsby.svg)](https://badge.fury.io/js/gatsby)
 
 gatsby-plugin-image With the Plugins proper usage.
 
-* * *
+---
 
 # Basic Instructions is Based on Starter Foundation
 
@@ -280,7 +280,7 @@ yarn add gatsby-plugin-netlify-cms netlify-cms-app gatsby-plugin-netlify-cms-pat
 Add to initialize **netlify-cms-app** as a folder under src/cms/cms.js
 
 ```javascript
-import CMS from "netlify-cms-app"
+import CMS from 'netlify-cms-app'
 
 export default {
   CMS,
@@ -289,11 +289,11 @@ export default {
 
 ### The Configuration file
 
-Change /static/admin/config.yml file to your site needs. 
+Change /static/admin/config.yml file to your site needs.
 
 > Otherwise its tailored for this Configuration!
 
-* * *
+---
 
 ## 📝 Editing content and Adding posts
 

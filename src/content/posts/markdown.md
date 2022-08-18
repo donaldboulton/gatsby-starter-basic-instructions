@@ -4,7 +4,7 @@ path: /posts/markdown
 date: 2021-11-12 09:30
 title: Markdown
 tags: [markdown, post]
-category: format  
+category: format
 featuredImage: ../../../static/assets/markdown.jpg
 ---
 
@@ -218,9 +218,9 @@ To produce a code block in Markdown, simply indent every line of the
 block by at least 4 spaces or 1 tab.
 
 ```javascript
-import React from "react"
-import { Link, useStaticQuery, graphql } from "gatsby"
-import Navigation from "../components/navigation"
+import React from 'react'
+import { Link, useStaticQuery, graphql } from 'gatsby'
+import Navigation from '../components/navigation'
 
 export default ({ children }) => {
   const data = useStaticQuery(

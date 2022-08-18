@@ -1,16 +1,16 @@
 /** @jsx jsx */
-import { jsx, Box } from "theme-ui"
-import PropTypes from "prop-types"
+import { jsx, Box } from 'theme-ui'
+import PropTypes from 'prop-types'
 // Utilities
-import kebabCase from "lodash/kebabCase"
+import kebabCase from 'lodash/kebabCase'
 // Components
-import { Helmet } from "react-helmet"
-import { Link, graphql } from "gatsby"
-import Seo from "../components/seo"
-import Stars from "../components/Stars"
-import Layout from "../components/layout"
+import { Helmet } from 'react-helmet'
+import { Link, graphql } from 'gatsby'
+import Seo from '../components/seo'
+import Stars from '../components/Stars'
+import Layout from '../components/layout'
 
-const url = typeof window !== 'undefined' ? window.location.href : '';
+const url = typeof window !== 'undefined' ? window.location.href : ''
 
 const TagsPage = ({
   data: {
@@ -31,24 +31,24 @@ const TagsPage = ({
       <meta property="twitter:description" content="Tags Page" />
     </Helmet>
     <Stars />
-    <div
-      className="wrapper"
-    >
+    <div className="wrapper">
       <h1>Tags</h1>
-      <Box p={4} bg="primary"
+      <Box
+        p={4}
+        bg="primary"
         sx={{
-          borderRadius: "12px",
+          borderRadius: '12px',
         }}
       >
-        <ul className='taglist field is-grouped is-grouped-multiline'>
+        <ul className="taglist field is-grouped is-grouped-multiline">
           {group.map(tag => (
-            <li key={tag.fieldValue} className='control'>
+            <li key={tag.fieldValue} className="control">
               <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
-                <div className='tags has-addons is-large'>
-                  <span aria-label='Tag' className='tag is-primary'>
+                <div className="tags has-addons is-large">
+                  <span aria-label="Tag" className="tag is-primary">
                     {tag.fieldValue}
                   </span>
-                  <span aria-label='Tag Count' className='tag is-dark '>                            
+                  <span aria-label="Tag Count" className="tag is-dark ">
                     {tag.totalCount}
                   </span>
                 </div>

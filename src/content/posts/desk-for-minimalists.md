@@ -15,7 +15,7 @@ Uh, is the puppy mechanical in any way? Maybe I love you so much I love you no m
 
 That's the ONLY thing about being a slave. OK, if everyone's finished being stupid. Bender, we're trying our best. Fry! Stay back! He's too powerful! I just told you! **You've killed me!** _And yet you haven't said what I told you to say!_ How can any of us trust you?
 
-![Royal Mail](../../../static/assets/royal-mail-unsplash.jpg "Royal Mail from Unsplash")
+![Royal Mail](../../../static/assets/royal-mail-unsplash.jpg 'Royal Mail from Unsplash')
 
 ## It doesn't look so shiny to me.
 

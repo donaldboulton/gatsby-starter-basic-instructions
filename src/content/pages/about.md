@@ -81,9 +81,9 @@ This is a Gatsby Starter v4.21.0 with everything you need for a professional web
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
     "@typescript-eslint/eslint-plugin": "^5.33.0",
-    "@typescript-eslint/parser": "^5.33.0", 
-    "autoprefixer": "^10.4.8", 
-    "cssnano": "5.1.12",  
+    "@typescript-eslint/parser": "^5.33.0",
+    "autoprefixer": "^10.4.8",
+    "cssnano": "5.1.12",
     "eslint": "^8.21.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
@@ -102,16 +102,15 @@ This is a Gatsby Starter v4.21.0 with everything you need for a professional web
 
 GatsbyJS Version @latest with all the @latest modules from npm.
 
-[![npm version](https://badge.fury.io/js/gatsby.svg)](https://badge.fury.io/js/gatsby) 
+[![npm version](https://badge.fury.io/js/gatsby.svg)](https://badge.fury.io/js/gatsby)
 
 gatsby-plugin-image With the Plugins proper usage.
 
-* * *
+---
 
 # Gatsby Version 4.21.0
 
 [<img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" text-align="center" />](https://app.netlify.com/start/deploy?repository=https://www.gatsbyjs.com)
-
 
 ### Gatsby Starter Basic Instructions
 
@@ -125,11 +124,11 @@ Both Scores below Reflect the usage of Large Images, with Google Tags Analytics 
 
 ### Lighthouse
 
-![Lighthouse](../../../static/assets/performance-lighthouse.jpg "Gatsby Cloud Lighthouse Scores")
+![Lighthouse](../../../static/assets/performance-lighthouse.jpg 'Gatsby Cloud Lighthouse Scores')
 
 ### Web Page Test
 
-![Web Speed Test](../../../static/assets/performance.jpg "Web Speed Test Scores")
+![Web Speed Test](../../../static/assets/performance.jpg 'Web Speed Test Scores')
 
 _Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.com/docs/gatsby-starters/)._
 
@@ -250,7 +249,7 @@ This would fork `gatsby-starter-basic-instructions` to your Github account and s
 
 ## ⚙ Access to Netlify CMS
 
-![Gatsby Netlify](../../../static/assets/netlify-gatsby-plugin.png "Gatsby Netlify")
+![Gatsby Netlify](../../../static/assets/netlify-gatsby-plugin.png 'Gatsby Netlify')
 
 ### Netlify Cms will not work on Gatsby Cloud
 
@@ -288,7 +287,7 @@ yarn add gatsby-plugin-netlify-cms netlify-cms-app gatsby-plugin-netlify-cms-pat
 Add to initialize **netlify-cms-app** as a folder under src/cms/cms.js
 
 ```js
-import CMS from "netlify-cms-app"
+import CMS from 'netlify-cms-app'
 
 export default {
   CMS,
@@ -297,6 +296,6 @@ export default {
 
 ### The Configuration file
 
-Change /static/admin/config.yml file to your site needs. 
+Change /static/admin/config.yml file to your site needs.
 
 > Otherwise its tailored for this Configuration!

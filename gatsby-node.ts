@@ -1,20 +1,17 @@
-const path = require("path")
-const _ = require("lodash")
+const path = require('path')
+const _ = require('lodash')
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
 
   const blogList = path.resolve(`./src/templates/blog-list.tsx`)
-  const tagTemplate = path.resolve("./src/templates/tags-page.tsx")
-  const categoryTemplate = path.resolve("./src/templates/category-page.tsx")
+  const tagTemplate = path.resolve('./src/templates/tags-page.tsx')
+  const categoryTemplate = path.resolve('./src/templates/category-page.tsx')
 
   const result = await graphql(`
     {
-      allMarkdownRemark(
-        sort: { fields: [frontmatter___date], order: DESC }
-        limit: 1000
-      ) {
+      allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 1000) {
         edges {
           node {
             id
@@ -25,7 +22,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             headings {
               depth
               value
-            } 
+            }
             frontmatter {
               path
               template
@@ -56,7 +53,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     return
   }
 
-
   // Create markdown pages
   const posts = result.data.allMarkdownRemark.edges
   let blogPostsCount = 0
@@ -68,9 +64,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
     createPage({
       path: post.node.frontmatter.path,
-      component: path.resolve(
-        `src/templates/${String(post.node.frontmatter.template)}.tsx`
-      ),
+      component: path.resolve(`src/templates/${String(post.node.frontmatter.template)}.tsx`),
       // additional data can be passed via context
       context: {
         id,
@@ -78,7 +72,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         next,
       },
     })
-    
+
     let category = []
 
     // Iterate through each post, putting all found date fields into `dates`
@@ -117,7 +111,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     })
 
     // Count blog posts.
-    if (post.node.frontmatter.template === "blog-post") {
+    if (post.node.frontmatter.template === 'blog-post') {
       blogPostsCount++
     }
   })
@@ -138,7 +132,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       },
     })
   })
-  
+
   actions.createPage({
     path: '/dsg',
     component: path.resolve('src/templates/dsg.tsx'),

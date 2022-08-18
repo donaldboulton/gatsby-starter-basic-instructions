@@ -5,7 +5,7 @@ path: /posts/cookies
 date: 2021-11-15 12:37
 description: How-to setup GDPR cookie consent with Gatsby
 tags: [cookies, gdpr]
-category: code  
+category: code
 featuredImage: ../../../static/assets/cookies.jpg
 ---
 
@@ -39,6 +39,7 @@ You can install the plugin using npm:
 ```bash
 npm install --save gatsby-plugin-gdpr-cookies
 ```
+
 or yarn:
 
 ```bash
@@ -57,7 +58,7 @@ module.exports = {
           trackingId: 'UA-00000000-1', // leave empty if you want to disable the tracker
           cookieName: 'gatsby-gdpr-google-analytics', // default
           anonymize: true, // default
-          allowAdFeatures: false // default
+          allowAdFeatures: false, // default
         },
         googleTagManager: {
           trackingId: 'GTM-00000', // leave empty if you want to disable the tracker
@@ -78,11 +79,11 @@ module.exports = {
           cookieName: 'gatsby-gdpr-hotjar', // default
         },
         // defines the environments where the tracking should be available  - default is ["production"]
-        environments: ['production', 'development']
+        environments: ['production', 'development'],
       },
     },
   ],
-};
+}
 ```
 
 ### COLLECT USER CONSENT
@@ -102,42 +103,47 @@ npm install --save react-cookie-consent
 After that add the component in your layout.js file or wherever you define your layout. It’s important that the component is loaded on any page so the consent can be collected regardless of the entry page.
 
 ```javascript
-import CookieConsent from 'react-cookie-consent';
+import CookieConsent from 'react-cookie-consent'
 
-<CookieConsent
-    location="bottom"
-    buttonText="Accept"
-    declineButtonText="Decline"
-    cookieName="gatsby-gdpr-google-analytics">
-    This site uses cookies ...
+;<CookieConsent
+  location="bottom"
+  buttonText="Accept"
+  declineButtonText="Decline"
+  cookieName="gatsby-gdpr-google-analytics"
+>
+  This site uses cookies ...
 </CookieConsent>
 ```
 
 Or Taylor it to you needs
 
 ```javascript
-  <CookieConsent
-    enableDeclineButton 
-    flipButtons
-    location="bottom"
-    buttonText="Accept"
-    declineButtonText="Decline"
-    cookieName="gatsby-gdpr-google-analytics"
-    style={{
-      background: "linear-gradient(to right, orange, yellow, green, cyan, blue, violet)",
-      textShadow: "2px 2px black",
-    }}
-    buttonStyle={{
-      background: "linear-gradient(to left, orange, yellow, green, cyan, blue, violet)",
-      color: "white",
-      fontWeight: "bolder",
-      borderRadius: '3px',
-      textShadow: "2px 2px black",
-    }}
-  >
-    This website uses cookies for user experience.{" "}
-    <span style={{ fontSize: "10px" }}><Link to='/privacy' alt='Privacy Page' area-label="Privacy">Privacy Page</Link></span>
-  </CookieConsent>
+<CookieConsent
+  enableDeclineButton
+  flipButtons
+  location="bottom"
+  buttonText="Accept"
+  declineButtonText="Decline"
+  cookieName="gatsby-gdpr-google-analytics"
+  style={{
+    background: 'linear-gradient(to right, orange, yellow, green, cyan, blue, violet)',
+    textShadow: '2px 2px black',
+  }}
+  buttonStyle={{
+    background: 'linear-gradient(to left, orange, yellow, green, cyan, blue, violet)',
+    color: 'white',
+    fontWeight: 'bolder',
+    borderRadius: '3px',
+    textShadow: '2px 2px black',
+  }}
+>
+  This website uses cookies for user experience.{' '}
+  <span style={{ fontSize: '10px' }}>
+    <Link to="/privacy" alt="Privacy Page" area-label="Privacy">
+      Privacy Page
+    </Link>
+  </span>
+</CookieConsent>
 ```
 
 The important part is to set the cookieName prop to the value of the cookie you want to set (e.g.: gatsby-gdpr-google-analytics).
@@ -152,4 +158,4 @@ import CookieConsent, { Cookies } from "react-cookie-consent";
 
 Hopefully this helped you making your Gatsby site GDPR compliant.
 
-Cookie's Explained In  [Privacy Page](/posts/privacy#Cookies-And-Beacons)
+Cookie's Explained In [Privacy Page](/posts/privacy#Cookies-And-Beacons)

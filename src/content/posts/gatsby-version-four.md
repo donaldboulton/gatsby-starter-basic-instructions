@@ -5,7 +5,7 @@ path: /posts/gatsby-version-four
 date: 2021-11-23 03:40
 description: Gatsby Version Four with Server-Side Rendering
 tags: [gatsby, starter]
-category: code 
+category: code
 featuredImage: ../../../static/assets/gatsby-starter-rendering-modes-thumbnail-wide.jpg
 ---
 
@@ -13,7 +13,7 @@ featuredImage: ../../../static/assets/gatsby-starter-rendering-modes-thumbnail-w
 
 > The performance of static sites without all of those long build times
 
-![DSG](../../../static/assets/DSG_for_blog_article_and_G4_overview_page.jpg "Statically Generated Websites")
+![DSG](../../../static/assets/DSG_for_blog_article_and_G4_overview_page.jpg 'Statically Generated Websites')
 
 ### Local DSG Example
 
@@ -25,7 +25,7 @@ The benefits of statically generated websites - performance, security, reliabili
 
 > Request and render data at run-time with Gatsby
 
-![SSR](../../../static/assets/SSR_for_blog_article_and_G4_overview_page.jpg "Render Data At Run-time")
+![SSR](../../../static/assets/SSR_for_blog_article_and_G4_overview_page.jpg 'Render Data At Run-time')
 
 ### Local SSR Example
 
@@ -46,29 +46,27 @@ import * as React from 'react'
 import fetch from 'isomorphic-fetch'
 import { Link } from 'gatsby'
 
-function SSR (props) {
+function SSR(props) {
   const { image } = props.serverData
 
-  return (    
+  return (
     <>
       <div className="not-found-page">
         <div
           className="wrapper"
           style={{
-            marginTop: "40px",
-            alignText: "center"
+            marginTop: '40px',
+            alignText: 'center',
           }}
         >
-          <Link to='/posts/gatsby-version-four'>Back to Post</Link><br />
+          <Link to="/posts/gatsby-version-four">Back to Post</Link>
+          <br />
           <h1>SSR: Server Side Rendering</h1>
           <div>You Should See Doggies Below</div>
           <div>Refresh The Page for More Doggies</div>
           <div>
-            <img
-              alt='doggo'
-              src={image}
-            />
-          </div>          
+            <img alt="doggo" src={image} />
+          </div>
         </div>
       </div>
     </>
@@ -77,15 +75,14 @@ function SSR (props) {
 
 export default SSR
 
-export async function getServerData ({ params }) {
-  const data = await fetch(`https://dog.ceo/api/breeds/image/random`)
-    .then(res => res.json())
+export async function getServerData({ params }) {
+  const data = await fetch(`https://dog.ceo/api/breeds/image/random`).then(res => res.json())
 
   return {
     props: {
-     // data has the shape of "message", "status" where message is the image src
-      image: data.message
-    }
+      // data has the shape of "message", "status" where message is the image src
+      image: data.message,
+    },
   }
 }
 ```
@@ -96,7 +93,7 @@ export async function getServerData ({ params }) {
 
 With static generation or deferred static generation, Gatsby builds the website’s files only once. With server-side rendering, however, a server builds each page each time the user visits it.
 
-Server-side rendering is useful when your pages update frequently. For example, you might build an e-commerce application where products’ prices and descriptions update frequently. In Gatsby 4, you would have to rebuild the application each time you wanted to update the product data. 
+Server-side rendering is useful when your pages update frequently. For example, you might build an e-commerce application where products’ prices and descriptions update frequently. In Gatsby 4, you would have to rebuild the application each time you wanted to update the product data.
 
 In contrast, server-side rendering can rebuild the product page each time a user visits it, so the page will always show the latest product information. By using server-side rendering, you can update pages automatically without needing to rebuild your entire website.
 
@@ -104,15 +101,14 @@ In contrast, server-side rendering can rebuild the product page each time a user
 >
 > (SSG) Generated at build time ,
 >
-> > D (DSG) Deferred static generation - page generated at runtime 
+> > D (DSG) Deferred static generation - page generated at runtime
 >
-> > ∞ (SSR) Server-side renders at runtime (uses getServerData) 
+> > ∞ (SSR) Server-side renders at runtime (uses getServerData)
 >
-> > λ (Function) Gatsby function 
+> > λ (Function) Gatsby function
 
 ## 4 Cool Things You Can Build with Gatsby 4
 
 `video: https://www.youtube.com/watch?v=9EX36Gtl89I`
-
 
 [See More About Gatsby Version Four](https://www.gatsbyjs.com/gatsby-4/)

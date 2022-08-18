@@ -1,4 +1,4 @@
-const settings = require("./src/util/site.json")
+const settings = require('./src/util/site.json')
 
 module.exports = {
   siteMetadata: {
@@ -20,22 +20,18 @@ module.exports = {
       resolve: `gatsby-plugin-gatsby-cloud`,
       options: {
         headers: {
-          "/*": [
-            "Cache-Control: public, max-age=31536000, immutable",
-          ],
-          "/static/*": [
-            "Cache-Control: public, max-age=31536000, immutable",
-          ],
+          '/*': ['Cache-Control: public, max-age=31536000, immutable'],
+          '/static/*': ['Cache-Control: public, max-age=31536000, immutable'],
         }, // option to add more headers. `Link` headers are transformed by the below criteria
         allPageHeaders: [
-          "Strict-Transport-Security: max-age=31536000; preload",
-          "X-Robots-Tag: index",
-          "X-Frame-Options: DENY",
-          "X-XSS-Protection: 1; mode=block",
-          "X-Content-Type-Options: nosniff",
-          "Referrer-Policy: same-origin",
-          "Access-Control-Allow-Origin: https://gatsbystarterbasicinstructions.gatsbyjs.io/, https://utteranc.es/client.js",
-          "Access-Control-Allow-Methods: POST; GET; PUT; DELETE; HEAD",
+          'Strict-Transport-Security: max-age=31536000; preload',
+          'X-Robots-Tag: index',
+          'X-Frame-Options: DENY',
+          'X-XSS-Protection: 1; mode=block',
+          'X-Content-Type-Options: nosniff',
+          'Referrer-Policy: same-origin',
+          'Access-Control-Allow-Origin: https://gatsbystarterbasicinstructions.gatsbyjs.io/, https://utteranc.es/client.js',
+          'Access-Control-Allow-Methods: POST; GET; PUT; DELETE; HEAD',
         ], // option to add headers for all pages. `Link` headers are transformed by the below criteria
         mergeSecurityHeaders: true, // boolean to turn off the default security headers
         mergeLinkHeaders: true, // boolean to turn off the default gatsby js headers
@@ -63,7 +59,7 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: "gatsby-remark-embed-video",
+            resolve: 'gatsby-remark-embed-video',
             options: {
               width: 800,
               ratio: 1.77, // Optional: Defaults to 16/9 = 1.77
@@ -71,7 +67,7 @@ module.exports = {
               related: false, //Optional: Will remove related videos from the end of an embedded YouTube video.
               noIframeBorder: true, //Optional: Disable insertion of <style> border: 0
               loadingStrategy: 'lazy', //Optional: Enable support for lazy-load offscreen iframes. Default is disabled.
-              containerClass: "embedVideo-container", //Optional: Custom CSS class for iframe container, for multiple classes separate them by space
+              containerClass: 'embedVideo-container', //Optional: Custom CSS class for iframe container, for multiple classes separate them by space
               iframeId: false, //Optional: if true, iframe's id will be set to what is provided after 'video:' (YouTube IFrame player API requires iframe id)
             },
           },
@@ -84,7 +80,7 @@ module.exports = {
               backgroundColor: 'none',
               disableBgImage: true,
               withWebp: true,
-              loading: "lazy",
+              loading: 'lazy',
             },
           },
           {
@@ -106,7 +102,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
-              classPrefix: "language-",
+              classPrefix: 'language-',
               inlineCodeMarker: null,
               aliases: {},
               showLineNumbers: false,
@@ -119,9 +115,9 @@ module.exports = {
           },
           `gatsby-remark-copy-linked-files`,
           {
-            resolve: "gatsby-remark-smartypants",
+            resolve: 'gatsby-remark-smartypants',
             options: {
-              dashes: "oldschool",
+              dashes: 'oldschool',
             },
           },
         ],
@@ -166,7 +162,7 @@ module.exports = {
                   date: node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + node.fields.slug,
                   guid: site.siteMetadata.siteUrl + node.fields.slug,
-                  custom_elements: [{ "content:encoded": node.html }],
+                  custom_elements: [{ 'content:encoded': node.html }],
                 })
               })
             },
@@ -189,8 +185,8 @@ module.exports = {
                 }
               }
             `,
-            output: "/rss.xml",
-            title: "Gatsby Starter Blog RSS Feed",
+            output: '/rss.xml',
+            title: 'Gatsby Starter Blog RSS Feed',
           },
         ],
       },
@@ -204,7 +200,7 @@ module.exports = {
         background_color: `#f7f0eb`,
         theme_color: `#a2466c`,
         display: `standalone`,
-        icon: "static" + settings.meta.iconimage,
+        icon: 'static' + settings.meta.iconimage,
       },
     },
     {
@@ -214,41 +210,41 @@ module.exports = {
         fields: [`title`, `description`, `content`, `path`, `date`],
         // How to resolve each field`s value for a supported node type
         resolvers: {
-          BlogPost : {
-            title         : node => node.title,
-            description   : node => node.description,
-            content       : node => node.rawMarkdownBody,
-            path          : node => node.slug,
-            date          : node => node.date,
-            featuredImage : (node, getNode) => getNode(node.featuredImage___NODE)
+          BlogPost: {
+            title: node => node.title,
+            description: node => node.description,
+            content: node => node.rawMarkdownBody,
+            path: node => node.slug,
+            date: node => node.date,
+            featuredImage: (node, getNode) => getNode(node.featuredImage___NODE),
           },
           MarkdownRemark: {
             title: node => node.frontmatter.title,
             description: node => node.frontmatter.description,
             content: node => node.rawMarkdownBody,
             path: node => node.frontmatter.path,
-            date: node => node.frontmatter.date
+            date: node => node.frontmatter.date,
           },
         },
       },
     },
-    'gatsby-plugin-sass', 
+    'gatsby-plugin-sass',
     `gatsby-plugin-react-helmet`,
     {
-      resolve: "gatsby-plugin-anchor-links",
+      resolve: 'gatsby-plugin-anchor-links',
       options: {
         offset: -100,
-        duration: 1000
-      }
+        duration: 1000,
+      },
     },
     `gatsby-plugin-catch-links`,
     {
-      resolve: "gatsby-plugin-webpack-bundle-analyser-v2",
+      resolve: 'gatsby-plugin-webpack-bundle-analyser-v2',
       options: {
-        analyzerMode: "static",
-        analyzerPort: "3001",
-        analyzerHost: "https://gatsbystarterbasicinstructions.gatsbyjs.io",
-        defaultSizes: "gzip"
+        analyzerMode: 'static',
+        analyzerPort: '3001',
+        analyzerHost: 'https://gatsbystarterbasicinstructions.gatsbyjs.io',
+        defaultSizes: 'gzip',
       },
     },
     {

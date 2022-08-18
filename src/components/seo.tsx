@@ -5,10 +5,10 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import * as React from "react"
-import PropTypes from "prop-types"
-import { Script } from "gatsby"
-import { useStaticQuery, graphql } from "gatsby"
+import * as React from 'react'
+import PropTypes from 'prop-types'
+import { Script } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 
 const Seo = ({ description, lang, meta, title }) => {
   const { site } = useStaticQuery(
@@ -55,11 +55,11 @@ const Seo = ({ description, lang, meta, title }) => {
         {
           property: `og:site_name`,
           content: defaultTitle,
-        },        
+        },
         {
           name: `twitter:site`,
           content: site.siteMetadata?.social?.twitter || ``,
-        },        
+        },
         {
           name: `twitter:creator`,
           content: site.siteMetadata?.social?.twitter || ``,

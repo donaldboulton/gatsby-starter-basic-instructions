@@ -1,8 +1,8 @@
-import React from "react"
-import { Link } from "gatsby"
-import { RiArrowLeftSLine, RiSkullLine, RiBugLine } from "react-icons/ri"
-import Seo from "../components/seo"
-import Layout from "../components/layout"
+import React from 'react'
+import { Link } from 'gatsby'
+import { RiArrowLeftSLine, RiSkullLine, RiBugLine } from 'react-icons/ri'
+import Seo from '../components/seo'
+import Layout from '../components/layout'
 
 const NotFound = () => (
   <Layout className="not-found-page">
@@ -10,29 +10,28 @@ const NotFound = () => (
     <div
       className="wrapper"
       style={{
-        textAlign: "center",
+        textAlign: 'center',
       }}
     >
       <header>
         <RiSkullLine
           style={{
-            fontSize: "128px",
-            color: "var(--primary-color)",
+            fontSize: '128px',
+            color: 'var(--primary-color)',
           }}
         />
         <h1>Oops we did not expect that to happen</h1>
-        <p>
-          Have you wondered into the unknown. Let us help you, Please take a look
-          at below options
-        </p>
+        <p>Have you wondered into the unknown. Let us help you, Please take a look at below options</p>
       </header>
       <Link to="/" className="button">
         <RiArrowLeftSLine className="icon -left" />
         Back to Homepage
       </Link>
-      <Link to="/contact" className="button -outline"
-        sx={{  
-          variant: "variants.button",      
+      <Link
+        to="/contact"
+        className="button -outline"
+        sx={{
+          variant: 'variants.button',
         }}
       >
         Report this <RiBugLine className="icon -right" />

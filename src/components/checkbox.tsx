@@ -1,8 +1,8 @@
 /** @jsx jsx */
-import { jsx, Checkbox, Label} from "theme-ui"
+import { jsx, Checkbox, Label } from 'theme-ui'
 
 const Checked = () => {
-  <Label>
+  ;<Label>
     <Checkbox defaultChecked={true} />
   </Label>
 }

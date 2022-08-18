@@ -1,21 +1,19 @@
 /** @jsx jsx */
-import { jsx, Container, Heading } from "theme-ui"
-import PropTypes from "prop-types"
+import { jsx, Container, Heading } from 'theme-ui'
+import PropTypes from 'prop-types'
 import { Helmet } from 'react-helmet'
-import { FaTags } from "react-icons/fa";
+import { FaTags } from 'react-icons/fa'
 // Components
-import { Link, graphql } from "gatsby"
-import Layout from "../components/layout"
-import Seo from "../components/seo"
-import Stars from "../components/Stars"
+import { Link, graphql } from 'gatsby'
+import Layout from '../components/layout'
+import Seo from '../components/seo'
+import Stars from '../components/Stars'
 
 const Tags = ({ pageContext, data }) => {
   const { tag } = pageContext
-  const url = typeof window !== 'undefined' ? window.location.href : '';
+  const url = typeof window !== 'undefined' ? window.location.href : ''
   const { edges, totalCount } = data.allMarkdownRemark
-  const tagHeader = `${totalCount} post${
-    totalCount === 1 ? "" : "s"
-  } tagged with "${tag}"`
+  const tagHeader = `${totalCount} post${totalCount === 1 ? '' : 's'} tagged with "${tag}"`
 
   return (
     <Layout className="not-found-page">
@@ -29,16 +27,16 @@ const Tags = ({ pageContext, data }) => {
         <meta property="twitter:description" content={tag} />
       </Helmet>
       <Stars />
-      <div
-        className="wrapper"
-      >
+      <div className="wrapper">
         <div>
-          <Container p={4} bg="primary"
+          <Container
+            p={4}
+            bg="primary"
             sx={{
-              borderRadius: "12px",
+              borderRadius: '12px',
             }}
           >
-            <Heading as='h2'>{tagHeader}</Heading>
+            <Heading as="h2">{tagHeader}</Heading>
             <div>
               <ul className="tagsPage">
                 {edges.map(({ node }) => {
@@ -55,7 +53,7 @@ const Tags = ({ pageContext, data }) => {
             <div>
               <span className="icon -tags">
                 <FaTags />
-              </span>{" "} 
+              </span>{' '}
               <Link to="/tags">All Tags</Link>
             </div>
           </Container>
@@ -91,7 +89,7 @@ Tags.propTypes = {
 export default Tags
 
 export const pageQuery = graphql`
-  query($tag: String) {
+  query ($tag: String) {
     allMarkdownRemark(
       limit: 2000
       sort: { fields: [frontmatter___date], order: DESC }
@@ -107,7 +105,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             path
-            description            
+            description
           }
         }
       }

@@ -46,7 +46,6 @@ If you wish to disable cookies, you may do so through your web browser options. 
 
 🔗 \* [Cookies – Doing nothing isn't the right answer](https://chriswharton.me/2012/05/cookies-doing-nothing-isnt-the-right-answer/)
 
-
 ### Disabling Cookies
 
 ❌ If you would like to restrict the use of cookies you can control this in your Internet browser. Links to advice on how to do this for the most popular Internet browsers are provided below for convenience and will be available for the Internet browser of your choice either online or via the software help (normally available via key F1).
@@ -221,7 +220,6 @@ INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
 LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
 OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
 PERFORMANCE OF THIS SOFTWARE.
-
 
 ## Attribution
 

@@ -1,14 +1,14 @@
 /** @jsx jsx */
-import { jsx, Box } from "theme-ui"
-import PropTypes from "prop-types"
-import kebabCase from "lodash/kebabCase"
+import { jsx, Box } from 'theme-ui'
+import PropTypes from 'prop-types'
+import kebabCase from 'lodash/kebabCase'
 import Helmet from 'react-helmet'
 import { Link, graphql } from 'gatsby'
-import Seo from "../components/seo"
-import Stars from "../components/Stars"
+import Seo from '../components/seo'
+import Stars from '../components/Stars'
 import Layout from '../components/layout'
 
-const url = typeof window !== 'undefined' ? window.location.href : '';
+const url = typeof window !== 'undefined' ? window.location.href : ''
 
 const CategoriesPage = ({
   data: {
@@ -29,28 +29,32 @@ const CategoriesPage = ({
       <meta property="twitter:description" content="Categories Page" />
     </Helmet>
     <Stars />
-    <div
-      className="wrapper"
-    >
+    <div className="wrapper">
       <h1>Categories</h1>
-      <Box p={4} bg="primary"
+      <Box
+        p={4}
+        bg="primary"
         sx={{
-          borderRadius: "12px",
+          borderRadius: '12px',
         }}
-      >       
-        <ul className='taglist field is-grouped is-grouped-multiline'>
+      >
+        <ul className="taglist field is-grouped is-grouped-multiline">
           {group.map(category => (
-            <li className='control' key={category.fieldValue}>
+            <li className="control" key={category.fieldValue}>
               <Link to={`/categories/${kebabCase(category.fieldValue)}/`}>
-                <div className='tags has-addons is-large'>
-                  <span aria-label='Category' className='tag is-primary'>{category.fieldValue}</span>
-                  <span aria-label='Category Count' className='tag is-dark'>{category.totalCount}</span>
+                <div className="tags has-addons is-large">
+                  <span aria-label="Category" className="tag is-primary">
+                    {category.fieldValue}
+                  </span>
+                  <span aria-label="Category Count" className="tag is-dark">
+                    {category.totalCount}
+                  </span>
                 </div>
               </Link>
             </li>
           ))}
         </ul>
-      </Box>    
+      </Box>
     </div>
   </Layout>
 )

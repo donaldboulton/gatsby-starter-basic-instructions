@@ -1,12 +1,12 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui"
-import { graphql } from "gatsby"
+import { jsx } from 'theme-ui'
+import { graphql } from 'gatsby'
 import { Helmet } from 'react-helmet'
-import { GatsbyImage } from "gatsby-plugin-image"
-import { RiSendPlane2Line } from "react-icons/ri"
-import Layout from "../components/layout"
-import Seo from "../components/seo"
-import Stars from "../components/Stars"
+import { GatsbyImage } from 'gatsby-plugin-image'
+import { RiSendPlane2Line } from 'react-icons/ri'
+import Layout from '../components/layout'
+import Seo from '../components/seo'
+import Stars from '../components/Stars'
 
 export const pageQuery = graphql`
   query ContactQuery($id: String!) {
@@ -34,24 +34,19 @@ export const pageQuery = graphql`
 `
 
 function onSubmit(token) {
-    document.getElementById("contact").submit();
+  document.getElementById('contact').submit()
 }
 
 const Contact = ({ data }) => {
   const { markdownRemark, site } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
   const postNode = data.markdownRemark
-  const url = typeof window !== 'undefined' ? window.location.href : '';
-  const Image = frontmatter.featuredImage
-    ? postNode.frontmatter.featuredImage.childImageSharp.gatsbyImageData
-    : ""
+  const url = typeof window !== 'undefined' ? window.location.href : ''
+  const Image = frontmatter.featuredImage ? postNode.frontmatter.featuredImage.childImageSharp.gatsbyImageData : ''
 
   return (
     <Layout className="contact-page" sx={contactStyles.contactPage}>
-      <Seo
-        title={frontmatter.title}
-        description={frontmatter.title + " " + site.siteMetadata.title}
-      />
+      <Seo title={frontmatter.title} description={frontmatter.title + ' ' + site.siteMetadata.title} />
       <Helmet>
         <link rel="canonical" href={url} />
         <meta property="og:url" content={url} />
@@ -67,21 +62,10 @@ const Contact = ({ data }) => {
         <header className="featured-banner">
           <section className="article-header">
             <h1>{frontmatter.title}</h1>
-          </section> 
-            {Image ? (
-            <GatsbyImage
-              image={Image}
-              alt={frontmatter.title + " - Featured image"}
-              className="cover"
-            />
-            ) : (
-              ""
-            )}      
-          </header>
-        <div
-          className="description"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
+          </section>
+          {Image ? <GatsbyImage image={Image} alt={frontmatter.title + ' - Featured image'} className="cover" /> : ''}
+        </header>
+        <div className="description" dangerouslySetInnerHTML={{ __html: html }} />
         <form
           className="contact-form"
           action="/thanks"
@@ -91,7 +75,9 @@ const Contact = ({ data }) => {
           data-netlify-honeypot="bot-field"
         >
           <p class="hidden">
-            <label>Dont fill this out if you are human: <input name="bot-field" /></label>
+            <label>
+              Dont fill this out if you are human: <input name="bot-field" />
+            </label>
           </p>
           <input type="hidden" name="form-name" value="contact" />
           <p>
@@ -120,17 +106,17 @@ const Contact = ({ data }) => {
           <p className="text-align-right">
             <button
               aria-label="Submit"
-              class="button g-recaptcha" 
-              data-sitekey="6LcE-000000000_000000_000000" 
+              class="button g-recaptcha"
+              data-sitekey="6LcE-000000000_000000_000000"
               data-callback={onSubmit}
-              data-action='submit'
+              data-action="submit"
               className="button g-recaptcha"
               sx={{
-                variant: "variants.button",
+                variant: 'variants.button',
               }}
               type="submit"
             >
-              Send Message{" "}
+              Send Message{' '}
               <span className="icon -right">
                 <RiSendPlane2Line />
               </span>
@@ -147,18 +133,18 @@ export default Contact
 const contactStyles = {
   contactPage: {
     input: {
-      border: "6px solid",
-      borderColor: "inputBorder",
-      bg: "inputBackground",
-      color: "#777",
-      outline: "none",
+      border: '6px solid',
+      borderColor: 'inputBorder',
+      bg: 'inputBackground',
+      color: '#777',
+      outline: 'none',
     },
     textarea: {
-      border: "6px solid",
-      borderColor: "inputBorder",
-      bg: "inputBackground",
-      color: "#777",
-      outline: "none",
+      border: '6px solid',
+      borderColor: 'inputBorder',
+      bg: 'inputBackground',
+      color: '#777',
+      outline: 'none',
     },
   },
 }

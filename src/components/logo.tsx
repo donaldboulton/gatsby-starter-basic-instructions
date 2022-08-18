@@ -1,14 +1,16 @@
 import * as React from 'react'
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import { Link } from 'gatsby'
+import { StaticImage } from 'gatsby-plugin-image'
 
 const Logo = props => (
   <>
     <Link to="/">
-      <StaticImage src='../../static/assets/logo.png' alt='PubliusLogic'
+      <StaticImage
+        src="../../static/assets/logo.png"
+        alt="PubliusLogic"
         style={{
-          maxWidth: "100%",
-          height: "auto",
+          maxWidth: '100%',
+          height: 'auto',
         }}
       />
     </Link>

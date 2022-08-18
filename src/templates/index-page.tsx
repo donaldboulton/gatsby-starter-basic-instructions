@@ -11,9 +11,9 @@ import {
   RiTwitterFill,
   RiFacebookBoxFill,
 } from 'react-icons/ri'
-import Layout from '../components/layout'
-import BlogListHome from '../components/blog-list-home'
-import Seo from '../components/seo'
+import Layout from '../components/Layout'
+import BlogListHome from '../components/BlogListHome'
+import Seo from '../components/Seo'
 import Stars from '../components/Stars'
 import Icons from '../util/socialmedia.json'
 

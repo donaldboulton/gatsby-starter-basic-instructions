@@ -4,19 +4,19 @@ import * as React from 'react'
 import { useStaticQuery, graphql, Link } from 'gatsby'
 import { Helmet } from 'react-helmet'
 import CookieConsent from 'react-cookie-consent'
-import Scroll from './Scroll'
-import ScrollDown from './ScrollDown'
-import Header from './header'
-import Logo from './logo'
-import Navigation from './navigation'
-import '../assets/scss/style.scss'
-import Footer from './footer'
-import Theme from './theme'
-import Search from './search'
+import Scroll from '../Scroll'
+import ScrollDown from '../ScrollDown'
+import Header from '../Header'
+import Logo from '../Logo'
+import Navigation from '../Navigation'
+import '../../assets/scss/style.scss'
+import Footer from '../Footer'
+import Theme from '../Theme'
+import Search from '../Search'
 import { SiGnuprivacyguard } from 'react-icons/si'
 import { LazyMotion, m } from 'framer-motion'
 
-const loadFeatures = () => import('./FramerFeatures').then(res => res.default)
+const loadFeatures = () => import('../FramerFeatures').then(res => res.default)
 
 interface LayoutProps {
   children: React.ReactNode

@@ -6,9 +6,9 @@ import kebabCase from 'lodash/kebabCase'
 // Components
 import { Helmet } from 'react-helmet'
 import { Link, graphql } from 'gatsby'
-import Seo from '../components/seo'
+import Seo from '../components/Seo'
 import Stars from '../components/Stars'
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 
 const url = typeof window !== 'undefined' ? window.location.href : ''
 

@@ -19,6 +19,7 @@ This is a Gatsby Starter v4.21.0 with everything you need for a professional web
 - Professional Page Scrolling
 - Tags and Categories
 - SSR and DSG Examples
+- Framer Motion for page Transitions and Components
 
 ## Dependency's
 

@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import { RiArrowLeftSLine, RiCheckboxCircleLine } from 'react-icons/ri'
-import Seo from '../components/seo'
+import Seo from '../components/Seo'
 import Stars from '../components/Stars'
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 
 const Thanks = () => (
   <Layout className="thanks-page">

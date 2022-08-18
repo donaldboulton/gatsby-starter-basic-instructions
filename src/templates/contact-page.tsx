@@ -4,8 +4,8 @@ import { graphql } from 'gatsby'
 import { Helmet } from 'react-helmet'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import { RiSendPlane2Line } from 'react-icons/ri'
-import Layout from '../components/layout'
-import Seo from '../components/seo'
+import Layout from '../components/Layout'
+import Seo from '../components/Seo'
 import Stars from '../components/Stars'
 
 export const pageQuery = graphql`

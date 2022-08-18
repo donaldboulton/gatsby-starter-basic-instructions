@@ -4,9 +4,9 @@ import * as React from 'react'
 import { Helmet } from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 import { RiArrowLeftLine, RiArrowRightLine } from 'react-icons/ri'
-import Layout from '../components/layout'
-import PostCard from '../components/post-card'
-import Seo from '../components/seo'
+import Layout from '../components/Layout'
+import PostCard from '../components/PostCard'
+import Seo from '../components/Seo'
 import Stars from '../components/Stars'
 
 const styles = {

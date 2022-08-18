@@ -104,7 +104,6 @@ After that add the component in your layout.js file or wherever you define your 
 
 ```javascript
 import CookieConsent from 'react-cookie-consent'
-
 ;<CookieConsent
   location="bottom"
   buttonText="Accept"

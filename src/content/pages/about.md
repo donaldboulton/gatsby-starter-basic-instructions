@@ -42,7 +42,6 @@ This is a Gatsby Starter v4.21.0 with everything you need for a professional web
     "gatsby-plugin-image": "^2.20.0",
     "gatsby-plugin-manifest": "^4.21.0",
     "gatsby-plugin-offline": "^5.21.0",
-    "gatsby-plugin-react-helmet": "^5.21.0",
     "gatsby-plugin-sass": "^5.21.0",
     "gatsby-plugin-sharp": "^4.21.0",
     "gatsby-plugin-sitemap": "^5.21.0",
@@ -66,12 +65,11 @@ This is a Gatsby Starter v4.21.0 with everything you need for a professional web
     "react": "^18.2.0",
     "react-cookie-consent": "^8.0.1",
     "react-dom": "^18.2.0",
-    "react-helmet": "^6.1.0",
     "react-icons": "^4.4.0",
-    "react-tsparticles": "^2.2.2",
+    "react-tsparticles": "^2.2.3",
     "rehype-react": "^7.1.1",
     "theme-ui": "^0.14.7",
-    "tsparticles-preset-stars": "^2.2.2"
+    "tsparticles-preset-stars": "^2.2.3"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "5.16.5",

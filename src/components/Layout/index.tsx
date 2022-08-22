@@ -1,8 +1,8 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui'
 import * as React from 'react'
+import { ReactNode } from 'react'
 import { useStaticQuery, graphql, Link } from 'gatsby'
-import { Helmet } from 'react-helmet'
 import CookieConsent from 'react-cookie-consent'
 import Scroll from '../Scroll'
 import ScrollDown from '../ScrollDown'
@@ -19,8 +19,11 @@ import { LazyMotion, m } from 'framer-motion'
 const loadFeatures = () => import('../FramerFeatures').then(res => res.default)
 
 interface LayoutProps {
-  children: React.ReactNode
+  children: ReactNode
+  className: string
+  path: string
 }
+
 const query = graphql`
   query SearchIndexQuery {
     siteSearchIndex {
@@ -40,9 +43,6 @@ const Layout = ({ className, children, path }: LayoutProps) => {
 
   return (
     <>
-      <Helmet>
-        <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
-      </Helmet>
       <div
         sx={{
           display: 'grid',
@@ -53,6 +53,7 @@ const Layout = ({ className, children, path }: LayoutProps) => {
           ],
           gridTemplateColumns: ['1fr', '64px 1fr 64px'],
           gridTemplateRows: ['min-content min-content 1fr min-content min-content', 'min-content 1fr min-content'],
+          gridRowGap: '2.5vh',
         }}
       >
         <div
@@ -79,15 +80,16 @@ const Layout = ({ className, children, path }: LayoutProps) => {
             gridArea: 'main',
           }}
         >
-          <m.main
-            key={path}
-            className={'container ' + className}
-            variants={animationConfiguration}
-            transition={{ duration: 2 }}
-            exit="exit"
-          >
-            {children}
-          </m.main>
+          <LazyMotion features={loadFeatures}>
+            <m.main
+              key={path}
+              className={'container ' + className}
+              variants={animationConfiguration}
+              transition={{ duration: 3 }}
+            >
+              {children}
+            </m.main>
+          </LazyMotion>
           <ScrollDown direction="down" to={205} showAbove={1500} css="position: fixed; right: 1em; top: 4.5em;" />
           <Scroll showBelow={1500} css="position: fixed; right: 1em; bottom: 4em;" />
         </div>

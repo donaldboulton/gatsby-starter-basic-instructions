@@ -1,6 +1,6 @@
 ---
 template: privacy-page
-title: Privacy and Terms
+title: Privacy
 path: /privacy
 featuredImage: ../../../static/assets/privacy.jpg
 ---

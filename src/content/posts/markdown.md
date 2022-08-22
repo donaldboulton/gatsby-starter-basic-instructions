@@ -218,7 +218,7 @@ To produce a code block in Markdown, simply indent every line of the
 block by at least 4 spaces or 1 tab.
 
 ```javascript
-import React from 'react'
+import * as React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import Navigation from '../components/navigation'
 

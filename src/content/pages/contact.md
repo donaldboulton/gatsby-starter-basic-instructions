@@ -1,7 +1,7 @@
 ---
 template: contact-page
 path: /contact
-title: Get In Touch
+title: Contact
 description: Contact Us Get In Touch
 featuredImage: ../../../static/assets/andrew-seaman-4fi_4q6_efm-unsplash.jpg
 ---

@@ -1,16 +1,16 @@
 import * as React from 'react'
 import { AnimatePresence } from 'framer-motion'
-
-export function wrapPageElement({ element }) {
-  return <AnimatePresence exitBeforeEnter>{element}</AnimatePresence>
-}
-
+import type { GatsbySSR } from 'gatsby'
 import { Partytown } from '@builder.io/partytown/react'
+
+export const wrapPageElement: GatsbySSR['wrapPageElement'] = ({ element }) => {
+  return <AnimatePresence wait>{element}</AnimatePresence>
+}
 
 const ORIGIN = 'https://www.googletagmanager.com'
 const GATSBY_GA_MEASUREMENT_ID = 'GTM-PSZS4JD'
 
-export function onRenderBody({ setHeadComponents, setPreBodyComponents }) {
+export function onRenderBody({ setHeadComponents }) {
   if (process.env.NODE_ENV !== 'production' && process.env.NODE_ENV !== 'test') return null
 
   setHeadComponents([

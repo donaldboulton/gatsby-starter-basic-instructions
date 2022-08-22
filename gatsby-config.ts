@@ -1,6 +1,7 @@
+import type { GatsbyConfig } from 'gatsby'
 const settings = require('./src/util/site.json')
 
-module.exports = {
+const config: GatsbyConfig = {
   siteMetadata: {
     title: `Basic Instructions`,
     author: {
@@ -14,6 +15,7 @@ module.exports = {
       twitter: `donboulton`,
     },
   },
+  graphqlTypegen: true,
   plugins: [
     `gatsby-plugin-theme-ui`,
     {
@@ -229,7 +231,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-sass',
-    `gatsby-plugin-react-helmet`,
     {
       resolve: 'gatsby-plugin-anchor-links',
       options: {
@@ -258,3 +259,5 @@ module.exports = {
     },
   ],
 }
+
+export default config

@@ -24,7 +24,7 @@ const config: GatsbyConfig = {
         headers: {
           '/*': ['Cache-Control: public, max-age=31536000, immutable'],
           '/static/*': ['Cache-Control: public, max-age=31536000, immutable'],
-        }, // option to add more headers. `Link` headers are transformed by the below criteria
+        },
         allPageHeaders: [
           'Strict-Transport-Security: max-age=31536000; preload',
           'X-Robots-Tag: index',
@@ -34,12 +34,12 @@ const config: GatsbyConfig = {
           'Referrer-Policy: same-origin',
           'Access-Control-Allow-Origin: https://gatsbystarterbasicinstructions.gatsbyjs.io/, https://utteranc.es/client.js',
           'Access-Control-Allow-Methods: POST; GET; PUT; DELETE; HEAD',
-        ], // option to add headers for all pages. `Link` headers are transformed by the below criteria
-        mergeSecurityHeaders: true, // boolean to turn off the default security headers
-        mergeLinkHeaders: true, // boolean to turn off the default gatsby js headers
-        mergeCachingHeaders: true, // boolean to turn off the default caching headers
-        transformHeaders: (headers, path) => headers, // optional transform for manipulating headers under each path (e.g.sorting), etc.
-        generateMatchPathRewrites: true, // boolean to turn off automatic creation of redirect rules for client only paths
+        ],
+        mergeSecurityHeaders: true,
+        mergeLinkHeaders: true,
+        mergeCachingHeaders: true,
+        transformHeaders: (headers, path) => headers,
+        generateMatchPathRewrites: true,
       },
     },
     {
@@ -64,13 +64,13 @@ const config: GatsbyConfig = {
             resolve: 'gatsby-remark-embed-video',
             options: {
               width: 800,
-              ratio: 1.77, // Optional: Defaults to 16/9 = 1.77
-              height: 400, // Optional: Overrides optional.ratio
-              related: false, //Optional: Will remove related videos from the end of an embedded YouTube video.
-              noIframeBorder: true, //Optional: Disable insertion of <style> border: 0
-              loadingStrategy: 'lazy', //Optional: Enable support for lazy-load offscreen iframes. Default is disabled.
-              containerClass: 'embedVideo-container', //Optional: Custom CSS class for iframe container, for multiple classes separate them by space
-              iframeId: false, //Optional: if true, iframe's id will be set to what is provided after 'video:' (YouTube IFrame player API requires iframe id)
+              ratio: 1.77,
+              height: 400,
+              related: false, 
+              noIframeBorder: true, 
+              loadingStrategy: 'lazy',
+              containerClass: 'embedVideo-container',
+              iframeId: false,
             },
           },
           {
@@ -109,9 +109,6 @@ const config: GatsbyConfig = {
               aliases: {},
               showLineNumbers: false,
               noInlineHighlight: false,
-              // By default the HTML entities <>&'" are escaped.
-              // Add additional HTML escapes by providing a mapping
-              // of HTML entities and their escape value IE: { '}': '&#123;' }
               escapeEntities: {},
             },
           },
@@ -208,9 +205,7 @@ const config: GatsbyConfig = {
     {
       resolve: `@gatsby-contrib/gatsby-plugin-elasticlunr-search`,
       options: {
-        // Fields to index Add Featured Image to fields and in Markdown below to index images
         fields: [`title`, `description`, `content`, `path`, `date`],
-        // How to resolve each field`s value for a supported node type
         resolvers: {
           BlogPost: {
             title: node => node.title,

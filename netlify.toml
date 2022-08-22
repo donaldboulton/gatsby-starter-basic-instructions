@@ -2,7 +2,7 @@
   publish = "public"
   command = "gatsby build"
 [build.environment]
-  NODE_VERSION = "18.7.0"
+  NODE_VERSION = "16.16.0"
 [[headers]]
   for = "/*"
   [headers.values]

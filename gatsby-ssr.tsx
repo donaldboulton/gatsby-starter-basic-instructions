@@ -10,9 +10,9 @@ export const wrapPageElement: GatsbySSR['wrapPageElement'] = ({ element }) => {
 const ORIGIN = 'https://www.googletagmanager.com'
 const GATSBY_GA_MEASUREMENT_ID = 'GTM-PSZS4JD'
 
-export function onRenderBody({ setHeadComponents }) {
+export function onRenderBody({ setHeadComponents, setHtmlAttributes }) {
   if (process.env.NODE_ENV !== 'production' && process.env.NODE_ENV !== 'test') return null
-
+  setHtmlAttributes({ lang: 'en' })
   setHeadComponents([
     <Partytown key="partytown" forward={['gtag']} />,
     <script key="google-analytics" type="text/partytown" src={`${ORIGIN}/gtag/js?id=${GATSBY_GA_MEASUREMENT_ID}`} />,
